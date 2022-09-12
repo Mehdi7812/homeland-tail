@@ -57,7 +57,7 @@
     </div>
     <header class="w-full h-5/6 bg-gray-400 relative bg-cover" style="background-image: url(images/header.jpg);">
         <div class="backdrop-brightness-50">
-            <div class="container m-auto p-6">
+            <div class="container m-auto p-6 lg:p-0 lg:py-5">
                 <nav class="hidden sm:block p-2 bg-primary rounded-2xl border-black border-[1px] shadow-[0_0_17px_rgba(0,0,0,0.16)]">
                     <ul class="flex justify-center items-center gap-10">
                         <li>
@@ -78,13 +78,13 @@
                     </ul>
                 </nav>
                 
-                <div class="flex flex-col text-center items-center gap-5 p-5 pb-20">
-                    <h2 class="mt-5 text-xs font-bold">برترین مشاورین املاک خاور میانه</h2>
-                    <h1 class="text-2xl font-extrabold">مشاورین املاک هوم لند</h1>
-                    <p class="text-[11px]">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته میشود.</p>
-                    <form class="absolute -bottom-6 w-4/5 text-center h-12"> 
-                        <input class="w-full h-full rounded-3xl border-0 outline-none bg-primary text-right p-4 placeholder:text-white placeholder:font-bold" type="text" placeholder="جستجوی کد ملی">
-                        <div class="absolute bottom-1 left-1 bg-primaryOrange hover:bg-hoverPrimaryOrange rounded-full w-10 h-10 flex justify-center items-center cursor-pointer transition duration-300">
+                <div class="flex flex-col text-center items-center gap-5 p-5 pb-20 lg:px-12 lg:items-end lg:py-28">
+                    <h2 class="mt-5 text-xs font-bold lg:text-lg">برترین مشاورین املاک خاور میانه</h2>
+                    <h1 class="text-2xl font-extrabold lg:text-6xl">مشاورین املاک هوم لند</h1>
+                    <p class="text-[11px] lg:text-sm lg:max-w-[530px] lg:text-right">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته میشود.</p>
+                    <form class="absolute -bottom-6 w-4/5 text-center h-12 lg:relative lg:w-1/2 lg:h-16"> 
+                        <input class="w-full h-full rounded-3xl border-0 outline-none bg-primary text-right p-4 placeholder:text-white placeholder:font-bold lg:rounded-[33px]" type="text" placeholder="جستجوی کد ملی">
+                        <div class="absolute bottom-1 left-1 bg-primaryOrange hover:bg-hoverPrimaryOrange rounded-full w-10 h-10 flex justify-center items-center cursor-pointer transition duration-300 lg:w-[55px] lg:h-[55px]">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_422_694)">
                                     <path d="M18 5H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -113,34 +113,35 @@
     </header>
 
     <main style="direction: rtl;">
-        <section class="container m-auto p-5 mb-15 md:py-10">
-            <div class="py-10 flex flex-col gap-5">
-                <div class="relative w-full flex flex-col gap-5">
-                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5">
+        <!-- Category section -->
+        <section class="container m-auto p-5 mb-15 md:py-10 lg:px-12 lg:relative">
+            <div class="py-10 flex flex-col gap-5 lg:flex-row lg:bg-primary lg:p-1 lg:rounded-2xl lg:justify-between lg:absolute lg:left-0 lg:right-0 lg:top-[-22px] lg:w-11/12 lg:m-auto">
+                <div class="relative w-full flex flex-col gap-5 lg:flex-row lg:gap-0 lg:w-4/6">
+                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5 lg:justify-around lg:p-0 lg:relative lg:after:absolute lg:after:left-0  lg:after:w-[1px] lg:after:h-7 lg:after:bg-graytext">
                         <span>منطقه شما</span>
                         <svg class="-rotate-90" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L8 6.5L15.5 1" stroke="#EEEEEE" stroke-opacity="0.6" stroke-width="1.5"></path>
                         </svg>
                     </a>
-                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5">
+                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5 lg:justify-around lg:p-0 lg:relative lg:after:absolute lg:after:left-0  lg:after:w-[1px] lg:after:h-7 lg:after:bg-graytext">
                         <span>نوع ملک</span>
                         <svg class="-rotate-90" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L8 6.5L15.5 1" stroke="#EEEEEE" stroke-opacity="0.6" stroke-width="1.5"></path>
                         </svg>
                     </a>
-                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5">
+                    <a href="#" class="bg-primary w-full rounded-xl h-10 flex justify-between items-center px-5 lg:justify-around lg:p-0">
                         <span>بازه قیمتی</span>
                         <svg class="-rotate-90" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L8 6.5L15.5 1" stroke="#EEEEEE" stroke-opacity="0.6" stroke-width="1.5"></path>
                         </svg>
                     </a>
                 </div>
-                <a href="#" class="btn w-full text-[17px]">جستجوی ملک</a>
+                <a href="#" class="btn w-full text-[17px] lg:w-1/5">جستجوی ملک</a>
             </div>
 
             <div class="py-4">
-                <p class="text-sm text-primaryOrange font-bold">دسته بندی</p>
-                <h2 class="text-white text-lg font-extrabold mt-2 mb-11">دسته بندی ملک ها</h2>
+                <p class="text-sm text-primaryOrange font-bold lg:text-xl">دسته بندی</p>
+                <h2 class="text-white text-lg font-extrabold mt-2 mb-11 lg:text-4xl">دسته بندی ملک ها</h2>
             </div>
 
             <div class="swiper swiper1 sm:hidden">
@@ -182,13 +183,13 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-9 pb-8">
+            <div class="grid grid-cols-2 gap-9 pb-8 lg:grid-cols-3">
                 <div class="relative rounded-xl overflow-hidden">
                     <img src="images/categoryImg1.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
 
@@ -196,8 +197,8 @@
                     <img src="images/categoryImg2.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
                 
@@ -205,8 +206,8 @@
                     <img src="images/categoryImg3.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
                 
@@ -214,8 +215,8 @@
                     <img src="images/categoryImg1.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
 
@@ -223,8 +224,8 @@
                     <img src="images/categoryImg2.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
                 
@@ -232,18 +233,20 @@
                     <img src="images/categoryImg3.png" class="w-full h-full">
                     <img src="images/categoryIcon.png" class="absolute top-2 right-2" alt="">
                     <div class="absolute bottom-2 left-2 right-2 bg-sec222831 flex justify-between p-4 rounded-xl text-white items-center">
-                        <span class="text-sm font-bold">ویلایی</span>
-                        <span class="text-graytext font-normal text-xs">۱,۳۲۲ ملک</span>
+                        <span class="text-sm font-bold lg:text-2xl">ویلایی</span>
+                        <span class="text-graytext font-normal text-xs lg:text-sm">۱,۳۲۲ ملک</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-primary md:py-10">
+        <!-- Trust section -->
+        <section class="bg-primary md:py-10 lg:px-12">
             <div class="container m-auto p-5">
-                <p class="text-xs text-primaryOrange">ارزش های ما</p>
-                <h2 class="text-lg font-extrabold mt-2 mb-8">چرا باید به ما اعتماد کنید ؟</h2>
-                <div class="flex flex-wrap gap-8">
+                <p class="text-xs text-primaryOrange lg:text-xl">ارزش های ما</p>
+                <h2 class="text-lg font-extrabold mt-2 mb-8 lg:text-4xl">چرا باید به ما اعتماد کنید ؟</h2>
+
+                <div class="flex flex-wrap gap-8 lg:flex-nowrap lg:gap-10">
                     <div class="flex items-center gap-8">
                         <svg width="80" height="80" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.25 15.75C33.25 18.2875 32.4975 20.615 31.2025 22.5575C29.3125 25.3575 26.32 27.335 22.8375 27.8425C22.2425 27.9475 21.63 28 21 28C20.37 28 19.7575 27.9475 19.1625 27.8425C15.68 27.335 12.6875 25.3575 10.7975 22.5575C9.5025 20.615 8.75 18.2875 8.75 15.75C8.75 8.9775 14.2275 3.5 21 3.5C27.7725 3.5 33.25 8.9775 33.25 15.75Z" stroke="#E16428" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -252,7 +255,7 @@
                             </svg>
                             
                         <div>
-                            <h3 class="text-base font-extrabold mb-2">ملک های با ارزش</h3>
+                            <h3 class="text-base font-extrabold mb-2 lg:text-2xl">ملک های با ارزش</h3>
                             <p class="text-xs font-normal text-graytext">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
                         </div>
                     </div>
@@ -269,7 +272,7 @@
                         </svg>
                     
                         <div>
-                            <h3 class="text-base font-extrabold mb-2">ملک های با ارزش</h3>
+                            <h3 class="text-base font-extrabold mb-2 lg:text-2xl">ملک های با ارزش</h3>
                             <p class="text-xs font-normal text-graytext">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
                         </div>
                     </div>
@@ -282,7 +285,7 @@
                             </svg>                            
                             
                         <div>
-                            <h3 class="text-base font-extrabold mb-2">ملک های با ارزش</h3>
+                            <h3 class="text-base font-extrabold mb-2 lg:text-2xl">ملک های با ارزش</h3>
                             <p class="text-xs font-normal text-graytext">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
                         </div>
                     </div>
@@ -290,11 +293,12 @@
             </div>
         </section>
 
-        <section class="my-16 md:py-10">
+        <!-- Newst section -->
+        <section class="my-16 md:py-10 lg:px-12 lg:my-0">
             <div class="container m-auto p-5">
                 <div>
-                    <p class="text-xs text-primaryOrange">ارزش های ما</p>
-                    <h2 class="text-lg font-extrabold mt-2 mb-8">چرا باید به ما اعتماد کنید ؟</h2>
+                    <p class="text-xs text-primaryOrange lg:text-xl">ارزش های ما</p>
+                    <h2 class="text-lg font-extrabold mt-2 mb-8 lg:text-4xl">چرا باید به ما اعتماد کنید ؟</h2>
                 </div>
 
 
@@ -458,7 +462,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperNewsImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperNewsImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -477,7 +481,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperNewsImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperNewsImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -499,7 +503,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -522,8 +526,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png">
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative m-auto z-10" src="images/newstperson.png">
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -705,7 +709,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperNewsImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperNewsImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -724,7 +728,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperNewsImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperNewsImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -746,7 +750,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -769,8 +773,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png">
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative m-auto z-10" src="images/newstperson.png">
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -952,7 +956,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperNewsImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperNewsImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -971,7 +975,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperNewsImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperNewsImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -993,7 +997,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -1016,8 +1020,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png">
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative m-auto z-10" src="images/newstperson.png">
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -1199,7 +1203,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperNewsImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperNewsImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -1218,7 +1222,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperNewsImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperNewsImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -1240,7 +1244,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -1263,255 +1267,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png">
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
-                                            <div class="flex flex-col">
-                                                <span class="text-[15px] font-bold">پوریا حدادی</span> 
-                                                <span class="text-xs">۱۰ سال تجربه</span>
-                                            </div>
-            
-                                            <div class="flex gap-3">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M14.1401 0.959997L5.11012 3.96C-0.959883 5.99 -0.959883 9.3 5.11012 11.32L7.79012 12.21L8.68012 14.89C10.7001 20.96 14.0201 20.96 16.0401 14.89L19.0501 5.87C20.3901 1.82 18.1901 -0.390003 14.1401 0.959997ZM14.4601 6.34L10.6601 10.16C10.5101 10.31 10.3201 10.38 10.1301 10.38C9.94012 10.38 9.75012 10.31 9.60012 10.16C9.31012 9.87 9.31012 9.39 9.60012 9.1L13.4001 5.28C13.6901 4.99 14.1701 4.99 14.4601 5.28C14.7501 5.57 14.7501 6.05 14.4601 6.34Z" fill="#FFA80A"/>
-                                                </svg>
-            
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17.62 10.75C17.19 10.75 16.85 10.4 16.85 9.98001C16.85 9.61001 16.48 8.84001 15.86 8.17001C15.25 7.52001 14.58 7.14001 14.02 7.14001C13.59 7.14001 13.25 6.79001 13.25 6.37001C13.25 5.95001 13.6 5.60001 14.02 5.60001C15.02 5.60001 16.07 6.14001 16.99 7.11001C17.85 8.02001 18.4 9.15001 18.4 9.97001C18.4 10.4 18.05 10.75 17.62 10.75Z" fill="#0DA049"/>
-                                                    <path d="M21.2298 10.75C20.7998 10.75 20.4598 10.4 20.4598 9.98C20.4598 6.43 17.5698 3.55 14.0298 3.55C13.5998 3.55 13.2598 3.2 13.2598 2.78C13.2598 2.36 13.5998 2 14.0198 2C18.4198 2 21.9998 5.58 21.9998 9.98C21.9998 10.4 21.6498 10.75 21.2298 10.75Z" fill="#0DA049"/>
-                                                    <path d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z" fill="#0DA049"/>
-                                                    <path d="M21.97 18.33C21.97 18.61 21.92 18.9 21.82 19.18C21.79 19.26 21.76 19.34 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C19.39 21.62 19.38 21.63 19.37 21.63C18.78 21.87 18.14 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C10.36 19 8.09999 17.08 7.72999 16.77L11 13.5C11.28 13.71 13.4 15.5 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" fill="#0DA049"/>
-                                                </svg>     
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="bg-primary rounded-2xl py-2 px-3 group">
-                                <div class="swiper swiperNewsImg1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="relative">
-                                                <img src="images/newstImg1.png" class="w-full h-full rounded-2xl overflow-hidden">
-                        
-                                                <div class="absolute top-3 left-3 right-3 flex justify-between">
-                                                    <div class="flex gap-2 items-center">
-                                                        <span class="bg-[#55499B] py-[6px] px-2 rounded-md font-extrabold text-[10px]">پیش فروش</span> 
-                                                        <div class="bg-[#FFA80A] p-1 rounded-md flex items-center relative w-6 overflow-hidden group-hover:w-20 transition-all duration-300">
-                                                            <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8518 16.0147H5.0974C4.82047 16.0147 4.59082 15.7672 4.59082 15.4687C4.59082 15.1703 4.82047 14.9228 5.0974 14.9228H11.8518C12.1287 14.9228 12.3584 15.1703 12.3584 15.4687C12.3584 15.7672 12.1287 16.0147 11.8518 16.0147Z" fill="white"/><path d="M14.1144 4.01824L11.4126 6.10015C11.0546 6.37677 10.5413 6.20934 10.386 5.7653L9.10939 2.09647C8.89325 1.46316 8.06246 1.46316 7.84632 2.09647L6.56298 5.75802C6.40763 6.20934 5.90105 6.37677 5.54307 6.09287L2.84132 4.01096C2.30097 3.60331 1.585 4.17838 1.8079 4.85537L4.61772 13.3359C4.71228 13.6271 4.96895 13.8163 5.25263 13.8163H11.6896C11.9732 13.8163 12.2299 13.6198 12.3245 13.3359L15.1343 4.85537C15.3639 4.17838 14.648 3.60331 14.1144 4.01824ZM10.1631 10.7371H6.78588C6.50895 10.7371 6.2793 10.4896 6.2793 10.1912C6.2793 9.89272 6.50895 9.64522 6.78588 9.64522H10.1631C10.44 9.64522 10.6696 9.89272 10.6696 10.1912C10.6696 10.4896 10.44 10.7371 10.1631 10.7371Z" fill="white"/></svg>
-                                                                </span>
-                                                            <span class="text-[10px] font-extrabold absolute right-7">فروش ویژه</span>
-                                                        </div>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <div class="bg-primary flex gap-2 rounded-md p-1 items-center">
-                                                            <span class="text-[10px] font-extrabold">آپارتمان</span>
-                        
-                                                            <span>
-                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M10.8332 18.3333H4.1665C2.49984 18.3333 1.6665 17.5 1.6665 15.8333V9.16667C1.6665 7.50001 2.49984 6.66667 4.1665 6.66667H8.33317V15.8333C8.33317 17.5 9.1665 18.3333 10.8332 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.42483 3.33333C8.35816 3.58333 8.33317 3.85833 8.33317 4.16666V6.66666H4.1665V4.99999C4.1665 4.08333 4.9165 3.33333 5.83317 3.33333H8.42483Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M11.6665 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M15 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M14.1665 14.1667H12.4998C12.0415 14.1667 11.6665 14.5417 11.6665 15V18.3333H14.9998V15C14.9998 14.5417 14.6248 14.1667 14.1665 14.1667Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M5 10.8333V14.1667" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.3335 15.8333V4.16667C8.3335 2.50001 9.16683 1.66667 10.8335 1.66667H15.8335C17.5002 1.66667 18.3335 2.50001 18.3335 4.16667V15.8333C18.3335 17.5 17.5002 18.3333 15.8335 18.3333H10.8335C9.16683 18.3333 8.3335 17.5 8.3335 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg> 
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="absolute bottom-3 right-3 left-3 flex justify-between items-end">
-                                                    <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-7 relative group-hover:h-11 overflow-hidden transition-all duration-300">
-                                                        <span class="absolute bottom-5">۶</span>
-                                                        <span>
-                                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4.82349 17.4167H14.1762C16.6393 17.4167 17.621 16.0788 17.737 14.4479L18.201 7.90875C18.326 6.19875 16.791 4.75 14.8544 4.75C14.31 4.75 13.8103 4.47292 13.5604 4.04542L12.9179 2.8975C12.5073 2.17708 11.4364 1.58333 10.5261 1.58333H8.48246C7.56326 1.58333 6.49234 2.17708 6.08182 2.8975L5.43927 4.04542C5.18939 4.47292 4.68963 4.75 4.14525 4.75C2.20867 4.75 0.673685 6.19875 0.798626 7.90875L1.26269 14.4479C1.36978 16.0788 2.36038 17.4167 4.82349 17.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                <path d="M9.50016 14.25C11.2443 14.25 12.6668 12.8274 12.6668 11.0833C12.6668 9.33923 11.2443 7.91667 9.50016 7.91667C7.75606 7.91667 6.3335 9.33923 6.3335 11.0833C6.3335 12.8274 7.75606 14.25 9.50016 14.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>                                        
-                                                        </span>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <span class="bg-primary text-[10px] py-2 px-3 font-extrabold rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">۲ روز پیش</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <div class="relative">
-                                                <img src="images/newstImg1.png" class="w-full h-full rounded-2xl overflow-hidden">
-                        
-                                                <div class="absolute top-3 left-3 right-3 flex justify-between">
-                                                    <div class="flex gap-2 items-center">
-                                                        <span class="bg-[#55499B] py-[6px] px-2 rounded-md font-extrabold text-[10px]">پیش فروش</span> 
-                                                        <div class="bg-[#FFA80A] p-1 rounded-md flex items-center relative w-6 overflow-hidden group-hover:w-20 transition-all duration-300">
-                                                            <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8518 16.0147H5.0974C4.82047 16.0147 4.59082 15.7672 4.59082 15.4687C4.59082 15.1703 4.82047 14.9228 5.0974 14.9228H11.8518C12.1287 14.9228 12.3584 15.1703 12.3584 15.4687C12.3584 15.7672 12.1287 16.0147 11.8518 16.0147Z" fill="white"/><path d="M14.1144 4.01824L11.4126 6.10015C11.0546 6.37677 10.5413 6.20934 10.386 5.7653L9.10939 2.09647C8.89325 1.46316 8.06246 1.46316 7.84632 2.09647L6.56298 5.75802C6.40763 6.20934 5.90105 6.37677 5.54307 6.09287L2.84132 4.01096C2.30097 3.60331 1.585 4.17838 1.8079 4.85537L4.61772 13.3359C4.71228 13.6271 4.96895 13.8163 5.25263 13.8163H11.6896C11.9732 13.8163 12.2299 13.6198 12.3245 13.3359L15.1343 4.85537C15.3639 4.17838 14.648 3.60331 14.1144 4.01824ZM10.1631 10.7371H6.78588C6.50895 10.7371 6.2793 10.4896 6.2793 10.1912C6.2793 9.89272 6.50895 9.64522 6.78588 9.64522H10.1631C10.44 9.64522 10.6696 9.89272 10.6696 10.1912C10.6696 10.4896 10.44 10.7371 10.1631 10.7371Z" fill="white"/></svg>
-                                                                </span>
-                                                            <span class="text-[10px] font-extrabold absolute right-7">فروش ویژه</span>
-                                                        </div>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <div class="bg-primary flex gap-2 rounded-md p-1 items-center">
-                                                            <span class="text-[10px] font-extrabold">آپارتمان</span>
-                        
-                                                            <span>
-                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M10.8332 18.3333H4.1665C2.49984 18.3333 1.6665 17.5 1.6665 15.8333V9.16667C1.6665 7.50001 2.49984 6.66667 4.1665 6.66667H8.33317V15.8333C8.33317 17.5 9.1665 18.3333 10.8332 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.42483 3.33333C8.35816 3.58333 8.33317 3.85833 8.33317 4.16666V6.66666H4.1665V4.99999C4.1665 4.08333 4.9165 3.33333 5.83317 3.33333H8.42483Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M11.6665 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M15 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M14.1665 14.1667H12.4998C12.0415 14.1667 11.6665 14.5417 11.6665 15V18.3333H14.9998V15C14.9998 14.5417 14.6248 14.1667 14.1665 14.1667Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M5 10.8333V14.1667" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.3335 15.8333V4.16667C8.3335 2.50001 9.16683 1.66667 10.8335 1.66667H15.8335C17.5002 1.66667 18.3335 2.50001 18.3335 4.16667V15.8333C18.3335 17.5 17.5002 18.3333 15.8335 18.3333H10.8335C9.16683 18.3333 8.3335 17.5 8.3335 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg> 
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="absolute bottom-3 right-3 left-3 flex justify-between items-end">
-                                                    <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-7 relative group-hover:h-11 overflow-hidden transition-all duration-300">
-                                                        <span class="absolute bottom-5">۶</span>
-                                                        <span>
-                                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4.82349 17.4167H14.1762C16.6393 17.4167 17.621 16.0788 17.737 14.4479L18.201 7.90875C18.326 6.19875 16.791 4.75 14.8544 4.75C14.31 4.75 13.8103 4.47292 13.5604 4.04542L12.9179 2.8975C12.5073 2.17708 11.4364 1.58333 10.5261 1.58333H8.48246C7.56326 1.58333 6.49234 2.17708 6.08182 2.8975L5.43927 4.04542C5.18939 4.47292 4.68963 4.75 4.14525 4.75C2.20867 4.75 0.673685 6.19875 0.798626 7.90875L1.26269 14.4479C1.36978 16.0788 2.36038 17.4167 4.82349 17.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                <path d="M9.50016 14.25C11.2443 14.25 12.6668 12.8274 12.6668 11.0833C12.6668 9.33923 11.2443 7.91667 9.50016 7.91667C7.75606 7.91667 6.3335 9.33923 6.3335 11.0833C6.3335 12.8274 7.75606 14.25 9.50016 14.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>                                        
-                                                        </span>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <span class="bg-primary text-[10px] py-2 px-3 font-extrabold rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">۲ روز پیش</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <div class="swiper-slide">
-                                            <div class="relative">
-                                                <img src="images/newstImg1.png" class="w-full h-full rounded-2xl overflow-hidden">
-                        
-                                                <div class="absolute top-3 left-3 right-3 flex justify-between">
-                                                    <div class="flex gap-2 items-center">
-                                                        <span class="bg-[#55499B] py-[6px] px-2 rounded-md font-extrabold text-[10px]">پیش فروش</span> 
-                                                        <div class="bg-[#FFA80A] p-1 rounded-md flex items-center relative w-6 overflow-hidden group-hover:w-20 transition-all duration-300">
-                                                            <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8518 16.0147H5.0974C4.82047 16.0147 4.59082 15.7672 4.59082 15.4687C4.59082 15.1703 4.82047 14.9228 5.0974 14.9228H11.8518C12.1287 14.9228 12.3584 15.1703 12.3584 15.4687C12.3584 15.7672 12.1287 16.0147 11.8518 16.0147Z" fill="white"/><path d="M14.1144 4.01824L11.4126 6.10015C11.0546 6.37677 10.5413 6.20934 10.386 5.7653L9.10939 2.09647C8.89325 1.46316 8.06246 1.46316 7.84632 2.09647L6.56298 5.75802C6.40763 6.20934 5.90105 6.37677 5.54307 6.09287L2.84132 4.01096C2.30097 3.60331 1.585 4.17838 1.8079 4.85537L4.61772 13.3359C4.71228 13.6271 4.96895 13.8163 5.25263 13.8163H11.6896C11.9732 13.8163 12.2299 13.6198 12.3245 13.3359L15.1343 4.85537C15.3639 4.17838 14.648 3.60331 14.1144 4.01824ZM10.1631 10.7371H6.78588C6.50895 10.7371 6.2793 10.4896 6.2793 10.1912C6.2793 9.89272 6.50895 9.64522 6.78588 9.64522H10.1631C10.44 9.64522 10.6696 9.89272 10.6696 10.1912C10.6696 10.4896 10.44 10.7371 10.1631 10.7371Z" fill="white"/></svg>
-                                                                </span>
-                                                            <span class="text-[10px] font-extrabold absolute right-7">فروش ویژه</span>
-                                                        </div>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <div class="bg-primary flex gap-2 rounded-md p-1 items-center">
-                                                            <span class="text-[10px] font-extrabold">آپارتمان</span>
-                        
-                                                            <span>
-                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M10.8332 18.3333H4.1665C2.49984 18.3333 1.6665 17.5 1.6665 15.8333V9.16667C1.6665 7.50001 2.49984 6.66667 4.1665 6.66667H8.33317V15.8333C8.33317 17.5 9.1665 18.3333 10.8332 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.42483 3.33333C8.35816 3.58333 8.33317 3.85833 8.33317 4.16666V6.66666H4.1665V4.99999C4.1665 4.08333 4.9165 3.33333 5.83317 3.33333H8.42483Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M11.6665 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M15 6.66667V10.8333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M14.1665 14.1667H12.4998C12.0415 14.1667 11.6665 14.5417 11.6665 15V18.3333H14.9998V15C14.9998 14.5417 14.6248 14.1667 14.1665 14.1667Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M5 10.8333V14.1667" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M8.3335 15.8333V4.16667C8.3335 2.50001 9.16683 1.66667 10.8335 1.66667H15.8335C17.5002 1.66667 18.3335 2.50001 18.3335 4.16667V15.8333C18.3335 17.5 17.5002 18.3333 15.8335 18.3333H10.8335C9.16683 18.3333 8.3335 17.5 8.3335 15.8333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg> 
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="absolute bottom-3 right-3 left-3 flex justify-between items-end">
-                                                    <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-7 relative group-hover:h-11 overflow-hidden transition-all duration-300">
-                                                        <span class="absolute bottom-5">۶</span>
-                                                        <span>
-                                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4.82349 17.4167H14.1762C16.6393 17.4167 17.621 16.0788 17.737 14.4479L18.201 7.90875C18.326 6.19875 16.791 4.75 14.8544 4.75C14.31 4.75 13.8103 4.47292 13.5604 4.04542L12.9179 2.8975C12.5073 2.17708 11.4364 1.58333 10.5261 1.58333H8.48246C7.56326 1.58333 6.49234 2.17708 6.08182 2.8975L5.43927 4.04542C5.18939 4.47292 4.68963 4.75 4.14525 4.75C2.20867 4.75 0.673685 6.19875 0.798626 7.90875L1.26269 14.4479C1.36978 16.0788 2.36038 17.4167 4.82349 17.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                <path d="M9.50016 14.25C11.2443 14.25 12.6668 12.8274 12.6668 11.0833C12.6668 9.33923 11.2443 7.91667 9.50016 7.91667C7.75606 7.91667 6.3335 9.33923 6.3335 11.0833C6.3335 12.8274 7.75606 14.25 9.50016 14.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>                                        
-                                                        </span>
-                                                    </div>
-                        
-                                                    <div>
-                                                        <span class="bg-primary text-[10px] py-2 px-3 font-extrabold rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">۲ روز پیش</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="swiperNewsImg1-next absolute top-1/2 z-10 right-1">
-                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_d_411_3053)">
-                                            <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
-                                            </g>
-                                            <defs>
-                                            <filter id="filter0_d_411_3053" x="-2" y="-2" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                            <feOffset/>
-                                            <feGaussianBlur stdDeviation="7.5"/>
-                                            <feComposite in2="hardAlpha" operator="out"/>
-                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_411_3053"/>
-                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_411_3053" result="shape"/>
-                                            </filter>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                    <div class="swiperNewsImg1-prev absolute top-1/2 z-10 left-1">
-                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_d_411_3052)">
-                                            <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
-                                            </g>
-                                            <defs>
-                                            <filter id="filter0_d_411_3052" x="-2" y="-2" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                            <feOffset/>
-                                            <feGaussianBlur stdDeviation="7.5"/>
-                                            <feComposite in2="hardAlpha" operator="out"/>
-                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_411_3052"/>
-                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_411_3052" result="shape"/>
-                                            </filter>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-            
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
-                                        فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
-                                    </h3>
-            
-                                    <div class="flex gap-8">
-                                        <span class="relative text-base font-normal text-[#f6e9e9] after:absolute after:w-1 after:h-1 after:rounded-full after:bg-[#f6e9e9] after:-left-4 after:top-3">۱۰۲ متر</span>
-                                        <span class="relative text-base font-normal text-[#f6e9e9] after:absolute after:w-1 after:h-1 after:rounded-full after:bg-[#f6e9e9] after:-left-4 after:top-3">۳ خوابه</span>
-                                        <span class="relative text-base font-normal text-[#f6e9e9] after:absolute after:w-1 after:h-1 after:rounded-full after:bg-[#f6e9e9] after:-left-4 after:top-3">۲ طبقه</span>
-                                        <span class="relative text-base font-normal text-[#f6e9e9]">نوساز</span>
-                                    </div>
-            
-                                    <div class="flex items-center">
-                                        <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path opacity="0.4" d="M25.7331 10.56V17.4267C25.7331 21.5333 23.3865 23.2933 19.8665 23.2933H8.14644C7.54644 23.2933 6.97311 23.24 6.43978 23.12C6.10645 23.0667 5.78646 22.9734 5.49312 22.8667C3.49312 22.12 2.27979 20.3867 2.27979 17.4267V10.56C2.27979 6.4533 4.62644 4.69334 8.14644 4.69334H19.8665C22.8531 4.69334 24.9998 5.96 25.5731 8.85334C25.6665 9.38667 25.7331 9.9333 25.7331 10.56Z" fill="#237E48"/>
-                                            <path d="M29.7333 14.56V21.4267C29.7333 25.5334 27.3866 27.2934 23.8666 27.2934H12.1466C11.1599 27.2934 10.2666 27.1601 9.49329 26.8668C7.90662 26.2801 6.82661 25.0668 6.43994 23.1201C6.97327 23.2401 7.54661 23.2934 8.14661 23.2934H19.8666C23.3866 23.2934 25.7333 21.5334 25.7333 17.4267V10.56C25.7333 9.93337 25.68 9.37341 25.5733 8.85341C28.1066 9.38674 29.7333 11.1734 29.7333 14.56Z" fill="#237E48"/>
-                                            <path d="M14 17.52C15.944 17.52 17.52 15.944 17.52 13.9999C17.52 12.0559 15.944 10.4799 14 10.4799C12.056 10.4799 10.48 12.0559 10.48 13.9999C10.48 15.944 12.056 17.52 14 17.52Z" fill="#237E48"/>
-                                            <path d="M6.37354 11C5.82687 11 5.37354 11.4533 5.37354 12V16C5.37354 16.5467 5.82687 17 6.37354 17C6.9202 17 7.37354 16.5467 7.37354 16V12C7.37354 11.4533 6.93354 11 6.37354 11Z" fill="#237E48"/>
-                                            <path d="M21.6133 11C21.0666 11 20.6133 11.4533 20.6133 12V16C20.6133 16.5467 21.0666 17 21.6133 17C22.1599 17 22.6133 16.5467 22.6133 16V12C22.6133 11.4533 22.1733 11 21.6133 11Z" fill="#237E48"/>
-                                        </svg>
-                                        <p class="text-sm"><span class="text-xl font-extrabold">۲۳۰ میلیارد</span> تومان</p>   
-                                    </div>
-            
-                                    <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png">
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative m-auto z-10" src="images/newstperson.png">
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-sec222831 w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -1539,15 +1296,16 @@
             </div>
         </section>
 
-        <section class="bg-primary md:py-10">
+        <!-- Proposal section -->
+        <section class="bg-primary md:py-10 lg:px-12">
             <div class="container m-auto p-5">
-                <p class="text-xs text-primaryOrange">ارزش های ما</p>
-                <h2 class="text-lg font-extrabold mt-2 mb-8">چرا باید به ما اعتماد کنید ؟</h2>
+                <p class="text-xs text-primaryOrange lg:text-xl">جدیدترین ملک ها</p>
+                <h2 class="text-lg font-extrabold mt-2 mb-8 lg:text-4xl">پیشنهادات باورنکردنی ملک ها</h2>
 
-                <div class="swiper swiperProposal"> 
+                <div class="swiper swiperProposal">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group">
+                        <div class="swiper-slide lg:min-w-[60%]">
+                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group lg:flex">
                                 <div class="swiper swiperProposalImg1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -1653,7 +1411,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperProposalImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperProposalImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -1672,7 +1430,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperProposalImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperProposalImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -1693,8 +1451,8 @@
                                     </div>
                                 </div>
             
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                <div class="py-3 flex gap-4 flex-col lg:min-w-[270px] lg:pr-3 lg:justify-center">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -1742,8 +1500,8 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group">
+                        <div class="swiper-slide lg:min-w-[60%]">
+                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group lg:flex">
                                 <div class="swiper swiperProposalImg1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -1849,7 +1607,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperProposalImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperProposalImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -1868,7 +1626,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperProposalImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperProposalImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -1889,8 +1647,8 @@
                                     </div>
                                 </div>
             
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                <div class="py-3 flex gap-4 flex-col lg:min-w-[270px] lg:pr-3 lg:justify-center">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -1938,8 +1696,8 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group">
+                        <div class="swiper-slide lg:min-w-[60%]">
+                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group lg:flex">
                                 <div class="swiper swiperProposalImg1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -2045,7 +1803,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperProposalImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperProposalImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -2064,7 +1822,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperProposalImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperProposalImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -2085,8 +1843,8 @@
                                     </div>
                                 </div>
             
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                <div class="py-3 flex gap-4 flex-col lg:min-w-[270px] lg:pr-3 lg:justify-center">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -2134,8 +1892,8 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group">
+                        <div class="swiper-slide lg:min-w-[60%]">
+                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group lg:flex">
                                 <div class="swiper swiperProposalImg1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -2241,7 +1999,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperProposalImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperProposalImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -2260,7 +2018,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperProposalImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperProposalImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -2281,8 +2039,8 @@
                                     </div>
                                 </div>
             
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                <div class="py-3 flex gap-4 flex-col lg:min-w-[270px] lg:pr-3 lg:justify-center">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -2330,8 +2088,8 @@
                             </div>
                         </div>
                         
-                        <div class="swiper-slide">
-                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group">
+                        <div class="swiper-slide lg:min-w-[60%]">
+                            <div class="bg-sec222831 rounded-2xl py-2 px-3 group lg:flex">
                                 <div class="swiper swiperProposalImg1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -2437,7 +2195,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperProposalImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperProposalImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -2456,7 +2214,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperProposalImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperProposalImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -2477,8 +2235,8 @@
                                     </div>
                                 </div>
             
-                                <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                <div class="py-3 flex gap-4 flex-col lg:min-w-[270px] lg:pr-3 lg:justify-center">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -2530,12 +2288,14 @@
             </div>
         </section>
 
-        <section class="mb-12 md:py-10">
+        <!-- favourite section -->
+        <section class="mb-12 md:py-10 lg:px-12 lg:mb-0 lg:pb-0">
             <div class="container m-auto p-5">
-                <div class="relative my-28 rounded-xl overflow-hidden hidden sm:block">
-                    <div class=" w-full h-[117px] bg-no-repeat bg-right after:absolute after:left-0 after:top-0 after:bottom-0 after:w-5/6 after:bg-gradient-to-r after:from-primaryOrange after:via-primaryOrange after:z-10" style="background-image: url(images/favImg1.png);">
+                <!-- خرید ویلاهای جنگلی -->
+                <div class="relative my-28 rounded-xl overflow-hidden hidden sm:block lg:mt-0">
+                    <div class=" w-full h-[117px] lg:h-[223px] bg-no-repeat bg-right after:absolute after:left-0 after:top-0 after:bottom-0 after:w-5/6 after:bg-gradient-to-r after:from-primaryOrange after:via-primaryOrange after:z-10" style="background-image: url(images/favImg1.png);">
                         <div class="flex items-center absolute left-[10%] top-0 bottom-0 z-20 cursor-pointer">
-                            <h3 class="w-20 text-center text-sm font-extrabold">خرید ویلاهای ساحلی</h3>
+                            <h3 class="w-20 text-center text-sm font-extrabold lg:text-3xl lg:w-40">خرید ویلاهای ساحلی</h3>
 
                             <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.7935 0.717834H4.20683C1.78016 0.717834 0.333496 2.1645 0.333496 4.59117V10.1712C0.333496 12.6045 1.78016 14.0512 4.20683 14.0512H9.78683C12.2135 14.0512 13.6602 12.6045 13.6602 10.1778V4.59117C13.6668 2.1645 12.2202 0.717834 9.7935 0.717834ZM11.0002 7.8845H4.20683L6.2135 9.89117C6.40683 10.0845 6.40683 10.4045 6.2135 10.5978C6.1135 10.6978 5.98683 10.7445 5.86016 10.7445C5.7335 10.7445 5.60683 10.6978 5.50683 10.5978L2.64683 7.73783C2.5535 7.6445 2.50016 7.51783 2.50016 7.3845C2.50016 7.25117 2.5535 7.1245 2.64683 7.03117L5.50683 4.17117C5.70016 3.97783 6.02016 3.97783 6.2135 4.17117C6.40683 4.3645 6.40683 4.6845 6.2135 4.87783L4.20683 6.8845H11.0002C11.2735 6.8845 11.5002 7.11117 11.5002 7.3845C11.5002 7.65783 11.2735 7.8845 11.0002 7.8845Z" fill="white"/>
@@ -2556,10 +2316,48 @@
                     </div>
                 </div> 
 
-                <p class="text-xs text-primaryOrange">بهشت خودت را پیدا کن</p>
-                <h2 class="text-lg font-extrabold mt-2 mb-8">منطقه های محبوب</h2>
+                <p class="text-xs text-primaryOrange lg:text-xl">بهشت خودت را پیدا کن</p>
+                <h2 class="text-lg font-extrabold mt-2 mb-8 lg:text-4xl">منطقه های محبوب</h2>
 
-                <div class="swiper swiperFavourite">
+                <div class="grid grid-cols-4 grid-rows-2 gap-5" style="direction: ltr;">
+                    <div class="relative flex justify-center items-center h-64 rounded-xl overflow-hidden bg-cover bg-no-repeat" style="background-image: url(images/favContent1.png);">
+                        <span class="backdrop-brightness-50 w-full h-full text-center leading-[256px] text-2xl font-extrabold hover:backdrop-brightness-100">خیابان امام رضا</span>
+                    </div>
+
+                    <div class="relative flex justify-center items-center h-64 rounded-xl overflow-hidden bg-cover bg-no-repeat" style="background-image: url(images/favContent2.png);">
+                        <span class="backdrop-brightness-50 w-full h-full text-center leading-[256px] text-2xl font-extrabold hover:backdrop-brightness-100">خیابان امام رضا</span>
+                    </div>
+
+                    <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden bg-cover bg-no-repeat" style="background-image: url(images/favContent5.png);">
+                        <div class="flex flex-col justify-end h-full items-end p-6">
+                            <span class="text-3xl font-extrabold">خیابان امام رضا</span>
+                            <span class="text-lg">۳,۴۳۸ ملک ثبت شده </span>
+                        </div>
+                    </div>
+
+                    <div class="relative flex justify-center items-center h-64 rounded-xl overflow-hidden bg-cover bg-no-repeat" style="background-image: url(images/favContent3.png);">
+                        <span class="backdrop-brightness-50 w-full h-full text-center leading-[256px] text-2xl font-extrabold hover:backdrop-brightness-100">خیابان امام رضا</span>
+                    </div>
+
+                    <div class="relative flex justify-center items-center h-64 rounded-xl overflow-hidden bg-cover bg-no-repeat" style="background-image: url(images/favContent4.png);">
+                        <span class="backdrop-brightness-50 w-full h-full text-center leading-[256px] text-2xl font-extrabold hover:backdrop-brightness-100">خیابان امام رضا</span>
+                    </div>
+                </div>
+
+                <!-- خرید ویلاهای ساحلی lg -->
+                <div class="hidden relative my-24 rounded-xl overflow-hidden lg:block">
+                    <div class=" w-full h-[223px] bg-no-repeat bg-cover bg-right after:absolute after:left-0 after:top-0 after:bottom-0 after:w-5/6 after:bg-gradient-to-r after:from-primaryOrange after:via-primaryOrange after:z-10" style="background-image: url(images/favImg2.jpg);">
+                        <div class="flex items-center absolute left-[10%] top-0 bottom-0 z-20 cursor-pointer">
+                            <h3 class="w-20 text-center text-sm font-extrabold lg:text-3xl lg:w-40">خرید ویلاهای ساحلی</h3>
+
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.7935 0.717834H4.20683C1.78016 0.717834 0.333496 2.1645 0.333496 4.59117V10.1712C0.333496 12.6045 1.78016 14.0512 4.20683 14.0512H9.78683C12.2135 14.0512 13.6602 12.6045 13.6602 10.1778V4.59117C13.6668 2.1645 12.2202 0.717834 9.7935 0.717834ZM11.0002 7.8845H4.20683L6.2135 9.89117C6.40683 10.0845 6.40683 10.4045 6.2135 10.5978C6.1135 10.6978 5.98683 10.7445 5.86016 10.7445C5.7335 10.7445 5.60683 10.6978 5.50683 10.5978L2.64683 7.73783C2.5535 7.6445 2.50016 7.51783 2.50016 7.3845C2.50016 7.25117 2.5535 7.1245 2.64683 7.03117L5.50683 4.17117C5.70016 3.97783 6.02016 3.97783 6.2135 4.17117C6.40683 4.3645 6.40683 4.6845 6.2135 4.87783L4.20683 6.8845H11.0002C11.2735 6.8845 11.5002 7.11117 11.5002 7.3845C11.5002 7.65783 11.2735 7.8845 11.0002 7.8845Z" fill="white"/>
+                            </svg>     
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="swiper swiperFavourite lg:hidden">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"> 
                             <div class="h-72 bg-no-repeat bg-cover bg-center rounded-xl overflow-hidden flex flex-col justify-end pr-5 pb-3 after:bg-gradient-to-t after:from-black50 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-16 after:rounded-b-[12px]" style="background-image: url(images/favContent4.png);">
@@ -2593,10 +2391,11 @@
             </div>
         </section>
 
-        <section class="bg-primary md:py-10">
+        <!-- Weblog section -->
+        <section class="bg-primary md:py-10 lg:px-12 lg:py-5">
             <div class="container m-auto p-5 py-12">
-                <p class="text-xs text-primaryOrange">از آخرین اخبار اطلاعی دارید؟</p>
-                <h2 class="text-lg font-extrabold mt-2 mb-10">وبلاگ تخصصی ما</h2>
+                <p class="text-xs text-primaryOrange lg:text-xl">از آخرین اخبار اطلاعی دارید؟</p>
+                <h2 class="text-lg font-extrabold mt-2 mb-10 lg:text-4xl">وبلاگ تخصصی ما</h2>
 
                 <div class="swiper swiperWeblog"> 
                     <div class="swiper-wrapper">
@@ -2707,7 +2506,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperWeblogImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperWeblogImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -2726,7 +2525,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperWeblogImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperWeblogImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -2748,7 +2547,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -2770,9 +2569,9 @@
                                         <p class="text-sm"><span class="text-xl font-extrabold">۲۳۰ میلیارد</span> تومان</p>   
                                     </div>
             
-                                    <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png"> 
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                    <div class="text-right relative -mb-[48px]">
+                                        <img class="z-10 lg:m-auto relative" src="images/newstperson.png"> 
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -2903,7 +2702,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperWeblogImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperWeblogImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -2922,7 +2721,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperWeblogImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperWeblogImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -2944,7 +2743,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -2967,8 +2766,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png"> 
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative z-10 lg:m-auto" src="images/newstperson.png"> 
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -3099,7 +2898,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperWeblogImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperWeblogImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -3118,7 +2917,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperWeblogImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperWeblogImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -3140,7 +2939,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -3163,8 +2962,8 @@
                                     </div>
             
                                     <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png"> 
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                        <img class="relative z-10 lg:m-auto" src="images/newstperson.png"> 
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -3295,7 +3094,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="swiperWeblogImg1-next absolute top-1/2 z-10 right-1">
+                                    <div class="swiperWeblogImg1-next absolute top-[38%] z-10 -right-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3053)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM27.79 25.53L24.26 29.06C24.11 29.21 23.92 29.28 23.73 29.28C23.54 29.28 23.35 29.21 23.2 29.06C22.91 28.77 22.91 28.29 23.2 28L26.2 25L23.2 22C22.91 21.71 22.91 21.23 23.2 20.94C23.49 20.65 23.97 20.65 24.26 20.94L27.79 24.47C28.09 24.76 28.09 25.24 27.79 25.53Z" fill="black"/>
@@ -3314,7 +3113,7 @@
                                             </defs>
                                         </svg>                                
                                     </div>
-                                    <div class="swiperWeblogImg1-prev absolute top-1/2 z-10 left-1">
+                                    <div class="swiperWeblogImg1-prev absolute top-[38%] z-10 -left-3">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_411_3052)">
                                             <path d="M25 15C19.49 15 15 19.49 15 25C15 30.51 19.49 35 25 35C30.51 35 35 30.51 35 25C35 19.49 30.51 15 25 15ZM26.79 28C27.08 28.29 27.08 28.77 26.79 29.06C26.64 29.21 26.45 29.28 26.26 29.28C26.07 29.28 25.88 29.21 25.73 29.06L22.2 25.53C21.91 25.24 21.91 24.76 22.2 24.47L25.73 20.94C26.02 20.65 26.5 20.65 26.79 20.94C27.08 21.23 27.08 21.71 26.79 22L23.79 25L26.79 28Z" fill="black"/>
@@ -3336,7 +3135,7 @@
                                 </div>
             
                                 <div class="py-3 flex gap-4 flex-col">
-                                    <h3 class="text-[15px] font-bold">
+                                    <h3 class="text-[15px] font-bold lg:text-xl">
                                         فروش آپارتمان ساحلی قواره دوم دریا در آویدر نوشهر
                                     </h3>
             
@@ -3358,9 +3157,9 @@
                                         <p class="text-sm"><span class="text-xl font-extrabold">۲۳۰ میلیارد</span> تومان</p>   
                                     </div>
             
-                                    <div class="text-right -mb-[48px]">
-                                        <img class="relative z-10" src="images/newstperson.png"> 
-                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden">
+                                    <div class="text-center -mb-[48px]">
+                                        <img class="relative z-10 lg:m-auto" src="images/newstperson.png"> 
+                                        <div class="flex justify-around items-center relative -top-[43px] right-5 bg-primary w-1 h-[43px] group-hover:w-11/12 transition-all duration-300 rounded-tl-[21.5px] rounded-bl-[21.5px] overflow-hidden lg:m-auto lg:right-auto lg:rounded-r-[21.5px]">
                                             <div class="flex flex-col">
                                                 <span class="text-[15px] font-bold">پوریا حدادی</span> 
                                                 <span class="text-xs">۱۰ سال تجربه</span>
@@ -3388,9 +3187,10 @@
             </div>
         </section>
 
-        <section>
-            <div class="container m-auto p-5">
-                <div class="relative my-20 rounded-xl overflow-hidden">
+        <!-- Persons section -->
+        <section class="lg:px-12">
+            <div class="container m-auto p-5 lg:py-12">
+                <div class="relative my-20 rounded-xl overflow-hidden lg:hidden">
                     <div class=" w-full h-[117px] bg-no-repeat bg-right after:absolute after:left-0 after:top-0 after:bottom-0 after:w-5/6 after:bg-gradient-to-r after:from-primaryOrange after:via-primaryOrange after:z-10" style="background-image: url(images/favImg1.png);">
                         <div class="flex items-center absolute left-[10%] top-0 bottom-0 z-20 cursor-pointer">
                             <h3 class="w-20 text-center text-sm font-extrabold">خرید ویلاهای جنگلی</h3>
@@ -3400,33 +3200,33 @@
                             </svg>     
                         </div>
                     </div>
-                </div> 
+                </div>
 
-                <p class="text-xs text-primaryOrange">نمایندگان با پشتکار ما</p>
-                <h2 class="text-lg font-extrabold mt-2 mb-10">بانمایندگان ما آشنا شوید</h2>
+                <p class="text-xs text-primaryOrange lg:text-xl">نمایندگان با پشتکار ما</p>
+                <h2 class="text-lg font-extrabold mt-2 mb-10 lg:text-4xl">بانمایندگان ما آشنا شوید</h2>
 
-                <div class="swiper swiperPersons text-center">
+                <div class="swiper swiperPersons text-center lg: px-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="bg-primary rounded-2xl flex flex-col justify-center items-center p-5 gap-3">
-                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11" src="images/personItem.png">
-                                <p class="text-[10px] font-bold">مینا بهرامی</p>
+                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11 lg:w-24 lg:h-24 lg:border-4" src="images/personItem.png">
+                                <p class="text-[10px] font-bold lg:text-base">مینا بهرامی</p>
                                 
                                 <div class="flex">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
             
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
                                                                                                                                                 
@@ -3436,24 +3236,24 @@
 
                         <div class="swiper-slide">
                             <div class="bg-primary rounded-2xl flex flex-col justify-center items-center p-5 gap-3">
-                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11" src="images/personItem.png">
-                                <p class="text-[10px] font-bold">مینا بهرامی</p>
+                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11 lg:w-24 lg:h-24 lg:border-4" src="images/personItem.png">
+                                <p class="text-[10px] font-bold lg:text-base">مینا بهرامی</p>
                                 
                                 <div class="flex">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
             
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
                                                                                                                                                 
@@ -3463,24 +3263,24 @@
 
                         <div class="swiper-slide">
                             <div class="bg-primary rounded-2xl flex flex-col justify-center items-center p-5 gap-3">
-                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11" src="images/personItem.png">
-                                <p class="text-[10px] font-bold">مینا بهرامی</p>
+                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11 lg:w-24 lg:h-24 lg:border-4" src="images/personItem.png">
+                                <p class="text-[10px] font-bold lg:text-base">مینا بهرامی</p>
                                 
                                 <div class="flex">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
             
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
                                                                                                                                                 
@@ -3490,25 +3290,25 @@
 
                         <div class="swiper-slide">
                             <div class="bg-primary rounded-2xl flex flex-col justify-center items-center p-5 gap-3">
-                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11" src="images/personItem.png">
-                                <p class="text-[10px] font-bold">مینا بهرامی</p>
+                                <img class="rounded-full border-primaryOrange border-2 w-11 h-11 lg:w-24 lg:h-24 lg:border-4" src="images/personItem.png">
+                                <p class="text-[10px] font-bold lg:text-base">مینا بهرامی</p>
                                 
                                 <div class="flex">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.43813 1.06438C5.55787 0.695851 6.07924 0.695851 6.19898 1.06438L7.26213 4.33643C7.31568 4.50124 7.46927 4.61282 7.64256 4.61282H11.083C11.4705 4.61282 11.6316 5.10867 11.3181 5.33643L8.53474 7.35867C8.39454 7.46053 8.33588 7.64107 8.38943 7.80588L9.45258 11.0779C9.57232 11.4465 9.15053 11.7529 8.83705 11.5251L6.05367 9.50291C5.91348 9.40105 5.72364 9.40105 5.58344 9.50291L2.80007 11.5251C2.48658 11.7529 2.06479 11.4465 2.18453 11.0779L3.24769 7.80588C3.30124 7.64107 3.24257 7.46053 3.10238 7.35867L0.319003 5.33643C0.00551736 5.10867 0.166627 4.61282 0.554116 4.61282H3.99456C4.16785 4.61282 4.32143 4.50124 4.37498 4.33643L5.43813 1.06438Z" fill="#F8C623"/>
                                     </svg>
             
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
-                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
+                                    <svg class="lg:w-5 lg:h-5" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.79995 1.06438C5.91969 0.695851 6.44105 0.695851 6.5608 1.06438L7.62395 4.33643C7.6775 4.50124 7.83108 4.61282 8.00437 4.61282H11.4448C11.8323 4.61282 11.9934 5.10867 11.6799 5.33643L8.89655 7.35867C8.75636 7.46053 8.69769 7.64107 8.75124 7.80588L9.8144 11.0779C9.93414 11.4465 9.51235 11.7529 9.19886 11.5251L6.41549 9.50291C6.27529 9.40105 6.08545 9.40105 5.94526 9.50291L3.16188 11.5251C2.8484 11.7529 2.42661 11.4465 2.54635 11.0779L3.6095 7.80588C3.66305 7.64107 3.60439 7.46053 3.46419 7.35867L0.680819 5.33643C0.367334 5.10867 0.528444 4.61282 0.915933 4.61282H4.35637C4.52966 4.61282 4.68325 4.50124 4.7368 4.33643L5.79995 1.06438Z" stroke="white" stroke-width="0.5"/>
                                     </svg>
                                                                                                                                                 
                                 </div>
@@ -3516,83 +3316,103 @@
                         </div>
                     </div>
 
-                    <div class="swiper-paginationPersons my-9"></div> 
+                    <div class="personsPrev hidden lg:flex lg:justify-center lg:items-center lg:absolute lg:top-[35%] lg:left-0 lg:z-10 lg:bg-[#393e46] lg:bg-opacity-50 lg:w-12 lg:h-12 lg:rounded-full">
+                        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.65973 17.8277C9.97038 17.5171 9.99862 17.031 9.74446 16.6884L9.65973 16.5903L2.11218 9.04232L9.65973 1.49437C9.97038 1.18372 9.99862 0.697615 9.74446 0.355068L9.65973 0.256929C9.34909 -0.0537148 8.86298 -0.081955 8.52044 0.172209L8.4223 0.256929L0.255631 8.4236C-0.0550127 8.73424 -0.0832539 9.22035 0.17091 9.5629L0.255631 9.66103L8.4223 17.8277C8.76401 18.1694 9.31803 18.1694 9.65973 17.8277Z" fill="white"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="personsNext hidden lg:flex lg:justify-center lg:items-center lg:absolute lg:top-[35%] lg:right-0 lg:z-10 lg:bg-[#393e46] lg:bg-opacity-50 lg:w-12 lg:h-12 lg:rounded-full">
+                        <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.256282 17.8267C-0.0543628 17.5161 -0.0826032 17.03 0.17156 16.6874L0.256282 16.5893L7.80383 9.04134L0.256282 1.49339C-0.0543628 1.18275 -0.0826032 0.696638 0.17156 0.354091L0.256282 0.255953C0.566926 -0.0546908 1.05303 -0.0829318 1.39558 0.171232L1.49372 0.255953L9.66038 8.42262C9.97103 8.73327 9.99927 9.21937 9.74511 9.56192L9.66038 9.66006L1.49372 17.8267C1.15201 18.1684 0.59799 18.1684 0.256282 17.8267Z" fill="white"/>
+                        </svg>                            
+                    </div>
+                    
+                    <div class="swiper-paginationPersons my-9 lg:hidden"></div> 
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-[#1D2228]">
-        <div class="container m-auto p-5">
-            <div class="flex flex-col justify-center text-center items-center gap-12 md:flex-row-reverse md:flex-wrap md:items-start md:py-8">
-                <div class=" flex flex-col justify-center text-center items-center gap-5 mt-20 md:mt-0 md:w-64 md:text-right md:items-end">
-                    <img class="w-32" src="images/Logo.png" alt="">
-                    <p class="px-10 text-graytext md:text-xs md:px-0">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
-                    <div class="flex flex-row-reverse gap-4">
-                        <svg class="hidden cursor-pointer hover:scale-125 transition-all duration-300 md:inline-block md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6067 18.0322C11.98 18.0303 12.9779 18.0131 13.6006 17.9805C14.2622 17.946 14.8368 17.8482 15.3243 17.687C15.9046 17.4798 16.4095 17.1632 16.839 16.7373C17.2684 16.3113 17.5876 15.8106 17.7966 15.235C17.9591 14.7515 18.0577 14.1817 18.0925 13.5255C18.1274 12.8693 18.1448 11.793 18.1448 10.2964L18.1443 9.78595C18.1419 8.55391 18.1304 7.65348 18.1099 7.08467C18.0635 6.41699 17.9591 5.8414 17.7966 5.3579C17.5876 4.78232 17.2684 4.28155 16.839 3.85562C16.4095 3.42968 15.9046 3.11311 15.3243 2.9059C14.8368 2.74473 14.2622 2.64689 13.6006 2.61235C12.939 2.57781 11.8538 2.56055 10.3448 2.56055L10.083 2.56073C8.70972 2.56264 7.71176 2.57985 7.08907 2.61235C6.42747 2.64689 5.85292 2.74473 5.36543 2.9059C4.78508 3.11311 4.28017 3.42968 3.85071 3.85562C3.42125 4.28155 3.10206 4.78232 2.89313 5.3579C2.73063 5.8414 2.63197 6.41123 2.59715 7.0674C2.56233 7.72357 2.54492 8.79992 2.54492 10.2964L2.5451 10.5562C2.54703 11.9182 2.56438 12.9079 2.59715 13.5255C2.63197 14.1817 2.73063 14.7515 2.89313 15.235C3.10206 15.8106 3.42125 16.3113 3.85071 16.7373C4.28017 17.1632 4.78508 17.4683 5.36543 17.6525C5.85292 17.8367 6.42747 17.946 7.08907 17.9805C7.75067 18.0151 8.83593 18.0324 10.3448 18.0324L10.6067 18.0322ZM11.1335 16.6501L9.55965 16.6501C8.74039 16.6484 8.09668 16.637 7.62853 16.6159C6.76961 16.5698 6.14283 16.4777 5.7482 16.3396C5.05177 16.0633 4.55267 15.5683 4.25089 14.8546C4.11161 14.4632 4.01875 13.8415 3.97232 12.9896C3.94911 12.4831 3.9375 11.7694 3.9375 10.8485L3.93774 9.51741C3.93952 8.70488 3.95104 8.06645 3.97232 7.60215C4.01875 6.72725 4.11161 6.10562 4.25089 5.73724C4.52946 5.02351 5.02856 4.52851 5.7482 4.25222C6.14283 4.11408 6.76961 4.02199 7.62853 3.97594C8.13924 3.95292 8.85888 3.94141 9.78744 3.94141L11.1295 3.94165C11.9488 3.9434 12.5925 3.95484 13.0606 3.97594C13.9428 4.02199 14.5695 4.11408 14.941 4.25222C15.6606 4.52851 16.1597 5.02351 16.4383 5.73724C16.5776 6.10562 16.6704 6.72725 16.7168 7.60215C16.7401 8.08564 16.7517 8.79937 16.7517 9.74333L16.7514 11.0744C16.7496 11.8869 16.7381 12.5253 16.7168 12.9896C16.6704 13.8415 16.5776 14.4632 16.4383 14.8546C16.1597 15.5453 15.6606 16.0403 14.941 16.3396C14.5695 16.4777 13.9428 16.5698 13.0606 16.6159C12.6136 16.637 11.9715 16.6484 11.1342 16.6501L11.1335 16.6501ZM15.1664 6.80835C14.9923 6.99254 14.7776 7.08463 14.5222 7.08463C14.2668 7.08463 14.0463 6.99254 13.8606 6.80835C13.6749 6.62416 13.582 6.40544 13.582 6.15218C13.582 5.89892 13.6749 5.6802 13.8606 5.49601C14.0463 5.31182 14.2668 5.21973 14.5222 5.21973C14.7776 5.21973 14.9981 5.31182 15.1838 5.49601C15.3695 5.6802 15.4624 5.89892 15.4624 6.15218C15.4392 6.40544 15.3405 6.62416 15.1664 6.80835ZM10.3443 14.2683C11.0639 14.2683 11.7313 14.0899 12.3465 13.733C12.9617 13.3761 13.4491 12.8927 13.809 12.2825C14.1688 11.6724 14.3487 11.0105 14.3487 10.2968C14.3487 9.58302 14.1688 8.9211 13.809 8.31097C13.4491 7.70085 12.9617 7.21736 12.3465 6.86049C11.7313 6.50363 11.0639 6.3252 10.3443 6.3252C9.62463 6.3252 8.95723 6.50363 8.34206 6.86049C7.72688 7.21736 7.23939 7.70085 6.87957 8.31097C6.51975 8.9211 6.33984 9.58302 6.33984 10.2968C6.33984 11.0105 6.51975 11.6724 6.87957 12.2825C7.23939 12.8927 7.72688 13.3761 8.34206 13.733C8.95723 14.0899 9.62463 14.2683 10.3443 14.2683ZM8.50044 12.1275C9.01115 12.6341 9.62632 12.8873 10.346 12.8873C11.0656 12.8873 11.6808 12.6341 12.1915 12.1275C12.7022 11.621 12.9575 11.0109 12.9575 10.2972C12.9575 9.58345 12.7022 8.97332 12.1915 8.46681C11.6808 7.96029 11.0656 7.70703 10.346 7.70703C9.62632 7.70703 9.01115 7.96029 8.50044 8.46681C7.98973 8.97332 7.73438 9.58345 7.73438 10.2972C7.73438 11.0109 7.98973 11.621 8.50044 12.1275Z" fill="white"></path>
-                        </svg>
-                        <svg class="order-1 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.74769 17.0772C9.7297 17.0772 11.4855 16.578 13.0151 15.5798C14.4154 14.6877 15.5034 13.4876 16.2789 11.9795C17.033 10.5564 17.41 9.08022 17.41 7.55092C17.41 7.35975 17.3992 7.22169 17.3777 7.13673C18.0455 6.6482 18.6164 6.06409 19.0904 5.3844C18.4441 5.66053 17.7978 5.84107 17.1515 5.92603C17.8839 5.47999 18.3794 4.86402 18.638 4.07813C17.9701 4.46045 17.2484 4.72595 16.4728 4.87464C16.1497 4.55603 15.7781 4.30115 15.358 4.10999C14.9379 3.91882 14.4801 3.82324 13.9846 3.82324C13.3813 3.82324 12.8212 3.97192 12.3042 4.26929C11.7871 4.56665 11.3778 4.97553 11.0762 5.49592C10.7746 6.0163 10.6238 6.57386 10.6238 7.16859C10.6238 7.42347 10.6453 7.67836 10.6884 7.93324C9.3096 7.86952 8.0116 7.52968 6.79439 6.91371C5.57718 6.29774 4.54847 5.46937 3.70827 4.42859C3.38512 4.9596 3.22354 5.51716 3.22354 6.10126C3.22354 6.68537 3.36358 7.22169 3.64364 7.71022C3.92371 8.19874 4.28995 8.60231 4.74237 8.92092C4.20378 8.89967 3.6975 8.75099 3.22354 8.47487V8.53859C3.22354 9.32448 3.48207 10.0254 3.99911 10.6414C4.51616 11.2573 5.16246 11.6503 5.93803 11.8202C5.63642 11.8839 5.33481 11.9158 5.0332 11.9158C4.83931 11.9158 4.63465 11.9052 4.41921 11.8839C4.63465 12.5424 5.02782 13.0893 5.59872 13.5248C6.16963 13.9602 6.83209 14.1779 7.58612 14.1779C6.33659 15.1337 4.92549 15.6116 3.35281 15.6116C3.0512 15.6116 2.7819 15.601 2.54492 15.5798C4.1176 16.578 5.85186 17.0772 7.74769 17.0772Z" fill="white"></path>
-                        </svg>
-                        <svg class="order-2 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.875 3.06279C14.875 3.00534 14.8637 2.94845 14.8417 2.89537C14.8197 2.84229 14.7875 2.79406 14.7469 2.75343C14.7062 2.71281 14.658 2.68058 14.6049 2.65859C14.5518 2.63661 14.495 2.62529 14.4375 2.62529H12.25C11.1485 2.57042 10.07 2.95376 9.25026 3.69155C8.43049 4.42934 7.93606 5.4616 7.875 6.56279V8.92529H5.6875C5.57147 8.92529 5.46019 8.97139 5.37814 9.05343C5.29609 9.13548 5.25 9.24676 5.25 9.36279V11.6378C5.25 11.7538 5.29609 11.8651 5.37814 11.9472C5.46019 12.0292 5.57147 12.0753 5.6875 12.0753H7.875V17.9378C7.875 18.0538 7.92109 18.1651 8.00314 18.2472C8.08519 18.3292 8.19647 18.3753 8.3125 18.3753H10.9375C10.995 18.3753 11.0518 18.364 11.1049 18.342C11.158 18.32 11.2062 18.2878 11.2469 18.2472C11.2875 18.2065 11.3197 18.1583 11.3417 18.1052C11.3637 18.0521 11.375 17.9952 11.375 17.9378V12.0753H13.6675C13.7648 12.0767 13.8598 12.0456 13.9374 11.987C14.0151 11.9283 14.071 11.8455 14.0963 11.7515L14.7263 9.47654C14.7437 9.4119 14.746 9.34412 14.7331 9.27843C14.7202 9.21274 14.6924 9.15089 14.6518 9.09764C14.6112 9.04439 14.559 9.00116 14.4991 8.97128C14.4392 8.9414 14.3732 8.92567 14.3063 8.92529H11.375V6.56279C11.3968 6.34621 11.4985 6.14551 11.6603 5.9999C11.8221 5.85428 12.0323 5.7742 12.25 5.77529H14.4375C14.5535 5.77529 14.6648 5.7292 14.7469 5.64715C14.8289 5.5651 14.875 5.45382 14.875 5.33779V3.06279Z" fill="white"></path>
-                        </svg>
-                        <svg class="order-3 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.5788 11.479C9.75975 13.1695 8.63888 15.4585 8.08237 16.491C7.54338 17.4307 7.09625 17.3056 6.74188 16.5164C5.51163 13.6105 2.9855 8.51535 1.79725 5.65848C1.57763 5.1326 1.41137 4.79485 1.25563 4.66185C1.09725 4.5306 0.770875 4.45185 0.273875 4.42473C0.090125 4.40373 0 4.3591 0 4.2856V3.88748L0.0455 3.8481C0.854 3.84373 4.77138 3.8481 4.77138 3.8481L4.816 3.88748V4.26723C4.816 4.37135 4.75038 4.42123 4.61912 4.42123L4.12563 4.44835C3.70125 4.47373 3.4895 4.59185 3.4895 4.82985C3.4895 4.94798 3.53588 5.1186 3.63475 5.35573C4.5815 7.67098 7.8505 14.5616 7.8505 14.5616L7.9695 14.6019L10.0791 10.3931L9.65737 9.45948L8.20662 6.60348C8.20662 6.60348 7.92837 6.03123 7.83213 5.84048C7.19513 4.57785 7.20912 4.51223 6.566 4.4256C6.38487 4.40548 6.29213 4.38185 6.29213 4.29523V3.88573L6.34462 3.84635H10.1001L10.199 3.87873V4.27335C10.199 4.36523 10.1325 4.4046 10.0004 4.4046L9.73088 4.44573C9.03788 4.4991 9.1525 4.7791 9.61187 5.68998L10.9961 8.53548L12.5344 5.46948C12.7908 4.90948 12.7382 4.7686 12.6315 4.64085C12.5702 4.56735 12.3646 4.44835 11.921 4.43085L11.7451 4.41248C11.6989 4.41274 11.6541 4.39697 11.6182 4.36785C11.5997 4.35555 11.5846 4.33874 11.5744 4.31899C11.5641 4.29925 11.559 4.27722 11.5596 4.25498V3.88135L11.613 3.84198C12.7041 3.83498 15.1506 3.84198 15.1506 3.84198L15.2022 3.88135V4.26285C15.2022 4.36873 15.1506 4.4186 15.0334 4.4186C14.4681 4.44485 14.3491 4.50173 14.1383 4.80273C14.0333 4.96548 13.8101 5.3181 13.573 5.71185L11.5596 9.45073L11.5028 9.56885L13.9458 14.5669L14.0945 14.6089L17.941 5.4756C18.0758 5.10635 18.0539 4.84385 17.885 4.69248C17.7126 4.54198 17.5823 4.4536 17.1351 4.43435L16.7676 4.42035C16.7202 4.42169 16.6736 4.4079 16.6346 4.38098C16.597 4.3556 16.5716 4.31535 16.5716 4.27685V3.89535L16.6233 3.85598H20.9641L21 3.89535V4.27773C21 4.38185 20.9352 4.43523 20.8171 4.43523C20.2501 4.46148 19.831 4.59273 19.5545 4.8036C19.2797 5.02673 19.0671 5.3426 18.9105 5.73723C18.9105 5.73723 15.3729 13.838 14.1628 16.5339C13.7034 17.415 13.2414 17.3362 12.8476 16.5067C12.348 15.4821 11.2963 13.194 10.5324 11.5105L10.5788 11.479Z" fill="white"></path>
-                        </svg>
-                        <svg class="order-4 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.55791 16.3187L8.80291 12.6174L15.5229 6.56241C15.8204 6.29116 15.4617 6.15991 15.0679 6.39616L6.77291 11.6374L3.18541 10.4999C2.41541 10.2812 2.40666 9.74741 3.36041 9.36241L17.3342 3.97241C17.9729 3.68366 18.5854 4.12991 18.3404 5.10991L15.9604 16.3187C15.7942 17.1149 15.3129 17.3074 14.6479 16.9399L11.0254 14.2624L9.28416 15.9512C9.08291 16.1524 8.91666 16.3187 8.55791 16.3187Z" fill="white"></path>
-                        </svg>																																							
+        <div class=" lg:px-12">
+            <div class="container m-auto p-5 lg:p-6 ">
+                <div class="flex flex-col justify-center text-center items-center gap-12 md:flex-row-reverse md:flex-wrap md:items-start md:py-8 lg:justify-between lg:gap-0">
+                    <div class=" flex flex-col justify-center text-center items-center gap-5 mt-20 md:mt-0 md:w-64 md:text-right md:items-end">
+                        <img class="w-32" src="images/Logo.png" alt="">
+                        <p class="px-10 text-graytext md:text-xs md:px-0">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                        <div class="flex flex-row-reverse gap-4">
+                            <svg class="hidden cursor-pointer hover:scale-125 transition-all duration-300 md:inline-block md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6067 18.0322C11.98 18.0303 12.9779 18.0131 13.6006 17.9805C14.2622 17.946 14.8368 17.8482 15.3243 17.687C15.9046 17.4798 16.4095 17.1632 16.839 16.7373C17.2684 16.3113 17.5876 15.8106 17.7966 15.235C17.9591 14.7515 18.0577 14.1817 18.0925 13.5255C18.1274 12.8693 18.1448 11.793 18.1448 10.2964L18.1443 9.78595C18.1419 8.55391 18.1304 7.65348 18.1099 7.08467C18.0635 6.41699 17.9591 5.8414 17.7966 5.3579C17.5876 4.78232 17.2684 4.28155 16.839 3.85562C16.4095 3.42968 15.9046 3.11311 15.3243 2.9059C14.8368 2.74473 14.2622 2.64689 13.6006 2.61235C12.939 2.57781 11.8538 2.56055 10.3448 2.56055L10.083 2.56073C8.70972 2.56264 7.71176 2.57985 7.08907 2.61235C6.42747 2.64689 5.85292 2.74473 5.36543 2.9059C4.78508 3.11311 4.28017 3.42968 3.85071 3.85562C3.42125 4.28155 3.10206 4.78232 2.89313 5.3579C2.73063 5.8414 2.63197 6.41123 2.59715 7.0674C2.56233 7.72357 2.54492 8.79992 2.54492 10.2964L2.5451 10.5562C2.54703 11.9182 2.56438 12.9079 2.59715 13.5255C2.63197 14.1817 2.73063 14.7515 2.89313 15.235C3.10206 15.8106 3.42125 16.3113 3.85071 16.7373C4.28017 17.1632 4.78508 17.4683 5.36543 17.6525C5.85292 17.8367 6.42747 17.946 7.08907 17.9805C7.75067 18.0151 8.83593 18.0324 10.3448 18.0324L10.6067 18.0322ZM11.1335 16.6501L9.55965 16.6501C8.74039 16.6484 8.09668 16.637 7.62853 16.6159C6.76961 16.5698 6.14283 16.4777 5.7482 16.3396C5.05177 16.0633 4.55267 15.5683 4.25089 14.8546C4.11161 14.4632 4.01875 13.8415 3.97232 12.9896C3.94911 12.4831 3.9375 11.7694 3.9375 10.8485L3.93774 9.51741C3.93952 8.70488 3.95104 8.06645 3.97232 7.60215C4.01875 6.72725 4.11161 6.10562 4.25089 5.73724C4.52946 5.02351 5.02856 4.52851 5.7482 4.25222C6.14283 4.11408 6.76961 4.02199 7.62853 3.97594C8.13924 3.95292 8.85888 3.94141 9.78744 3.94141L11.1295 3.94165C11.9488 3.9434 12.5925 3.95484 13.0606 3.97594C13.9428 4.02199 14.5695 4.11408 14.941 4.25222C15.6606 4.52851 16.1597 5.02351 16.4383 5.73724C16.5776 6.10562 16.6704 6.72725 16.7168 7.60215C16.7401 8.08564 16.7517 8.79937 16.7517 9.74333L16.7514 11.0744C16.7496 11.8869 16.7381 12.5253 16.7168 12.9896C16.6704 13.8415 16.5776 14.4632 16.4383 14.8546C16.1597 15.5453 15.6606 16.0403 14.941 16.3396C14.5695 16.4777 13.9428 16.5698 13.0606 16.6159C12.6136 16.637 11.9715 16.6484 11.1342 16.6501L11.1335 16.6501ZM15.1664 6.80835C14.9923 6.99254 14.7776 7.08463 14.5222 7.08463C14.2668 7.08463 14.0463 6.99254 13.8606 6.80835C13.6749 6.62416 13.582 6.40544 13.582 6.15218C13.582 5.89892 13.6749 5.6802 13.8606 5.49601C14.0463 5.31182 14.2668 5.21973 14.5222 5.21973C14.7776 5.21973 14.9981 5.31182 15.1838 5.49601C15.3695 5.6802 15.4624 5.89892 15.4624 6.15218C15.4392 6.40544 15.3405 6.62416 15.1664 6.80835ZM10.3443 14.2683C11.0639 14.2683 11.7313 14.0899 12.3465 13.733C12.9617 13.3761 13.4491 12.8927 13.809 12.2825C14.1688 11.6724 14.3487 11.0105 14.3487 10.2968C14.3487 9.58302 14.1688 8.9211 13.809 8.31097C13.4491 7.70085 12.9617 7.21736 12.3465 6.86049C11.7313 6.50363 11.0639 6.3252 10.3443 6.3252C9.62463 6.3252 8.95723 6.50363 8.34206 6.86049C7.72688 7.21736 7.23939 7.70085 6.87957 8.31097C6.51975 8.9211 6.33984 9.58302 6.33984 10.2968C6.33984 11.0105 6.51975 11.6724 6.87957 12.2825C7.23939 12.8927 7.72688 13.3761 8.34206 13.733C8.95723 14.0899 9.62463 14.2683 10.3443 14.2683ZM8.50044 12.1275C9.01115 12.6341 9.62632 12.8873 10.346 12.8873C11.0656 12.8873 11.6808 12.6341 12.1915 12.1275C12.7022 11.621 12.9575 11.0109 12.9575 10.2972C12.9575 9.58345 12.7022 8.97332 12.1915 8.46681C11.6808 7.96029 11.0656 7.70703 10.346 7.70703C9.62632 7.70703 9.01115 7.96029 8.50044 8.46681C7.98973 8.97332 7.73438 9.58345 7.73438 10.2972C7.73438 11.0109 7.98973 11.621 8.50044 12.1275Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-1 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.74769 17.0772C9.7297 17.0772 11.4855 16.578 13.0151 15.5798C14.4154 14.6877 15.5034 13.4876 16.2789 11.9795C17.033 10.5564 17.41 9.08022 17.41 7.55092C17.41 7.35975 17.3992 7.22169 17.3777 7.13673C18.0455 6.6482 18.6164 6.06409 19.0904 5.3844C18.4441 5.66053 17.7978 5.84107 17.1515 5.92603C17.8839 5.47999 18.3794 4.86402 18.638 4.07813C17.9701 4.46045 17.2484 4.72595 16.4728 4.87464C16.1497 4.55603 15.7781 4.30115 15.358 4.10999C14.9379 3.91882 14.4801 3.82324 13.9846 3.82324C13.3813 3.82324 12.8212 3.97192 12.3042 4.26929C11.7871 4.56665 11.3778 4.97553 11.0762 5.49592C10.7746 6.0163 10.6238 6.57386 10.6238 7.16859C10.6238 7.42347 10.6453 7.67836 10.6884 7.93324C9.3096 7.86952 8.0116 7.52968 6.79439 6.91371C5.57718 6.29774 4.54847 5.46937 3.70827 4.42859C3.38512 4.9596 3.22354 5.51716 3.22354 6.10126C3.22354 6.68537 3.36358 7.22169 3.64364 7.71022C3.92371 8.19874 4.28995 8.60231 4.74237 8.92092C4.20378 8.89967 3.6975 8.75099 3.22354 8.47487V8.53859C3.22354 9.32448 3.48207 10.0254 3.99911 10.6414C4.51616 11.2573 5.16246 11.6503 5.93803 11.8202C5.63642 11.8839 5.33481 11.9158 5.0332 11.9158C4.83931 11.9158 4.63465 11.9052 4.41921 11.8839C4.63465 12.5424 5.02782 13.0893 5.59872 13.5248C6.16963 13.9602 6.83209 14.1779 7.58612 14.1779C6.33659 15.1337 4.92549 15.6116 3.35281 15.6116C3.0512 15.6116 2.7819 15.601 2.54492 15.5798C4.1176 16.578 5.85186 17.0772 7.74769 17.0772Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-2 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.875 3.06279C14.875 3.00534 14.8637 2.94845 14.8417 2.89537C14.8197 2.84229 14.7875 2.79406 14.7469 2.75343C14.7062 2.71281 14.658 2.68058 14.6049 2.65859C14.5518 2.63661 14.495 2.62529 14.4375 2.62529H12.25C11.1485 2.57042 10.07 2.95376 9.25026 3.69155C8.43049 4.42934 7.93606 5.4616 7.875 6.56279V8.92529H5.6875C5.57147 8.92529 5.46019 8.97139 5.37814 9.05343C5.29609 9.13548 5.25 9.24676 5.25 9.36279V11.6378C5.25 11.7538 5.29609 11.8651 5.37814 11.9472C5.46019 12.0292 5.57147 12.0753 5.6875 12.0753H7.875V17.9378C7.875 18.0538 7.92109 18.1651 8.00314 18.2472C8.08519 18.3292 8.19647 18.3753 8.3125 18.3753H10.9375C10.995 18.3753 11.0518 18.364 11.1049 18.342C11.158 18.32 11.2062 18.2878 11.2469 18.2472C11.2875 18.2065 11.3197 18.1583 11.3417 18.1052C11.3637 18.0521 11.375 17.9952 11.375 17.9378V12.0753H13.6675C13.7648 12.0767 13.8598 12.0456 13.9374 11.987C14.0151 11.9283 14.071 11.8455 14.0963 11.7515L14.7263 9.47654C14.7437 9.4119 14.746 9.34412 14.7331 9.27843C14.7202 9.21274 14.6924 9.15089 14.6518 9.09764C14.6112 9.04439 14.559 9.00116 14.4991 8.97128C14.4392 8.9414 14.3732 8.92567 14.3063 8.92529H11.375V6.56279C11.3968 6.34621 11.4985 6.14551 11.6603 5.9999C11.8221 5.85428 12.0323 5.7742 12.25 5.77529H14.4375C14.5535 5.77529 14.6648 5.7292 14.7469 5.64715C14.8289 5.5651 14.875 5.45382 14.875 5.33779V3.06279Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-3 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5788 11.479C9.75975 13.1695 8.63888 15.4585 8.08237 16.491C7.54338 17.4307 7.09625 17.3056 6.74188 16.5164C5.51163 13.6105 2.9855 8.51535 1.79725 5.65848C1.57763 5.1326 1.41137 4.79485 1.25563 4.66185C1.09725 4.5306 0.770875 4.45185 0.273875 4.42473C0.090125 4.40373 0 4.3591 0 4.2856V3.88748L0.0455 3.8481C0.854 3.84373 4.77138 3.8481 4.77138 3.8481L4.816 3.88748V4.26723C4.816 4.37135 4.75038 4.42123 4.61912 4.42123L4.12563 4.44835C3.70125 4.47373 3.4895 4.59185 3.4895 4.82985C3.4895 4.94798 3.53588 5.1186 3.63475 5.35573C4.5815 7.67098 7.8505 14.5616 7.8505 14.5616L7.9695 14.6019L10.0791 10.3931L9.65737 9.45948L8.20662 6.60348C8.20662 6.60348 7.92837 6.03123 7.83213 5.84048C7.19513 4.57785 7.20912 4.51223 6.566 4.4256C6.38487 4.40548 6.29213 4.38185 6.29213 4.29523V3.88573L6.34462 3.84635H10.1001L10.199 3.87873V4.27335C10.199 4.36523 10.1325 4.4046 10.0004 4.4046L9.73088 4.44573C9.03788 4.4991 9.1525 4.7791 9.61187 5.68998L10.9961 8.53548L12.5344 5.46948C12.7908 4.90948 12.7382 4.7686 12.6315 4.64085C12.5702 4.56735 12.3646 4.44835 11.921 4.43085L11.7451 4.41248C11.6989 4.41274 11.6541 4.39697 11.6182 4.36785C11.5997 4.35555 11.5846 4.33874 11.5744 4.31899C11.5641 4.29925 11.559 4.27722 11.5596 4.25498V3.88135L11.613 3.84198C12.7041 3.83498 15.1506 3.84198 15.1506 3.84198L15.2022 3.88135V4.26285C15.2022 4.36873 15.1506 4.4186 15.0334 4.4186C14.4681 4.44485 14.3491 4.50173 14.1383 4.80273C14.0333 4.96548 13.8101 5.3181 13.573 5.71185L11.5596 9.45073L11.5028 9.56885L13.9458 14.5669L14.0945 14.6089L17.941 5.4756C18.0758 5.10635 18.0539 4.84385 17.885 4.69248C17.7126 4.54198 17.5823 4.4536 17.1351 4.43435L16.7676 4.42035C16.7202 4.42169 16.6736 4.4079 16.6346 4.38098C16.597 4.3556 16.5716 4.31535 16.5716 4.27685V3.89535L16.6233 3.85598H20.9641L21 3.89535V4.27773C21 4.38185 20.9352 4.43523 20.8171 4.43523C20.2501 4.46148 19.831 4.59273 19.5545 4.8036C19.2797 5.02673 19.0671 5.3426 18.9105 5.73723C18.9105 5.73723 15.3729 13.838 14.1628 16.5339C13.7034 17.415 13.2414 17.3362 12.8476 16.5067C12.348 15.4821 11.2963 13.194 10.5324 11.5105L10.5788 11.479Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-4 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.55791 16.3187L8.80291 12.6174L15.5229 6.56241C15.8204 6.29116 15.4617 6.15991 15.0679 6.39616L6.77291 11.6374L3.18541 10.4999C2.41541 10.2812 2.40666 9.74741 3.36041 9.36241L17.3342 3.97241C17.9729 3.68366 18.5854 4.12991 18.3404 5.10991L15.9604 16.3187C15.7942 17.1149 15.3129 17.3074 14.6479 16.9399L11.0254 14.2624L9.28416 15.9512C9.08291 16.1524 8.91666 16.3187 8.55791 16.3187Z" fill="white"></path>
+                            </svg>																																							
+                        </div>
                     </div>
-                </div>
+        
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">دسته بندی</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه برقی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه معمولی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">لوازم جانبی دوچرخه</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32 lg:w-[9rem]">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">راهنمای خرید</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">نحوه ثبت سفارش</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">رویه ارسال</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">شیوه های پرداخت</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درخواست فاکتور رسمی</li>
+                        </ul>
+                    </div>
     
-                <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
-                    <h3 class="font-extrabold text-[#E16428]">دسته بندی</h3>
-                    <ul class="flex flex-col text-center gap-5 md:text-right">
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">دوچرخه برقی</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">دوچرخه معمولی</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">لوازم جانبی دوچرخه</li>
-                    </ul>
-                </div>
-                
-                <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
-                    <h3 class="font-extrabold text-[#E16428]">راهنمای خرید</h3>
-                    <ul class="flex flex-col text-center gap-5 md:text-right">
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">نحوه ثبت سفارش</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">رویه ارسال</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">شیوه های پرداخت</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">درخواست فاکتور رسمی</li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
-                    <h3 class="font-extrabold text-[#E16428]">باایویتک</h3>
-                    <ul class="flex flex-col text-center gap-5 md:text-right">
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">تماس  با ایویتک</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">درباره ایویتک</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">مجله تخصصی</li>
-                        <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0">وبلاگ ایویتک</li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col gap-7 justify-center text-center items-center w-full md:items-end md:w-1/2">
-                    <h3 class="font-extrabold text-[#E16428]">از جدیدترین کالاهای ما با خبر شوید</h3>
-                    <div class="relative h-[51px] w-5/6">
-                        <input class="h-full w-full bg-sec222831 rounded-lg text-right p-4 outline-none border-0" type="text" placeholder="ایمیل خود را وارد کنید">
-                        <a class="btn w-14 absolute left-1 top-1">ثبت</a>
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">باایویتک</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">تماس  با ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درباره ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">مجله تخصصی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">وبلاگ ایویتک</li>
+                        </ul>
                     </div>
-                    <div class="flex gap-4">
-                        <img src="images/footerNamad1.png" alt="">
-                        <img src="images/footerNamad2.png" alt="">
+    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center w-full md:items-end md:w-1/2 lg:w-1/4">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">از جدیدترین کالاهای ما با خبر شوید</h3>
+                        <div class="relative h-[51px] w-5/6 lg:w-full">
+                            <input class="h-full w-full bg-sec222831 rounded-lg text-right p-4 outline-none border-0" type="text" placeholder="ایمیل خود را وارد کنید">
+                            <a class="btn w-14 absolute left-1 top-1">ثبت</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <img src="images/footerNamad1.png" alt="">
+                            <img src="images/footerNamad2.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col text-center justify-center items-center px-10 py-5 gap-6 bg-sec222831">
-            <p class="text-xs">کلیه حقوق این وب‌سایت به شرکت پاک نیرو البرز تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.<br>2022</p>
-            <p class="text-xs">اجراء و پیاده سازی : <span class="text-sm font-extrabold">شرکت هایپونت</span></p>
+        <div class="flex flex-col text-center justify-center items-center px-10 py-5 gap-6 bg-sec222831 lg:flex-row-reverse lg:px-12">
+            <p class="text-xs lg:hidden">کلیه حقوق این وب‌سایت به شرکت پاک نیرو البرز تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.<br>2022</p>
+            <p class="text-xs lg:hidden">اجراء و پیاده سازی : <span class="text-sm font-extrabold">شرکت هایپونت</span></p>
+            <p class="text-sm">کلیه حقوق این وب‌سایت به <span class="text-base font-bold">مشاورین املاک هم لند</span> تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.</p>
+            <span class="h-8 border-[1px] border-[rgba(255, 255, 255, 0.27)]"></span>
+            <div class="flex justify-between w-1/2">
+                <span class="text-sm">Copyright &copy; 2021 EvTech | All Rights Reserved</span>
+                <span class="text-sm">اجراء و پیاده سازی : <span class="font-bold">شرکت هایپونت</span></span>
+            </div>
         </div>
     </footer>
  

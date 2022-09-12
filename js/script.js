@@ -23,7 +23,8 @@ const swiperNewst = new Swiper(".swiperNewst", {
 	loop: true,
 
 	breakpoints: {
-		768: {slidesPerView: 2, spaceBetween: 10}
+		768: {slidesPerView: 2, spaceBetween: 10},
+		1024: {slidesPerView: 3, spaceBetween: 10}
 	}
 });
 
@@ -41,7 +42,8 @@ const swiperProposal = new Swiper(".swiperProposal", {
 	loop: true,
 
 	breakpoints: {
-		768: {slidesPerView: 2, spaceBetween: 10}
+		768: {slidesPerView: 2, spaceBetween: 10},
+		1024: {slidesPerView: 2, spaceBetween: 10},
 	}
 });
 
@@ -53,6 +55,10 @@ const swiperProposalImg1 = new Swiper(".swiperProposalImg1", {
 		nextEl: ".swiperProposalImg1-next",
 		prevEl: ".swiperProposalImg1-prev",
 	},
+
+	breakpoints: {
+		1024: {spaceBetween: 10},
+	}
 });
 
 const swiperFavourite = new Swiper(".swiperFavourite", {
@@ -61,7 +67,8 @@ const swiperFavourite = new Swiper(".swiperFavourite", {
 	spaceBetween: 20,
 
 	breakpoints: {
-		768: {slidesPerView: 2, spaceBetween: 10}
+		768: {slidesPerView: 2, spaceBetween: 10},
+		1024: {slidesPerView: 3, spaceBetween: 10}
 	}
 });
 
@@ -70,7 +77,8 @@ const swiperWeblog = new Swiper('.swiperWeblog', {
 	loop: true,
 
 	breakpoints: {
-		768: {slidesPerView: 2, spaceBetween: 10}
+		768: {slidesPerView: 2, spaceBetween: 10},
+		1024: {slidesPerView: 3, spaceBetween: 10}
 	}
 })
 
@@ -95,6 +103,12 @@ const swiperPersons = new Swiper('.swiperPersons', {
       },
 
 	  breakpoints: {
-		768: {slidesPerView: 4, spaceBetween: 10}
+		768: {slidesPerView: 4, spaceBetween: 10},
+		1024: {slidesPerView: 5, spaceBetween: 20},
+	},
+
+	navigation: {
+		nextEl: '.personsNext',
+		prevEl: '.personsPrev',
 	}
 })
