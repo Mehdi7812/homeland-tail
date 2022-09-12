@@ -13,7 +13,7 @@ module.exports = {
         black50: 'rgba(0, 0, 0, 50%)',
       },
       fontFamily: {
-        yekan: ['iranYekan', 'sans-serif']
+        yekan: ['iranYekan', 'inherit']
       },
       backgroundImage: {
         'header': "url('./images/header.jpg')"

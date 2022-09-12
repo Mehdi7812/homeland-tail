@@ -1261,11 +1261,6 @@ video {
   padding-bottom: 3rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1301,7 +1296,7 @@ video {
 }
 
 .font-yekan {
-  font-family: iranYekan, sans-serif;
+  font-family: iranYekan, inherit;
 }
 
 .text-lg {
@@ -1400,6 +1395,11 @@ video {
   color: rgb(83 83 83 / var(--tw-text-opacity));
 }
 
+.text-\[\#F6E9E9\] {
+  --tw-text-opacity: 1;
+  color: rgb(246 233 233 / var(--tw-text-opacity));
+}
+
 .text-\[\#E16428\] {
   --tw-text-opacity: 1;
   color: rgb(225 100 40 / var(--tw-text-opacity));
@@ -1453,9 +1453,13 @@ video {
 }
 
 @font-face {
-  font-family: 'iranYekan';
+  font-family: 'medium';
 
-  src: url('font/Yekan\ Bakh\ EN\ 05\ Medium.woff') format('woff');
+  src: url('./font/Yekan\ Bakh\ EN\ 05\ Medium.woff') format('woff');
+}
+
+body {
+  font-family: "medium", inherit;
 }
 
 .btn {
@@ -2087,5 +2091,27 @@ video {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
     background-color: rgb(155 155 155 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-72 {
+    height: 18rem;
+  }
+
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:h-7 {
+    height: 1.75rem;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .xl\:w-full {
+    width: 100%;
   }
 }

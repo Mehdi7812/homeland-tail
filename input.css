@@ -11,8 +11,12 @@
 }
 
 @font-face {
-    font-family: 'iranYekan';
-    src: url('font/Yekan\ Bakh\ EN\ 05\ Medium.woff') format('woff');
+    font-family: 'medium';
+    src: url('./font/Yekan\ Bakh\ EN\ 05\ Medium.woff') format('woff');
+}
+
+body {
+    font-family: "medium", inherit;
 }
 
 .btn {
@@ -22,6 +26,7 @@
 .swiper-paginationPersons .swiper-pagination-bullet-active {
     width: 25px;
 }
+
 
 .swiper-paginationPersons span { 
     background-color: #7d7878;
