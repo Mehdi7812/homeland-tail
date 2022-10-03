@@ -1419,10 +1419,6 @@ video {
   text-align: right;
 }
 
-.font-yekan {
-  font-family: medium, inherit;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1602,6 +1598,9 @@ body {
   background-color: rgb(225 100 40 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .btn:hover {
@@ -1959,10 +1958,6 @@ body {
 .group:focus-within .group-focus-within\:border-b-primaryOrange {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(225 100 40 / var(--tw-border-opacity));
-}
-
-.group:focus-within .group-focus-within\:font-extrabold {
-  font-weight: 800;
 }
 
 .group:focus-within .group-focus-within\:font-bold {

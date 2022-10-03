@@ -20,7 +20,7 @@ body {
 }
 
 .btn {
-    @apply bg-primaryOrange text-white flex justify-center items-center h-10 rounded-xl hover:bg-hoverPrimaryOrange
+    @apply bg-primaryOrange text-white flex justify-center items-center h-10 rounded-xl transition-all duration-300 hover:bg-hoverPrimaryOrange
 }
 
 .swiper-paginationPersons .swiper-pagination-bullet-active {
