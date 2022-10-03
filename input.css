@@ -38,29 +38,104 @@ body {
     @apply top-5 w-[95%] rounded-2xl m-auto
 }
 
-.inputCustom {
-    @apply  before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300;
+#nosaz:checked + label:after {
+    background: #E16428;
+}
+#nosaz + label:before {
+    right: 0;
 }
 
-.inputCheckBoxCustom::after {
-    position: absolute;
-    content: '';
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #7d7878;
-    right: -8px;
+#nosaz:checked + label:before {
+    right: 0;
+    z-index: 10;
 }
 
-.inputCheckBoxCustom::before {
-    position: absolute;
-    content: '';
-    width: 8px;
-    height: 16px;
-    border: solid 4px red;
-    border-top-width: 0;
-    border-left-width: 0;
-    transform: rotate(45deg);
-    border-radius: 8px;
-    top: 2px;
+#flat:checked + label:after {
+    background: #E16428;
+}
+#flat + label:before {
+    right: 0;
+}
+
+#flat:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#nimPlot:checked + label:after {
+    background: #E16428;
+}
+#nimPlot + label:before {
+    right: 0;
+}
+
+#nimPlot:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#doblex:checked + label:after {
+    background: #E16428;
+}
+#doblex + label:before {
+    right: 0;
+}
+
+#doblex:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#threeblex:checked + label:after {
+    background: #E16428;
+}
+#threeblex + label:before {
+    right: 0;
+}
+#threeblex:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#aparteman:checked + label:after {
+    background: #E16428;
+}
+#aparteman + label:before {
+    right: 0;
+}
+#aparteman:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#vilayi:checked + label:after {
+    background: #E16428;
+}
+#vilayi + label:before {
+    right: 0;
+}
+#vilayi:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+
+#doblex2:checked + label:after {
+    background: #E16428;
+}
+#doblex2 + label:before {
+    right: 0;
+}
+#doblex2:checked + label:before {
+    right: 0;
+    z-index: 10;
+}
+#nimPlot2:checked + label:after {
+    background: #E16428;
+}
+#nimPlot2 + label:before {
+    right: 0;
+}
+#nimPlot2:checked + label:before {
+    right: 0;
+    z-index: 10;
 }

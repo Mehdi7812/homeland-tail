@@ -1317,6 +1317,10 @@ video {
   border-width: 1px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1848,53 +1852,121 @@ body {
   border-radius: 1rem;
 }
 
-.inputCustom::before {
-  top: 2px;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  content: var(--tw-content);
-  transition-duration: 300ms;
+#nosaz:checked + label:after {
+  background: #E16428;
 }
 
-.inputCustom::after {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  content: var(--tw-content);
-  transition-duration: 200ms;
+#nosaz + label:before {
+  right: 0;
 }
 
-.inputCustom:checked::before {
-  content: var(--tw-content);
+#nosaz:checked + label:before {
+  right: 0;
   z-index: 10;
 }
 
-.inputCustom:checked::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(225 100 40 / var(--tw-bg-opacity));
+#flat:checked + label:after {
+  background: #E16428;
 }
 
-.inputCheckBoxCustom::after {
-  position: absolute;
-  content: '';
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #7d7878;
-  right: -8px;
+#flat + label:before {
+  right: 0;
 }
 
-.inputCheckBoxCustom::before {
-  position: absolute;
-  content: '';
-  width: 8px;
-  height: 16px;
-  border: solid 4px red;
-  border-top-width: 0;
-  border-left-width: 0;
-  transform: rotate(45deg);
-  border-radius: 8px;
-  top: 2px;
+#flat:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#nimPlot:checked + label:after {
+  background: #E16428;
+}
+
+#nimPlot + label:before {
+  right: 0;
+}
+
+#nimPlot:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#doblex:checked + label:after {
+  background: #E16428;
+}
+
+#doblex + label:before {
+  right: 0;
+}
+
+#doblex:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#threeblex:checked + label:after {
+  background: #E16428;
+}
+
+#threeblex + label:before {
+  right: 0;
+}
+
+#threeblex:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#aparteman:checked + label:after {
+  background: #E16428;
+}
+
+#aparteman + label:before {
+  right: 0;
+}
+
+#aparteman:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#vilayi:checked + label:after {
+  background: #E16428;
+}
+
+#vilayi + label:before {
+  right: 0;
+}
+
+#vilayi:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#doblex2:checked + label:after {
+  background: #E16428;
+}
+
+#doblex2 + label:before {
+  right: 0;
+}
+
+#doblex2:checked + label:before {
+  right: 0;
+  z-index: 10;
+}
+
+#nimPlot2:checked + label:after {
+  background: #E16428;
+}
+
+#nimPlot2 + label:before {
+  right: 0;
+}
+
+#nimPlot2:checked + label:before {
+  right: 0;
+  z-index: 10;
 }
 
 .placeholder\:text-xs::-moz-placeholder {
@@ -2252,6 +2324,17 @@ body {
 .focus\:border-b-primaryOrange:focus {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(225 100 40 / var(--tw-border-opacity));
+}
+
+.group:checked .group-checked\:before\:z-10::before {
+  content: var(--tw-content);
+  z-index: 10;
+}
+
+.group:checked .group-checked\:after\:bg-primaryOrange::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 100 40 / var(--tw-bg-opacity));
 }
 
 .group:focus-within .group-focus-within\:top-0 {
