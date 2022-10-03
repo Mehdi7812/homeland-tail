@@ -12,29 +12,15 @@ exitBtn.addEventListener("click", () => {
 	menuMobile.classList.add("w-0");
 });
 
-const mantagheBtn = document.getElementById('mantaghe')
-const melkBtn = document.getElementById('melk')
-const priceBtn = document.getElementById('price')
+const nosazInput = document.getElementById('nosaz')
+const nosazList = document.getElementById('nosazList')
 
-mantagheBtn.addEventListener('click', (e) => {
-	listOpen(e)
-})
-melkBtn.addEventListener('click', (e) => {
-	listOpen(e)
-})
-priceBtn.addEventListener('click', (e) => {
-	listOpen(e)
-})
-
-function listOpen (e) {
-	let mantagheList = e.target.querySelector('div')
-	let svgElem = e.target.querySelector('svg')
-
-	if (!svgElem.classList.contains('-rotate-90')) {
-		mantagheList.style.height = '0px'
-		svgElem.classList.add('-rotate-90')
+nosazInput.addEventListener('click', () => {
+	if (nosazInput.checked) {
+	console.log('true');
+	nosazList.style.height= '28px'
 	} else {
-		mantagheList.style.height = '165px'
-		svgElem.classList.remove('-rotate-90')
+		console.log('false');
+		nosazList.style.height= '0px'
 	}
-}
+})
