@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: ['*.html'],
   theme: {
     extend: {
       colors: {
@@ -12,12 +12,12 @@ module.exports = {
         sec222831: '#222831',
         black50: 'rgba(0, 0, 0, 50%)',
       },
-      fontFamily: {
-        yekan: ['iranYekan', 'inherit']
-      },
       backgroundImage: {
         'header': "url('./images/header.jpg')"
       }
+    },
+    fontFamily: {
+      yekan: ['medium', 'inherit']
     },
   },
   plugins: [],

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/YekanBakh.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HomeLand-Contact</title>
+</head>
+<body class="bg-secondary text-white" dir="rtl">
+    <nav class="grid grid-cols-3 items-center justify-between cursor-pointer bg-primary p-2 border-black sticky top-0 z-30 md:hidden">
+        <svg class="col-span-1 justify-self-start" id="hamburger" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9.33337H28H4Z" fill="#363333"></path>
+            <path d="M4 9.33337H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 16H28H4Z" fill="#363333"></path>
+            <path d="M4 16H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 22.6666H28H4Z" fill="#363333"></path>
+            <path d="M4 22.6666H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+
+        <img class="col-span-1 col-start-2" src="images/Logo.png" alt="Home Land">
+
+        <a class="text-primaryOrange hover:text-hoverPrimaryOrange flex items-center justify-end gap-2" href="#">کدملی
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.3335 3.33337H13.3335" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.3335 5.33337H11.3335" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.0002 7.66671C14.0002 11.1667 11.1668 14 7.66683 14C4.16683 14 1.3335 11.1667 1.3335 7.66671C1.3335 4.16671 4.16683 1.33337 7.66683 1.33337" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6668 14.6667L13.3335 13.3334" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </nav>
+
+    <div dir="ltr" id="menu_mobile" class="fixed right-0 top-0 bottom-0 bg-secondary w-0 z-50 text-right overflow-hidden transition-all duration-300 ease-in-out flex flex-col justify-between">
+        <div class="grid grid-cols-2 items-center p-4">
+            <svg id="exitBtn" class="cursor-pointer" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_411_3382)">
+                <path d="M17.3214 15.5L22.8756 9.95879C23.1188 9.71556 23.2554 9.38568 23.2554 9.0417C23.2554 8.69773 23.1188 8.36785 22.8756 8.12462C22.6324 7.88139 22.3025 7.74475 21.9585 7.74475C21.6145 7.74475 21.2846 7.88139 21.0414 8.12462L15.5002 13.6788L9.95891 8.12462C9.71569 7.88139 9.3858 7.74475 9.04183 7.74475C8.69786 7.74475 8.36797 7.88139 8.12475 8.12462C7.88152 8.36785 7.74488 8.69773 7.74488 9.0417C7.74488 9.38568 7.88152 9.71556 8.12475 9.95879L13.6789 15.5L8.12475 21.0413C8.00368 21.1614 7.90759 21.3042 7.84201 21.4616C7.77644 21.619 7.74268 21.7879 7.74268 21.9584C7.74268 22.1289 7.77644 22.2977 7.84201 22.4551C7.90759 22.6125 8.00368 22.7554 8.12475 22.8755C8.24483 22.9965 8.38769 23.0926 8.54509 23.1582C8.70249 23.2238 8.87132 23.2575 9.04183 23.2575C9.21235 23.2575 9.38118 23.2238 9.53858 23.1582C9.69598 23.0926 9.83884 22.9965 9.95891 22.8755L15.5002 17.3213L21.0414 22.8755C21.1615 22.9965 21.3044 23.0926 21.4618 23.1582C21.6192 23.2238 21.788 23.2575 21.9585 23.2575C22.129 23.2575 22.2978 23.2238 22.4552 23.1582C22.6126 23.0926 22.7555 22.9965 22.8756 22.8755C22.9966 22.7554 23.0927 22.6125 23.1583 22.4551C23.2239 22.2977 23.2577 22.1289 23.2577 21.9584C23.2577 21.7879 23.2239 21.619 23.1583 21.4616C23.0927 21.3042 22.9966 21.1614 22.8756 21.0413L17.3214 15.5Z" fill="white"></path>
+                </g>
+                <defs>
+                <clipPath id="clip0_411_3382">
+                <rect width="31" height="31" fill="white"></rect>
+                </clipPath>
+                </defs>
+            </svg>
+
+            <img class="ml-auto w-2/5" src="images/Logo.png" alt="homeLand"> 
+        </div>
+
+        <div class="flex justify-end p-5"> 
+            <ul class="text-righ">
+                <li class="text-graytext cursor-default mb-6 text-lg">منو</li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">خانه</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">وبلاگ</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">تماس باما</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">درباره ما</a></li>
+            </ul>
+        </div>
+
+        <div class="p-5">
+            <p class="text-graytext text-lg">شروع گفتگو</p>
+            <p class="text-lg">Homeland.2022@gmail.com</p>
+        </div>
+    </div>
+
+    <header class="w-full h-5/6 bg-gray-400 relative bg-cover" style="background-image: url(images/header.jpg);">
+        <div class="backdrop-brightness-50">
+            <nav class="hidden md:block p-2 bg-primary shadow-[0_0_17px_rgba(0,0,0,0.16)]">
+                <div class="container m-auto flex justify-between items-center">
+                    <ul class="flex justify-center items-center gap-10">
+                        <li class="md:ml-5">
+                            <img src="images/Logo.png" alt="Home land">
+                        </li>
+                        <li class="relative">
+                            <a class="hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="index.html">خانه</a>
+                        </li>
+                        <li class="relative">
+                            <a class="hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="">وبلاگ</a>
+                        </li>
+                        <li class="relative">
+                            <a class="hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] text-primaryOrange after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:transition-all after:duration-300 after:h-2 after:rounded-t-md" href="">تماس با ما</a>
+                        </li>
+                        <li class="relative">
+                            <a class="hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="">درباره ما</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn gap-2 px-3">
+                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 5H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 8H17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
+                        جستجوی کد ملی
+                    </button>
+                </div>
+            </nav>
+            <div class="container m-auto p-6 lg:p-0 lg:py-5">   
+                <div class="flex flex-col text-center items-center gap-5 p-5 pb-20 lg:px-12 md:items-start lg:py-28">
+                    <h2 class="mt-5 text-xs font-bold md:text-[23px]">برترین مشاورین املاک خاور میانه</h2>
+                    <h1 class="text-2xl font-extrabold md:text-6xl">ارتباط با ما</h1>
+                    <p class="flex items-center gap-2">
+                        <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.1922 0.580397C8.60261 0.167154 7.85717 -0.0158061 7.13855 0.00106613C6.41993 0.0179381 5.68357 0.235705 5.11429 0.679053L5.11395 0.679316L1.32891 3.63249L1.32872 3.63263C0.976198 3.90723 0.674223 4.30337 0.449949 4.72428C0.427195 4.76698 0.405242 4.80994 0.384118 4.85305C0.154823 5.32098 0 5.85419 0 6.34414V11.5549C0 13.4486 1.53944 15 3.4337 15H3.49823H5.40636C5.582 15 5.72438 14.8574 5.72438 14.6816V14.0447V13.6925V13.2148V10.6674C5.72438 10.4915 5.86676 10.349 6.0424 10.349H8.58657C8.76221 10.349 8.90459 10.4915 8.90459 10.6674V11.9411V13.2148V13.6925V14.0109V14.0447V14.6816C8.90459 14.8574 9.04698 15 9.22261 15H11.4488H11.5663C13.2231 15 14.6094 13.8128 14.9301 12.2515C14.9759 12.0285 15 11.7978 15 11.5619V6.44259C15 5.92022 14.8287 5.35893 14.5745 4.87142C14.3205 4.3841 13.9589 3.92303 13.532 3.62499L13.5316 3.62469L9.1922 0.580397ZM11.5663 14.0447H10.0177C9.84203 14.0447 9.69965 13.9021 9.69965 13.7263V10.6674C9.69965 9.96394 9.13011 9.39368 8.42756 9.39368H6.20141C5.49886 9.39368 4.92933 9.96394 4.92933 10.6674V13.7263C4.92933 13.9021 4.78695 14.0447 4.61131 14.0447H3.4337C2.0693 14.0447 0.954064 12.924 0.954064 11.5549V6.34414C0.954064 6.03948 1.05558 5.6515 1.24064 5.27383C1.42561 4.89636 1.67095 4.57634 1.91464 4.38655L1.91498 4.38629L5.70002 1.43311L5.70028 1.43291C6.03173 1.17492 6.47718 1.01331 6.95459 0.968221C7.02279 0.961782 7.09165 0.95772 7.16091 0.956094C7.7152 0.94308 8.25145 1.08711 8.64508 1.363L12.9851 4.40774L12.9861 4.40841C13.2543 4.59559 13.5246 4.92196 13.7287 5.31348C13.7543 5.36241 13.7783 5.41162 13.801 5.46092C13.9593 5.80599 14.0459 6.15515 14.0459 6.44259V11.5619C14.0459 11.7321 14.0285 11.8985 13.9954 12.0594C13.7634 13.1861 12.7608 14.0447 11.5663 14.0447Z" fill="white"/>
+                        </svg></span> \ ارتیاط با ما
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <!-- Map Section -->
+        <section class="px-4 -mt-16 relative">
+                <div class="container m-auto">
+                    <div class="bg-primary flex flex-col rounded-[20px] overflow-hidden md:z-10 md:rounded-[63px]">
+                        <div class="relative h-40 sm:h-48 md:h-[448px]">
+                            <img src="images/contactMap.png" class="block w-full h-full">
+                            <span class="rounded-full bg-primaryOrange w-3 h-3 absolute top-1/3 left-1/2 shadow-[0_0_0_4px_rgba(225,100,40,0.4)] md:w-10 md:h-10 md:shadow-[0_0_0_10px_rgba(225,100,40,0.4)] md:top-[45%] md:left-[45%]"></span>
+                        </div>
+        
+                        <div class="bg-primaryOrange p-8 z-10 -mt-8 rounded-2xl md:w-80 md:-mt-[25rem] md:mr-8 md:rounded-[43px]">
+                            <h4 class="flex justify-center md:text-xl">راه های ارتباطی</h4>
+                            <div class="flex gap-5 flex-col py-5 pl-16 text-[13px] md:pl-0">
+                                <p class=" md:text-lg">شهر : <span>آمل</span></p>
+                                <p class="flex flex-wrap md:gap-2 md:text-lg">آدرس : <span>خیابان هراز ، آفتاب 6 ، جنب سوپر مارکت ، مشاور املاک هوم لند</span></p>
+                            </div>
+                            <div class="flex justify-between pl-16 md:pl-0 md:flex-col md:gap-5">
+                                <p class="flex flex-col gap-5 md:flex-row md:text-lg">
+                                    <span>تلفن:</span>
+                                    <span>0144210000</span>
+                                </p>
+                                <p class="flex flex-col gap-5 md:flex-row md:text-lg">
+                                    <span>شماره همراه:</span>
+                                    <span>09111001000</span>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="flex justify-between p-8 md:mt-11 md:justify-center md:gap-12 md:p-20 lg:gap-24 xl:gap-36">
+                            <div class="flex flex-col items-center gap-3">
+                                <svg class="md:w-16 md:h-16" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.7102" cy="17.1653" r="17.1653" fill="#E16428"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8174 24.8254C19.1934 24.8235 20.1933 24.8061 20.8172 24.7733C21.4801 24.7384 22.0558 24.6395 22.5442 24.4767C23.1257 24.2674 23.6316 23.9476 24.0619 23.5172C24.4922 23.0869 24.8121 22.581 25.0214 21.9996C25.1842 21.5111 25.2831 20.9354 25.318 20.2725C25.3528 19.6096 25.3703 18.5222 25.3703 17.0103L25.3698 16.4946C25.3674 15.2499 25.3559 14.3403 25.3354 13.7656C25.2889 13.0911 25.1842 12.5096 25.0214 12.0211C24.8121 11.4396 24.4922 10.9337 24.0619 10.5034C23.6316 10.0731 23.1257 9.7533 22.5442 9.54396C22.0558 9.38115 21.4801 9.28229 20.8172 9.2474C20.1543 9.21251 19.0669 9.19507 17.555 9.19507L17.2926 9.19525C15.9167 9.19718 14.9167 9.21457 14.2928 9.2474C13.6299 9.28229 13.0543 9.38115 12.5658 9.54396C11.9843 9.7533 11.4784 10.0731 11.0481 10.5034C10.6178 10.9337 10.298 11.4396 10.0886 12.0211C9.92582 12.5096 9.82697 13.0853 9.79208 13.7482C9.75719 14.4111 9.73975 15.4985 9.73975 17.0103L9.73993 17.2727C9.74186 18.6487 9.75924 19.6486 9.79208 20.2725C9.82697 20.9354 9.92582 21.5111 10.0886 21.9996C10.298 22.581 10.6178 23.0869 11.0481 23.5172C11.4784 23.9476 11.9843 24.2557 12.5658 24.4418C13.0543 24.6279 13.6299 24.7384 14.2928 24.7733C14.9557 24.8082 16.0431 24.8256 17.555 24.8256L17.8174 24.8254ZM18.3453 23.4296L16.7679 23.4296C15.947 23.4279 15.3021 23.4163 14.833 23.395C13.9724 23.3485 13.3444 23.2554 12.949 23.1159C12.2512 22.8368 11.7511 22.3367 11.4487 21.6156C11.3091 21.2202 11.2161 20.5922 11.1696 19.7316C11.1463 19.2199 11.1347 18.4988 11.1347 17.5684L11.1349 16.2237C11.1367 15.4029 11.1483 14.7579 11.1696 14.2888C11.2161 13.4049 11.3091 12.7769 11.4487 12.4048C11.7278 11.6837 12.2279 11.1836 12.949 10.9045C13.3444 10.765 13.9724 10.6719 14.833 10.6254C15.3447 10.6021 16.0658 10.5905 16.9962 10.5905L18.3409 10.5908C19.1617 10.5925 19.8067 10.6041 20.2758 10.6254C21.1596 10.6719 21.7877 10.765 22.1598 10.9045C22.8809 11.1836 23.3809 11.6837 23.6601 12.4048C23.7996 12.7769 23.8927 13.4049 23.9392 14.2888C23.9624 14.7773 23.9741 15.4983 23.9741 16.452L23.9738 17.7967C23.9721 18.6175 23.9605 19.2625 23.9392 19.7316C23.8927 20.5922 23.7996 21.2202 23.6601 21.6156C23.3809 22.3134 22.8809 22.8135 22.1598 23.1159C21.7877 23.2554 21.1596 23.3485 20.2758 23.395C19.8279 23.4163 19.1846 23.4279 18.3457 23.4296L18.3453 23.4296ZM22.387 13.4865C22.2126 13.6725 21.9974 13.7656 21.7416 13.7656C21.4857 13.7656 21.2647 13.6725 21.0787 13.4865C20.8926 13.3004 20.7995 13.0794 20.7995 12.8236C20.7995 12.5677 20.8926 12.3467 21.0787 12.1607C21.2647 11.9746 21.4857 11.8815 21.7416 11.8815C21.9974 11.8815 22.2184 11.9746 22.4045 12.1607C22.5905 12.3467 22.6836 12.5677 22.6836 12.8236C22.6603 13.0794 22.5615 13.3004 22.387 13.4865ZM17.5541 21.0227C18.2751 21.0227 18.9439 20.8424 19.5602 20.4819C20.1766 20.1214 20.6651 19.6329 21.0256 19.0165C21.3861 18.4001 21.5664 17.7314 21.5664 17.0104C21.5664 16.2893 21.3861 15.6206 21.0256 15.0042C20.6651 14.3878 20.1766 13.8994 19.5602 13.5388C18.9439 13.1783 18.2751 12.9981 17.5541 12.9981C16.833 12.9981 16.1643 13.1783 15.5479 13.5388C14.9316 13.8994 14.4431 14.3878 14.0826 15.0042C13.7221 15.6206 13.5418 16.2893 13.5418 17.0104C13.5418 17.7314 13.7221 18.4001 14.0826 19.0165C14.4431 19.6329 14.9316 20.1214 15.5479 20.4819C16.1643 20.8424 16.833 21.0227 17.5541 21.0227ZM15.7062 18.8598C16.2179 19.3715 16.8343 19.6273 17.5553 19.6273C18.2764 19.6273 18.8928 19.3715 19.4045 18.8598C19.9162 18.348 20.1721 17.7317 20.1721 17.0106C20.1721 16.2895 19.9162 15.6732 19.4045 15.1615C18.8928 14.6497 18.2764 14.3939 17.5553 14.3939C16.8343 14.3939 16.2179 14.6497 15.7062 15.1615C15.1945 15.6732 14.9386 16.2895 14.9386 17.0106C14.9386 17.7317 15.1945 18.348 15.7062 18.8598Z" fill="white"/>
+                                </svg>
+                                <span class="text-xs md:text-2xl md:text-graytext">@amlak.com</span>    
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <svg class="md:w-16 md:h-16" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="17.3435" cy="17.1653" rx="16.8884" ry="17.1653" fill="#E16428"/>
+                                    <path d="M23.9682 21.5464C23.9682 21.7956 23.9128 22.0517 23.7952 22.3009C23.6775 22.5501 23.5252 22.7854 23.3245 23.0069C22.9854 23.3806 22.6116 23.6506 22.1894 23.8236C21.7741 23.9966 21.3242 24.0866 20.8397 24.0866C20.1337 24.0866 19.3793 23.9205 18.5833 23.5814C17.7873 23.2422 16.9913 22.7854 16.2023 22.2109C15.4063 21.6295 14.6519 20.9858 13.932 20.2729C13.2191 19.5531 12.5754 18.7986 12.001 18.0096C11.4334 17.2205 10.9766 16.4315 10.6443 15.6493C10.3121 14.8603 10.146 14.1058 10.146 13.386C10.146 12.9153 10.2291 12.4655 10.3952 12.0502C10.5613 11.628 10.8243 11.2403 11.1911 10.8943C11.6341 10.4582 12.1186 10.2437 12.6308 10.2437C12.8246 10.2437 13.0184 10.2852 13.1915 10.3682C13.3714 10.4513 13.5306 10.5759 13.6552 10.7558L15.261 13.0192C15.3856 13.1922 15.4755 13.3514 15.5378 13.5037C15.6001 13.649 15.6347 13.7944 15.6347 13.9259C15.6347 14.092 15.5863 14.2581 15.4894 14.4173C15.3994 14.5765 15.2679 14.7426 15.1018 14.9087L14.5757 15.4555C14.4996 15.5317 14.465 15.6216 14.465 15.7324C14.465 15.7878 14.4719 15.8362 14.4858 15.8916C14.5065 15.947 14.5273 15.9885 14.5411 16.03C14.6657 16.2584 14.8803 16.556 15.1848 16.916C15.4963 17.2759 15.8285 17.6427 16.1885 18.0096C16.5622 18.3764 16.9221 18.7156 17.289 19.027C17.6489 19.3316 17.9465 19.5392 18.1818 19.6638C18.2165 19.6776 18.258 19.6984 18.3064 19.7192C18.3618 19.7399 18.4172 19.7469 18.4795 19.7469C18.5971 19.7469 18.6871 19.7053 18.7632 19.6292L19.2893 19.1101C19.4623 18.937 19.6284 18.8055 19.7876 18.7225C19.9468 18.6256 20.106 18.5771 20.2791 18.5771C20.4106 18.5771 20.549 18.6048 20.7013 18.6671C20.8535 18.7294 21.0127 18.8194 21.1858 18.937L23.4768 20.5636C23.6567 20.6882 23.7813 20.8335 23.8575 21.0066C23.9267 21.1796 23.9682 21.3526 23.9682 21.5464Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                                    <path d="M21.5666 15.0887C21.5666 14.6734 21.2413 14.0366 20.7567 13.5175C20.3138 13.0399 19.7254 12.6661 19.144 12.6661" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23.9891 15.0887C23.9891 12.4101 21.8227 10.2437 19.144 10.2437" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+        
+                                <span class="text-xs md:text-2xl md:text-graytext">011442100100</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <svg class="md:w-16 md:h-16" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.2063" cy="17.1653" r="17.1653" fill="#E16428"/>
+                                    <path d="M15.2391 22.505L15.4522 19.2845L21.2995 14.0158C21.5584 13.7798 21.2462 13.6656 20.9036 13.8712L13.6859 18.4317L10.5643 17.442C9.89429 17.2516 9.88668 16.7872 10.7166 16.4522L22.8755 11.7622C23.4313 11.5109 23.9643 11.8992 23.7511 12.752L21.6802 22.505C21.5355 23.1979 21.1168 23.3654 20.5382 23.0456L17.3861 20.7158L15.871 22.1853C15.6959 22.3604 15.5512 22.505 15.2391 22.505Z" fill="white"/>
+                                </svg>
+                                    
+                                <span class="text-xs md:text-2xl md:text-graytext">09111101100</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <svg class="hidden md:inline absolute left-0 top-5 -z-10" width="212" height="514" viewBox="0 0 212 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <circle cx="-45" cy="257" r="256" transform="rotate(-180 -45 257)" stroke="#BCBCBC" stroke-opacity="0.76" stroke-width="2"/>
+                        <circle opacity="0.5" cx="-45" cy="257" r="238" transform="rotate(-180 -45 257)" fill="url(#paint0_linear_668_700)"/>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_668_700" x1="-45" y1="19" x2="-45" y2="495" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.229142" stop-color="#E16428" stop-opacity="0.47"/>
+                        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+        </section>
+
+        <!-- Finder Vila -->
+        <section class="px-4 relative">
+            <div class="container m-auto">
+                <h2 class="text-2xl font-extrabold pt-14 pb-28 text-center md:text-[32px]">ویلا یاب</h2>
+                <div class="bg-primary flex justify-center py-4 rounded-2xl md:rounded-[50px]">
+                    <div class="flex flex-col md:w-1/2">
+                        <div class="flex flex-col gap-4 py-8 p-6 md:text-lg md:font-medium xl:flex-row xl:flex-wrap xl:gap-12">
+                            <div class="flex flex-col-reverse gap-2 group xl:w-[45%]">
+                                <input class="border-b-2 border-graytext bg-transparent outline-none focus:border-b-primaryOrange transition-all duration-300" type="text" id="name">
+                                <label class="text-graytext text-xs group-focus-within:text-primaryOrange group-focus-within:font-bold md:text-lg md:font-medium" for="name">نام و نام خانوادگی</label>
+                            </div>
+
+                            <div class="flex flex-col-reverse gap-2 group xl:w-[45%]">
+                                <input class="border-b-2 border-graytext bg-transparent outline-none focus:border-b-primaryOrange transition-all duration-300" type="text" id="number">
+                                <label class="text-graytext text-xs group-focus-within:text-primaryOrange group-focus-within:font-bold md:text-lg md:font-medium" for="number">شماره همراه</label>
+                            </div>
+
+                            <div class="flex flex-col-reverse gap-2 group xl:w-[45%]">
+                                <input class="border-b-2 border-graytext bg-transparent outline-none focus:border-b-primaryOrange transition-all duration-300" type="text" id="ostan">
+                                <label class="text-graytext text-xs group-focus-within:text-primaryOrange group-focus-within:font-bold md:text-lg md:font-medium" for="ostan">استان</label>
+                            </div>
+
+                            <div class="flex flex-col-reverse gap-2 group xl:w-[45%]">
+                                <input class="border-b-2 border-graytext bg-transparent outline-none focus:border-b-primaryOrange transition-all duration-300" type="text" id="city">
+                                <label class="text-graytext text-xs group-focus-within:text-primaryOrange group-focus-within:font-bold md:text-lg md:font-medium" for="city">شهرستان</label>
+                            </div>
+
+                            <div class="flex flex-col-reverse gap-2 group xl:w-[45%]">
+                                <input class="border-b-2 border-graytext bg-transparent outline-none focus:border-b-primaryOrange transition-all duration-300" type="text" id="mantaghe">
+                                <label class="text-graytext text-xs group-focus-within:text-primaryOrange group-focus-within:font-bold md:text-lg md:font-medium" for="mantaghe">منظقه</label>
+                            </div>
+                        </div>
+        
+                        <div class="flex gap-10 flex-wrap p-6">
+                            <div class="flex gap-2 relative">
+                                <input type="checkbox" class="after:absolute after:w-6 after:h-6 after:rounded-full after:bg-graytext after:-right-2 before:w-2 before:h-4 before:absolute before:border-4 before:rounded-lg before:border-t-0 before:border-l-0 before:border-b-white before:border-r-white before:rotate-45 before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300" checked id="nosaz">
+                                <label class="md:text-lg" for="nosaz">نوساز</label>
+                            </div>
+                            <div class="flex gap-2 relative">
+                                <input type="checkbox" class="after:absolute after:w-6 after:h-6 after:rounded-full after:bg-graytext after:-right-2 before:w-2 before:h-4 before:absolute before:border-4 before:rounded-lg before:border-t-0 before:border-l-0 before:border-b-white before:border-r-white before:rotate-45 before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300" id="flat">
+                                <label class="md:text-lg" for="flat">فلت</label>
+                            </div>
+                            <div class="flex gap-2 relative">
+                                <input type="checkbox" class="after:absolute after:w-6 after:h-6 after:rounded-full after:bg-graytext after:-right-2 before:w-2 before:h-4 before:absolute before:border-4 before:rounded-lg before:border-t-0 before:border-l-0 before:border-b-white before:border-r-white before:rotate-45 before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300" checked id="nimPlot">
+                                <label class="md:text-lg" for="nimPlot">نیم پلت</label>
+                            </div>
+                            <div class="flex gap-2 relative">
+                                <input type="checkbox" class="after:absolute after:w-6 after:h-6 after:rounded-full after:bg-graytext after:-right-2 before:w-2 before:h-4 before:absolute before:border-4 before:rounded-lg before:border-t-0 before:border-l-0 before:border-b-white before:border-r-white before:rotate-45 before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300" id="doblex">
+                                <label class="md:text-lg" for="doblex">دوبلکس</label>
+                            </div>
+                            <div class="flex gap-2 relative">
+                                <input type="checkbox" class="after:absolute after:w-6 after:h-6 after:rounded-full after:bg-graytext after:-right-2 before:w-2 before:h-4 before:absolute before:border-4 before:rounded-lg before:border-t-0 before:border-l-0 before:border-b-white before:border-r-white before:rotate-45 before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300" id="threeblex">
+                                <label class="md:text-lg" for="threeblex">تریبلکس</label>
+                            </div>
+                        </div>
+        
+                        <div class="flex flex-col-reverse p-6 gap-4 group xl:gap10">
+                            <input class="border-b-2 border-graytext bg-transparent outline-none group-focus-within:border-b-primaryOrange transition-all duration-300 placeholder:text-xs placeholder:text-graytext md:text-lg md:font-medium placeholder:md:text-lg placeholder:md:font-medium" placeholder="متن خود را بنویسید..." type="text" id="text">
+                            <label class="text-graytext text-xs group-focus-within:text-primaryOrange md:text-lg md:font-medium" for="text">متن</label>
+                        </div>
+        
+                        <div class="p-6">
+                            <button class="btn w-full text-xs md:max-w-sm md:text-lg md:font-bold md:h-14 md:m-auto">ثبت اطلاعات</button>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block md:w-1/2 pl-4">
+                        <div class="bg-cover bg-center w-full h-full rounded-[50px]" style="background-image: url(images/contactFinder.png);"></div>
+                    </div>
+                </div>
+
+                <svg class="hidden md:inline absolute right-0 top-52 -z-10" width="246" height="514" viewBox="0 0 246 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.4">
+                    <circle cx="257" cy="257" r="256" stroke="#BCBCBC" stroke-opacity="0.76" stroke-width="2"/>
+                    <circle opacity="0.5" cx="257" cy="257" r="238" fill="url(#paint0_linear_668_697)"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_668_697" x1="257" y1="19" x2="257" y2="495" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.229142" stop-color="#E16428" stop-opacity="0.47"/>
+                    <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="px-4 py-24">
+            <div class="container m-auto">
+                <h2 class="font-extrabold text-2xl mb-10 text-center md:text-[32px] md:mb-14">هوم لند ، تیمی سربلند</h2>
+                <div class="w-full h-60 bg-center bg-cover rounded-2xl md:h-80 md:rounded-[50px]" style="background-image: url(images/contactTeam.png);"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer dir="ltr" class="bg-[#1D2228]">
+        <div class=" lg:px-12">
+            <div class="container m-auto p-5 lg:p-6 ">
+                <div class="flex flex-col justify-center text-center items-center gap-12 md:flex-row-reverse md:flex-wrap md:items-start md:py-8 lg:justify-between lg:gap-0">
+                    <div class=" flex flex-col justify-center text-center items-center gap-5 mt-20 md:mt-0 md:w-64 md:text-right md:items-end">
+                        <img class="w-32" src="images/Logo.png" alt="">
+                        <p class="px-10 text-graytext md:text-xs md:px-0">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                        <div class="flex flex-row-reverse gap-4">
+                            <svg class="hidden cursor-pointer hover:scale-125 transition-all duration-300 md:inline-block md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6067 18.0322C11.98 18.0303 12.9779 18.0131 13.6006 17.9805C14.2622 17.946 14.8368 17.8482 15.3243 17.687C15.9046 17.4798 16.4095 17.1632 16.839 16.7373C17.2684 16.3113 17.5876 15.8106 17.7966 15.235C17.9591 14.7515 18.0577 14.1817 18.0925 13.5255C18.1274 12.8693 18.1448 11.793 18.1448 10.2964L18.1443 9.78595C18.1419 8.55391 18.1304 7.65348 18.1099 7.08467C18.0635 6.41699 17.9591 5.8414 17.7966 5.3579C17.5876 4.78232 17.2684 4.28155 16.839 3.85562C16.4095 3.42968 15.9046 3.11311 15.3243 2.9059C14.8368 2.74473 14.2622 2.64689 13.6006 2.61235C12.939 2.57781 11.8538 2.56055 10.3448 2.56055L10.083 2.56073C8.70972 2.56264 7.71176 2.57985 7.08907 2.61235C6.42747 2.64689 5.85292 2.74473 5.36543 2.9059C4.78508 3.11311 4.28017 3.42968 3.85071 3.85562C3.42125 4.28155 3.10206 4.78232 2.89313 5.3579C2.73063 5.8414 2.63197 6.41123 2.59715 7.0674C2.56233 7.72357 2.54492 8.79992 2.54492 10.2964L2.5451 10.5562C2.54703 11.9182 2.56438 12.9079 2.59715 13.5255C2.63197 14.1817 2.73063 14.7515 2.89313 15.235C3.10206 15.8106 3.42125 16.3113 3.85071 16.7373C4.28017 17.1632 4.78508 17.4683 5.36543 17.6525C5.85292 17.8367 6.42747 17.946 7.08907 17.9805C7.75067 18.0151 8.83593 18.0324 10.3448 18.0324L10.6067 18.0322ZM11.1335 16.6501L9.55965 16.6501C8.74039 16.6484 8.09668 16.637 7.62853 16.6159C6.76961 16.5698 6.14283 16.4777 5.7482 16.3396C5.05177 16.0633 4.55267 15.5683 4.25089 14.8546C4.11161 14.4632 4.01875 13.8415 3.97232 12.9896C3.94911 12.4831 3.9375 11.7694 3.9375 10.8485L3.93774 9.51741C3.93952 8.70488 3.95104 8.06645 3.97232 7.60215C4.01875 6.72725 4.11161 6.10562 4.25089 5.73724C4.52946 5.02351 5.02856 4.52851 5.7482 4.25222C6.14283 4.11408 6.76961 4.02199 7.62853 3.97594C8.13924 3.95292 8.85888 3.94141 9.78744 3.94141L11.1295 3.94165C11.9488 3.9434 12.5925 3.95484 13.0606 3.97594C13.9428 4.02199 14.5695 4.11408 14.941 4.25222C15.6606 4.52851 16.1597 5.02351 16.4383 5.73724C16.5776 6.10562 16.6704 6.72725 16.7168 7.60215C16.7401 8.08564 16.7517 8.79937 16.7517 9.74333L16.7514 11.0744C16.7496 11.8869 16.7381 12.5253 16.7168 12.9896C16.6704 13.8415 16.5776 14.4632 16.4383 14.8546C16.1597 15.5453 15.6606 16.0403 14.941 16.3396C14.5695 16.4777 13.9428 16.5698 13.0606 16.6159C12.6136 16.637 11.9715 16.6484 11.1342 16.6501L11.1335 16.6501ZM15.1664 6.80835C14.9923 6.99254 14.7776 7.08463 14.5222 7.08463C14.2668 7.08463 14.0463 6.99254 13.8606 6.80835C13.6749 6.62416 13.582 6.40544 13.582 6.15218C13.582 5.89892 13.6749 5.6802 13.8606 5.49601C14.0463 5.31182 14.2668 5.21973 14.5222 5.21973C14.7776 5.21973 14.9981 5.31182 15.1838 5.49601C15.3695 5.6802 15.4624 5.89892 15.4624 6.15218C15.4392 6.40544 15.3405 6.62416 15.1664 6.80835ZM10.3443 14.2683C11.0639 14.2683 11.7313 14.0899 12.3465 13.733C12.9617 13.3761 13.4491 12.8927 13.809 12.2825C14.1688 11.6724 14.3487 11.0105 14.3487 10.2968C14.3487 9.58302 14.1688 8.9211 13.809 8.31097C13.4491 7.70085 12.9617 7.21736 12.3465 6.86049C11.7313 6.50363 11.0639 6.3252 10.3443 6.3252C9.62463 6.3252 8.95723 6.50363 8.34206 6.86049C7.72688 7.21736 7.23939 7.70085 6.87957 8.31097C6.51975 8.9211 6.33984 9.58302 6.33984 10.2968C6.33984 11.0105 6.51975 11.6724 6.87957 12.2825C7.23939 12.8927 7.72688 13.3761 8.34206 13.733C8.95723 14.0899 9.62463 14.2683 10.3443 14.2683ZM8.50044 12.1275C9.01115 12.6341 9.62632 12.8873 10.346 12.8873C11.0656 12.8873 11.6808 12.6341 12.1915 12.1275C12.7022 11.621 12.9575 11.0109 12.9575 10.2972C12.9575 9.58345 12.7022 8.97332 12.1915 8.46681C11.6808 7.96029 11.0656 7.70703 10.346 7.70703C9.62632 7.70703 9.01115 7.96029 8.50044 8.46681C7.98973 8.97332 7.73438 9.58345 7.73438 10.2972C7.73438 11.0109 7.98973 11.621 8.50044 12.1275Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-1 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.74769 17.0772C9.7297 17.0772 11.4855 16.578 13.0151 15.5798C14.4154 14.6877 15.5034 13.4876 16.2789 11.9795C17.033 10.5564 17.41 9.08022 17.41 7.55092C17.41 7.35975 17.3992 7.22169 17.3777 7.13673C18.0455 6.6482 18.6164 6.06409 19.0904 5.3844C18.4441 5.66053 17.7978 5.84107 17.1515 5.92603C17.8839 5.47999 18.3794 4.86402 18.638 4.07813C17.9701 4.46045 17.2484 4.72595 16.4728 4.87464C16.1497 4.55603 15.7781 4.30115 15.358 4.10999C14.9379 3.91882 14.4801 3.82324 13.9846 3.82324C13.3813 3.82324 12.8212 3.97192 12.3042 4.26929C11.7871 4.56665 11.3778 4.97553 11.0762 5.49592C10.7746 6.0163 10.6238 6.57386 10.6238 7.16859C10.6238 7.42347 10.6453 7.67836 10.6884 7.93324C9.3096 7.86952 8.0116 7.52968 6.79439 6.91371C5.57718 6.29774 4.54847 5.46937 3.70827 4.42859C3.38512 4.9596 3.22354 5.51716 3.22354 6.10126C3.22354 6.68537 3.36358 7.22169 3.64364 7.71022C3.92371 8.19874 4.28995 8.60231 4.74237 8.92092C4.20378 8.89967 3.6975 8.75099 3.22354 8.47487V8.53859C3.22354 9.32448 3.48207 10.0254 3.99911 10.6414C4.51616 11.2573 5.16246 11.6503 5.93803 11.8202C5.63642 11.8839 5.33481 11.9158 5.0332 11.9158C4.83931 11.9158 4.63465 11.9052 4.41921 11.8839C4.63465 12.5424 5.02782 13.0893 5.59872 13.5248C6.16963 13.9602 6.83209 14.1779 7.58612 14.1779C6.33659 15.1337 4.92549 15.6116 3.35281 15.6116C3.0512 15.6116 2.7819 15.601 2.54492 15.5798C4.1176 16.578 5.85186 17.0772 7.74769 17.0772Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-2 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.875 3.06279C14.875 3.00534 14.8637 2.94845 14.8417 2.89537C14.8197 2.84229 14.7875 2.79406 14.7469 2.75343C14.7062 2.71281 14.658 2.68058 14.6049 2.65859C14.5518 2.63661 14.495 2.62529 14.4375 2.62529H12.25C11.1485 2.57042 10.07 2.95376 9.25026 3.69155C8.43049 4.42934 7.93606 5.4616 7.875 6.56279V8.92529H5.6875C5.57147 8.92529 5.46019 8.97139 5.37814 9.05343C5.29609 9.13548 5.25 9.24676 5.25 9.36279V11.6378C5.25 11.7538 5.29609 11.8651 5.37814 11.9472C5.46019 12.0292 5.57147 12.0753 5.6875 12.0753H7.875V17.9378C7.875 18.0538 7.92109 18.1651 8.00314 18.2472C8.08519 18.3292 8.19647 18.3753 8.3125 18.3753H10.9375C10.995 18.3753 11.0518 18.364 11.1049 18.342C11.158 18.32 11.2062 18.2878 11.2469 18.2472C11.2875 18.2065 11.3197 18.1583 11.3417 18.1052C11.3637 18.0521 11.375 17.9952 11.375 17.9378V12.0753H13.6675C13.7648 12.0767 13.8598 12.0456 13.9374 11.987C14.0151 11.9283 14.071 11.8455 14.0963 11.7515L14.7263 9.47654C14.7437 9.4119 14.746 9.34412 14.7331 9.27843C14.7202 9.21274 14.6924 9.15089 14.6518 9.09764C14.6112 9.04439 14.559 9.00116 14.4991 8.97128C14.4392 8.9414 14.3732 8.92567 14.3063 8.92529H11.375V6.56279C11.3968 6.34621 11.4985 6.14551 11.6603 5.9999C11.8221 5.85428 12.0323 5.7742 12.25 5.77529H14.4375C14.5535 5.77529 14.6648 5.7292 14.7469 5.64715C14.8289 5.5651 14.875 5.45382 14.875 5.33779V3.06279Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-3 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5788 11.479C9.75975 13.1695 8.63888 15.4585 8.08237 16.491C7.54338 17.4307 7.09625 17.3056 6.74188 16.5164C5.51163 13.6105 2.9855 8.51535 1.79725 5.65848C1.57763 5.1326 1.41137 4.79485 1.25563 4.66185C1.09725 4.5306 0.770875 4.45185 0.273875 4.42473C0.090125 4.40373 0 4.3591 0 4.2856V3.88748L0.0455 3.8481C0.854 3.84373 4.77138 3.8481 4.77138 3.8481L4.816 3.88748V4.26723C4.816 4.37135 4.75038 4.42123 4.61912 4.42123L4.12563 4.44835C3.70125 4.47373 3.4895 4.59185 3.4895 4.82985C3.4895 4.94798 3.53588 5.1186 3.63475 5.35573C4.5815 7.67098 7.8505 14.5616 7.8505 14.5616L7.9695 14.6019L10.0791 10.3931L9.65737 9.45948L8.20662 6.60348C8.20662 6.60348 7.92837 6.03123 7.83213 5.84048C7.19513 4.57785 7.20912 4.51223 6.566 4.4256C6.38487 4.40548 6.29213 4.38185 6.29213 4.29523V3.88573L6.34462 3.84635H10.1001L10.199 3.87873V4.27335C10.199 4.36523 10.1325 4.4046 10.0004 4.4046L9.73088 4.44573C9.03788 4.4991 9.1525 4.7791 9.61187 5.68998L10.9961 8.53548L12.5344 5.46948C12.7908 4.90948 12.7382 4.7686 12.6315 4.64085C12.5702 4.56735 12.3646 4.44835 11.921 4.43085L11.7451 4.41248C11.6989 4.41274 11.6541 4.39697 11.6182 4.36785C11.5997 4.35555 11.5846 4.33874 11.5744 4.31899C11.5641 4.29925 11.559 4.27722 11.5596 4.25498V3.88135L11.613 3.84198C12.7041 3.83498 15.1506 3.84198 15.1506 3.84198L15.2022 3.88135V4.26285C15.2022 4.36873 15.1506 4.4186 15.0334 4.4186C14.4681 4.44485 14.3491 4.50173 14.1383 4.80273C14.0333 4.96548 13.8101 5.3181 13.573 5.71185L11.5596 9.45073L11.5028 9.56885L13.9458 14.5669L14.0945 14.6089L17.941 5.4756C18.0758 5.10635 18.0539 4.84385 17.885 4.69248C17.7126 4.54198 17.5823 4.4536 17.1351 4.43435L16.7676 4.42035C16.7202 4.42169 16.6736 4.4079 16.6346 4.38098C16.597 4.3556 16.5716 4.31535 16.5716 4.27685V3.89535L16.6233 3.85598H20.9641L21 3.89535V4.27773C21 4.38185 20.9352 4.43523 20.8171 4.43523C20.2501 4.46148 19.831 4.59273 19.5545 4.8036C19.2797 5.02673 19.0671 5.3426 18.9105 5.73723C18.9105 5.73723 15.3729 13.838 14.1628 16.5339C13.7034 17.415 13.2414 17.3362 12.8476 16.5067C12.348 15.4821 11.2963 13.194 10.5324 11.5105L10.5788 11.479Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-4 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.55791 16.3187L8.80291 12.6174L15.5229 6.56241C15.8204 6.29116 15.4617 6.15991 15.0679 6.39616L6.77291 11.6374L3.18541 10.4999C2.41541 10.2812 2.40666 9.74741 3.36041 9.36241L17.3342 3.97241C17.9729 3.68366 18.5854 4.12991 18.3404 5.10991L15.9604 16.3187C15.7942 17.1149 15.3129 17.3074 14.6479 16.9399L11.0254 14.2624L9.28416 15.9512C9.08291 16.1524 8.91666 16.3187 8.55791 16.3187Z" fill="white"></path>
+                            </svg>																																							
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">دسته بندی</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه برقی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه معمولی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">لوازم جانبی دوچرخه</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32 lg:w-[9rem]">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">راهنمای خرید</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">نحوه ثبت سفارش</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">رویه ارسال</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">شیوه های پرداخت</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درخواست فاکتور رسمی</li>
+                        </ul>
+                    </div>
+    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">باایویتک</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">تماس  با ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درباره ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">مجله تخصصی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">وبلاگ ایویتک</li>
+                        </ul>
+                    </div>
+    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center w-full md:items-end md:w-1/2 lg:w-1/4">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">از جدیدترین کالاهای ما با خبر شوید</h3>
+                        <div class="relative h-[51px] w-5/6 lg:w-full">
+                            <input class="h-full w-full bg-sec222831 rounded-lg text-right p-4 outline-none border-0" type="text" placeholder="ایمیل خود را وارد کنید">
+                            <a class="btn w-14 absolute left-1 top-1">ثبت</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <img src="images/footerNamad1.png" alt="">
+                            <img src="images/footerNamad2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col text-center justify-center items-center px-10 py-5 gap-6 bg-sec222831 lg:flex-row-reverse lg:px-12">
+            <p class="text-xs lg:hidden">کلیه حقوق این وب‌سایت به شرکت پاک نیرو البرز تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.<br>2022</p>
+            <p class="text-xs lg:hidden">اجراء و پیاده سازی : <span class="text-sm font-extrabold">شرکت هایپونت</span></p>
+            <p class="hidden lg:block text-sm">کلیه حقوق این وب‌سایت به <span class="text-base font-bold">مشاورین املاک هم لند</span> تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.</p>
+            <span class=" hidden lg:inline-block h-8 border-[1px] border-[rgba(255, 255, 255, 0.27)]"></span>
+            <div class="hidden lg:flex justify-between w-1/2">
+                <span class="text-sm">Copyright &copy; 2021 EvTech | All Rights Reserved</span>
+                <span class="text-sm">اجراء و پیاده سازی : <span class="font-bold">شرکت هایپونت</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

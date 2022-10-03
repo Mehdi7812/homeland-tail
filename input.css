@@ -16,11 +16,11 @@
 }
 
 body {
-    font-family: "medium", inherit;
+    font-family: YekanBakh !important;
 }
 
 .btn {
-    @apply bg-primaryOrange text-white flex justify-center items-center h-10 rounded-xl
+    @apply bg-primaryOrange text-white flex justify-center items-center h-10 rounded-xl hover:bg-hoverPrimaryOrange
 }
 
 .swiper-paginationPersons .swiper-pagination-bullet-active {
