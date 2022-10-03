@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/YekanBakh.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Aparteman Beutifull</title>
+</head>
+<body class="bg-secondary text-white" dir="rtl">
+    
+    <nav id="navMenu" class="grid grid-cols-3 items-center justify-between cursor-pointer bg-primary p-2 border-black sticky top-0 z-30 md:hidden">
+        <svg class="col-span-1 justify-self-start" id="hamburger" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9.33337H28H4Z" fill="#363333"></path>
+            <path d="M4 9.33337H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 16H28H4Z" fill="#363333"></path>
+            <path d="M4 16H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 22.6666H28H4Z" fill="#363333"></path>
+            <path d="M4 22.6666H28" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+
+        <img class="col-span-1 col-start-2 m-auto" src="images/Logo.png" alt="Home Land">
+
+        <a class="text-primaryOrange hover:text-hoverPrimaryOrange flex items-center justify-end gap-2" href="#">کدملی
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.3335 3.33337H13.3335" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.3335 5.33337H11.3335" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.0002 7.66671C14.0002 11.1667 11.1668 14 7.66683 14C4.16683 14 1.3335 11.1667 1.3335 7.66671C1.3335 4.16671 4.16683 1.33337 7.66683 1.33337" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6668 14.6667L13.3335 13.3334" stroke="#E16428" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </nav>
+
+    <div dir="ltr" id="menu_mobile" class="fixed right-0 top-0 bottom-0 bg-secondary w-0 z-50 text-right overflow-hidden transition-all duration-300 ease-in-out flex flex-col justify-between">
+        <div class="grid grid-cols-2 items-center p-4">
+            <svg id="exitBtn" class="cursor-pointer" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_411_3382)">
+                <path d="M17.3214 15.5L22.8756 9.95879C23.1188 9.71556 23.2554 9.38568 23.2554 9.0417C23.2554 8.69773 23.1188 8.36785 22.8756 8.12462C22.6324 7.88139 22.3025 7.74475 21.9585 7.74475C21.6145 7.74475 21.2846 7.88139 21.0414 8.12462L15.5002 13.6788L9.95891 8.12462C9.71569 7.88139 9.3858 7.74475 9.04183 7.74475C8.69786 7.74475 8.36797 7.88139 8.12475 8.12462C7.88152 8.36785 7.74488 8.69773 7.74488 9.0417C7.74488 9.38568 7.88152 9.71556 8.12475 9.95879L13.6789 15.5L8.12475 21.0413C8.00368 21.1614 7.90759 21.3042 7.84201 21.4616C7.77644 21.619 7.74268 21.7879 7.74268 21.9584C7.74268 22.1289 7.77644 22.2977 7.84201 22.4551C7.90759 22.6125 8.00368 22.7554 8.12475 22.8755C8.24483 22.9965 8.38769 23.0926 8.54509 23.1582C8.70249 23.2238 8.87132 23.2575 9.04183 23.2575C9.21235 23.2575 9.38118 23.2238 9.53858 23.1582C9.69598 23.0926 9.83884 22.9965 9.95891 22.8755L15.5002 17.3213L21.0414 22.8755C21.1615 22.9965 21.3044 23.0926 21.4618 23.1582C21.6192 23.2238 21.788 23.2575 21.9585 23.2575C22.129 23.2575 22.2978 23.2238 22.4552 23.1582C22.6126 23.0926 22.7555 22.9965 22.8756 22.8755C22.9966 22.7554 23.0927 22.6125 23.1583 22.4551C23.2239 22.2977 23.2577 22.1289 23.2577 21.9584C23.2577 21.7879 23.2239 21.619 23.1583 21.4616C23.0927 21.3042 22.9966 21.1614 22.8756 21.0413L17.3214 15.5Z" fill="white"></path>
+                </g>
+                <defs>
+                <clipPath id="clip0_411_3382">
+                <rect width="31" height="31" fill="white"></rect>
+                </clipPath>
+                </defs>
+            </svg>
+
+            <img class="ml-auto w-2/5" src="images/Logo.png" alt="homeLand"> 
+        </div>
+
+        <div class="flex justify-end p-5"> 
+            <ul class="text-righ">
+                <li class="text-graytext cursor-default mb-6 text-lg">منو</li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">خانه</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">وبلاگ</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">تماس باما</a></li>
+                <li class="mb-5 text-xl hover:text-primaryOrange transition duration-300"><a href="#">درباره ما</a></li>
+            </ul>
+        </div>
+
+        <div class="p-5">
+            <p class="text-graytext text-lg">شروع گفتگو</p>
+            <p class="text-lg">Homeland.2022@gmail.com</p>
+        </div>
+    </div>
+
+    <nav class="hidden md:block p-2 sticky top-0 z-30 bg-primary shadow-[0_0_17px_rgba(0,0,0,0.16)]">
+        <div class="container m-auto flex justify-between items-center">
+            <ul class="flex justify-center items-center gap-5 lg:gap-10">
+                <li class="md:ml-5">
+                    <a href="index.html">
+                        <img src="images/Logo.png" alt="Home land">
+                    </a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="index.html">خرید خانه</a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="index.html">خرید ویلا</a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] text-primaryOrange after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:transition-all after:duration-300 after:h-2 after:rounded-t-md" href="aparteman.html">خرید آپارتمان</a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="weblog.html">وبلاگ</a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="contact.html">تماس با ما</a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm lg:text-base hover:text-hoverPrimaryOrange transition-all duration-300 pb-[30px] after:absolute after:left-0 after:right-0 after:-bottom-[30px] after:bg-primaryOrange after:h-0 after:transition-all after:duration-300 hover:after:h-2 after:rounded-t-md" href="about.html">درباره ما</a>
+                </li>
+            </ul>
+
+            <button class="btn gap-2 px-3">
+                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 5H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 8H17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></span>
+                جستجوی کد ملی
+            </button>
+        </div>
+    </nav>
+
+    <header class="w-full h-5/6 bg-gray-400 relative bg-cover bg-bottom" style="background-image: url(images/weblog2Header.jpg);">
+        <div class="backdrop-brightness-50">
+            
+            <div class="container m-auto p-6 lg:p-0 lg:py-5">   
+                <div class="flex flex-col gap-5 p-5 pb-20 lg:px-12 md:items-start lg:py-28">
+                    <h1 class="text-2xl font-bold md:text-[42px]">چگونه یک ملک زیبا داشته باشیم؟؟</h1>
+                    <p class="flex items-center gap-2">
+                        <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.1922 0.580397C8.60261 0.167154 7.85717 -0.0158061 7.13855 0.00106613C6.41993 0.0179381 5.68357 0.235705 5.11429 0.679053L5.11395 0.679316L1.32891 3.63249L1.32872 3.63263C0.976198 3.90723 0.674223 4.30337 0.449949 4.72428C0.427195 4.76698 0.405242 4.80994 0.384118 4.85305C0.154823 5.32098 0 5.85419 0 6.34414V11.5549C0 13.4486 1.53944 15 3.4337 15H3.49823H5.40636C5.582 15 5.72438 14.8574 5.72438 14.6816V14.0447V13.6925V13.2148V10.6674C5.72438 10.4915 5.86676 10.349 6.0424 10.349H8.58657C8.76221 10.349 8.90459 10.4915 8.90459 10.6674V11.9411V13.2148V13.6925V14.0109V14.0447V14.6816C8.90459 14.8574 9.04698 15 9.22261 15H11.4488H11.5663C13.2231 15 14.6094 13.8128 14.9301 12.2515C14.9759 12.0285 15 11.7978 15 11.5619V6.44259C15 5.92022 14.8287 5.35893 14.5745 4.87142C14.3205 4.3841 13.9589 3.92303 13.532 3.62499L13.5316 3.62469L9.1922 0.580397ZM11.5663 14.0447H10.0177C9.84203 14.0447 9.69965 13.9021 9.69965 13.7263V10.6674C9.69965 9.96394 9.13011 9.39368 8.42756 9.39368H6.20141C5.49886 9.39368 4.92933 9.96394 4.92933 10.6674V13.7263C4.92933 13.9021 4.78695 14.0447 4.61131 14.0447H3.4337C2.0693 14.0447 0.954064 12.924 0.954064 11.5549V6.34414C0.954064 6.03948 1.05558 5.6515 1.24064 5.27383C1.42561 4.89636 1.67095 4.57634 1.91464 4.38655L1.91498 4.38629L5.70002 1.43311L5.70028 1.43291C6.03173 1.17492 6.47718 1.01331 6.95459 0.968221C7.02279 0.961782 7.09165 0.95772 7.16091 0.956094C7.7152 0.94308 8.25145 1.08711 8.64508 1.363L12.9851 4.40774L12.9861 4.40841C13.2543 4.59559 13.5246 4.92196 13.7287 5.31348C13.7543 5.36241 13.7783 5.41162 13.801 5.46092C13.9593 5.80599 14.0459 6.15515 14.0459 6.44259V11.5619C14.0459 11.7321 14.0285 11.8985 13.9954 12.0594C13.7634 13.1861 12.7608 14.0447 11.5663 14.0447Z" fill="white"/>
+                        </svg></span> \ وبلاگ \ چگونه یک ملک زیبا داشته باشیم؟؟
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </header>
+    
+    <main class="px-2">
+        <section>
+            <div class="container m-auto">
+                <div class="flex flex-col lg:flex-row relative -top-20 gap-6 bg-primary rounded-[27px] lg:rounded-[31px]">
+                    <!-- right -->
+                    <div class="flex flex-col gap-5 md:gap-7 p-4 lg:w-3/5 md:p-11">
+                        <h3 class="text-center md:text-right font-bold md:text-[28px]">چگونه یک ملک زیبا داشته باشیم؟؟</h3>
+
+                        <div class="rounded-3xl overflow-hidden lg:rounded-lg my-2">
+                            <img class="w-full object-cover" src="images/weblog2Img1.jpg">
+                        </div>
+
+                        <p class="text-[9px] md:text-base">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و دارد اااااکاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. </p>
+                    
+                        <h4 class="text-[11px] md:text-xl my-2 hidden md:block">اولین قدم برای داشتن خانه ای زیبا </h4>
+
+                        <p class="text-[9px] md:text-base">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و دارد اااااکاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. </p>
+                    
+                        <div class="rounded-3xl overflow-hidden lg:rounded-lg">
+                            <img class="w-full object-cover" src="images/weblog2Img2.jpg">
+                        </div>
+
+                        <h4 class="text-[11px] md:text-xl">اولین قدم برای داشتن خانه ای زیبا </h4>
+                        
+                        <p class="text-[9px] md:text-base">فارسی ایجاد کرد. افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم تکنولوژی مورد نیاز و دارد اااااکاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک</p>
+                            
+                        <div class="text-center rounded-md md:rounded-[10px] overflow-hidden" style="background-image: url(images/weblog2Img3.jpg);">
+                            <div class="p-6 md:p-9 backdrop-brightness-50">
+                                <h5 class="text-[10px] md:text-lg md:font-semibold">نکته ای که باید به آن توجه کنید!</h5>
+                                <p class="text-[9px] md:text-sm">شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده باشید </p>
+                            </div>
+                        </div>
+
+                        <h4 class="text-[11px] md:text-xl">اولین قدم برای داشتن خانه ای زیبا </h4>
+
+                        <p class="text-[9px] md:text-base">فارسی ایجاد کرد. افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم تکنولوژی مورد نیاز و دارد اااااکاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک</p>
+                    
+                        <div class="hidden lg:block">
+                            <div class="flex justify-between">
+                                <img class="rounded-[10px] overflow-hidden" src="images/weblog2Img4.jpg">
+                                <img class="rounded-[10px] overflow-hidden" src="images/weblog2Img5.jpg">
+                            </div>
+
+                            <p class="mt-10 mb-4">شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده باشید </p>
+                            <p>شما یک طراح هستین.</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex gap-4">
+                                <img class="w-12 h-12 object-cover md:w-16 md:h-16" src="images/weblogPerson.png">
+
+                                <div class="flex flex-col justify-between">
+                                    <span class="text-xs md:text-xl">پوریا حدادی</span>
+                                    <span class="text-[9px] md:text-base text-graytext">۱۰ سال تجربه</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <div class="flex gap-3">
+                                    <a href="#">
+                                        <svg class="w-6 h-6 md:w-9 md:h-9" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.924996" y="0.924996" width="35.1499" height="35.1499" rx="12.6416" fill="#FFA80A" fill-opacity="0.08" stroke="#FFA80A" stroke-width="1.84999"/>
+                                            <path d="M22.1001 11.4295L14.2115 13.8917C8.90868 15.5578 8.90868 18.2744 14.2115 19.9323L16.5527 20.6628L17.3303 22.8623C19.0949 27.8442 21.9953 27.8442 23.76 22.8623L26.3896 15.4593C27.5602 12.1353 25.6383 10.3215 22.1001 11.4295ZM22.3797 15.845L19.06 18.9803C18.929 19.1034 18.763 19.1608 18.597 19.1608C18.431 19.1608 18.265 19.1034 18.134 18.9803C17.8806 18.7422 17.8806 18.3483 18.134 18.1103L21.4537 14.9751C21.707 14.7371 22.1264 14.7371 22.3797 14.9751C22.633 15.2131 22.633 15.607 22.3797 15.845Z" fill="#FFA80A"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="tel:+989111001000">
+                                        <svg class="w-6 h-6 md:w-9 md:h-9" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.924996 13.5666C0.924996 6.58483 6.58484 0.924996 13.5666 0.924996H23.4332C30.415 0.924996 36.0749 6.58484 36.0749 13.5666V23.4332C36.0749 30.415 30.415 36.0749 23.4332 36.0749H13.5666C6.58483 36.0749 0.924996 30.415 0.924996 23.4332V13.5666Z" fill="#0DA049" fill-opacity="0.08" stroke="#0DA049" stroke-width="1.84999"/>
+                                                <path d="M23.3938 17.8229C23.0182 17.8229 22.7212 17.5356 22.7212 17.1909C22.7212 16.8872 22.3979 16.2553 21.8563 15.7054C21.3234 15.1719 20.7381 14.86 20.2488 14.86C19.8732 14.86 19.5762 14.5727 19.5762 14.228C19.5762 13.8833 19.8819 13.5961 20.2488 13.5961C21.1225 13.5961 22.0397 14.0393 22.8435 14.8354C23.5948 15.5823 24.0752 16.5097 24.0752 17.1827C24.0752 17.5356 23.7695 17.8229 23.3938 17.8229Z" fill="#0DA049"/>
+                                                <path d="M26.5466 17.8229C26.171 17.8229 25.874 17.5357 25.874 17.191C25.874 14.2773 23.3492 11.9136 20.2567 11.9136C19.881 11.9136 19.584 11.6264 19.584 11.2817C19.584 10.9369 19.881 10.6415 20.2479 10.6415C24.0918 10.6415 27.2193 13.5797 27.2193 17.191C27.2193 17.5357 26.9136 17.8229 26.5466 17.8229Z" fill="#0DA049"/>
+                                                <path d="M17.6542 21.27L16.038 22.7884C15.6973 23.1085 15.1557 23.1085 14.8062 22.7966C14.7101 22.7063 14.614 22.6242 14.5179 22.534C13.6181 21.6804 12.8057 20.7858 12.0806 19.8502C11.3642 18.9145 10.7876 17.9789 10.3683 17.0514C9.95771 16.1158 9.74805 15.2212 9.74805 14.3676C9.74805 13.8095 9.85288 13.276 10.0625 12.7836C10.2722 12.283 10.6042 11.8233 11.0672 11.413C11.6263 10.8959 12.2378 10.6415 12.8843 10.6415C13.1289 10.6415 13.3735 10.6907 13.5919 10.7892C13.8191 10.8877 14.02 11.0354 14.1772 11.2488L16.204 13.9326C16.3613 14.1378 16.4748 14.3266 16.5534 14.5072C16.6321 14.6795 16.6758 14.8519 16.6758 15.0078C16.6758 15.2048 16.6146 15.4018 16.4923 15.5905C16.3787 15.7793 16.2127 15.9763 16.0031 16.1732L15.3391 16.8216C15.243 16.9119 15.1994 17.0186 15.1994 17.1499C15.1994 17.2156 15.2081 17.273 15.2256 17.3387C15.2518 17.4044 15.278 17.4536 15.2955 17.5028C15.4527 17.7737 15.7235 18.1266 16.1079 18.5534C16.501 18.9802 16.9204 19.4152 17.3746 19.8502C17.462 19.9322 17.5581 20.0143 17.6455 20.0964C17.9949 20.4165 18.0036 20.9417 17.6542 21.27Z" fill="#0DA049"/>
+                                                <path d="M27.1931 24.0441C27.1931 24.2739 27.1494 24.5119 27.0621 24.7417C27.0358 24.8074 27.0096 24.8731 26.9747 24.9387C26.8262 25.2342 26.634 25.5132 26.3806 25.7759C25.9526 26.2191 25.4808 26.5392 24.9479 26.7443C24.9392 26.7443 24.9305 26.7526 24.9217 26.7526C24.4063 26.9495 23.8472 27.0562 23.2444 27.0562C22.3533 27.0562 21.4011 26.8593 20.3964 26.4571C19.3918 26.0549 18.3871 25.5132 17.3912 24.832C17.0505 24.594 15.0762 23.0182 14.7529 22.7638L17.6096 20.08C17.8542 20.2523 19.7063 21.7214 19.8897 21.8117C19.9334 21.8281 19.9858 21.8528 20.047 21.8774C20.1169 21.902 20.1868 21.9102 20.2654 21.9102C20.4139 21.9102 20.5275 21.861 20.6236 21.7707L21.2875 21.1551C21.5059 20.9499 21.7156 20.794 21.9165 20.6955C22.1174 20.5806 22.3184 20.5232 22.5368 20.5232C22.7028 20.5232 22.8775 20.556 23.0697 20.6299C23.2619 20.7037 23.4628 20.8104 23.6812 20.9499L26.5728 22.8787C26.8 23.0264 26.9572 23.1988 27.0533 23.4039C27.1407 23.6091 27.1931 23.8143 27.1931 24.0441Z" fill="#0DA049"/>
+                                        </svg>       
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <p class="flex gap-2 text-[9px] md:text-base">
+                                        <span><svg class="w-3 h-3 md:w-5 md:h-5" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.33203 1.83325V4.58325" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.668 1.83325V4.58325" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.20703 8.33228H18.7904" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.25 7.79159V15.5833C19.25 18.3333 17.875 20.1666 14.6667 20.1666H7.33333C4.125 20.1666 2.75 18.3333 2.75 15.5833V7.79159C2.75 5.04159 4.125 3.20825 7.33333 3.20825H14.6667C17.875 3.20825 19.25 5.04159 19.25 7.79159Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.3888 12.5583H14.3971" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.3888 15.3083H14.3971" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9963 12.5583H11.0045" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9963 15.3083H11.0045" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.60466 12.5583H7.6129" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.60466 15.3083H7.6129" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        </span>
+                                        <span class="text-graytext ">نوشته شده در </span>  ۱۹ آذر ۱۴۰۰</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left -->
+                    <div class="hidden lg:flex flex-col lg:w-2/5 p-4">
+                        <div class="md:p-8 md:bg-primary rounded-[31px]">
+                            <h4 class="mb-4 md:text-xl">جستجوی پست</h4>
+                            <form class="flex">
+                                <input type="text" class="w-full outline-none bg-primary rounded-r-lg p-4 h-12 border-primaryOrange border-[1px] placeholder:text-graytext" placeholder="جستجو">
+                                <button class="bg-primaryOrange cursor-pointer hover:bg-hoverPrimaryOrange rounded-l-lg h-12 px-6 rounded-r-none transition-all duration-300 flex justify-center items-center">
+                                    <svg class="w-6 md:w-8" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6631 7.09363H29.1631" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.6631 11.3436H24.9131" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M30.5797 16.302C30.5797 23.7395 24.5589 29.7603 17.1214 29.7603C9.68392 29.7603 3.66309 23.7395 3.66309 16.302C3.66309 8.86446 9.68392 2.84363 17.1214 2.84363" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M31.9964 31.177L29.1631 28.3436" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="flex flex-col gap-7">
+                            <h4 class="mb-2 md:text-xl">جستجوهای اخیر</h4>
+
+                            <div class="flex gap-2">
+                                <img class="rounded-xl overflow-hidden md:rounded-[21px] lg:w-4/5 lg:max-w-[200px]" src="images/weblogImgLeft.jpg">
+                                <div class="flex flex-col justify-around">
+                                    <h5 class="text-xs md:text-base">چگونه یک ملک زیبا داشته باشیم ؟؟</h5>
+
+                                    <p class="text-[9px] text-graytext md:text-xs">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                
+                                    <p class="flex items-center gap-1 text-[9px] text-primaryOrange md:text-xs">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.1875 5.68127H12.8125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.125 5.3125V10.625C13.125 12.5 12.1875 13.75 10 13.75H5C2.8125 13.75 1.875 12.5 1.875 10.625V5.3125C1.875 3.4375 2.8125 2.1875 5 2.1875H10C12.1875 2.1875 13.125 3.4375 13.125 5.3125Z" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 8.5625H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 10.4375H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 8.5625H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 10.4375H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 8.5625H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 10.4375H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                              ۱۷ آبان ،۱۴۰۰  
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <img class="rounded-xl overflow-hidden md:rounded-[21px] lg:w-4/5 lg:max-w-[200px]" src="images/weblogImgLeft.jpg">
+                                <div class="flex flex-col justify-around">
+                                    <h5 class="text-xs md:text-base">چگونه یک ملک زیبا داشته باشیم ؟؟</h5>
+
+                                    <p class="text-[9px] text-graytext md:text-xs">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                
+                                    <p class="flex items-center gap-1 text-[9px] text-primaryOrange md:text-xs">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.1875 5.68127H12.8125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.125 5.3125V10.625C13.125 12.5 12.1875 13.75 10 13.75H5C2.8125 13.75 1.875 12.5 1.875 10.625V5.3125C1.875 3.4375 2.8125 2.1875 5 2.1875H10C12.1875 2.1875 13.125 3.4375 13.125 5.3125Z" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 8.5625H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 10.4375H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 8.5625H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 10.4375H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 8.5625H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 10.4375H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                              ۱۷ آبان ،۱۴۰۰  
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <img class="rounded-xl overflow-hidden md:rounded-[21px] lg:w-4/5 lg:max-w-[200px]" src="images/weblogImgLeft.jpg">
+                                <div class="flex flex-col justify-around">
+                                    <h5 class="text-xs md:text-base">چگونه یک ملک زیبا داشته باشیم ؟؟</h5>
+
+                                    <p class="text-[9px] text-graytext md:text-xs">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                
+                                    <p class="flex items-center gap-1 text-[9px] text-primaryOrange md:text-xs">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.1875 5.68127H12.8125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.125 5.3125V10.625C13.125 12.5 12.1875 13.75 10 13.75H5C2.8125 13.75 1.875 12.5 1.875 10.625V5.3125C1.875 3.4375 2.8125 2.1875 5 2.1875H10C12.1875 2.1875 13.125 3.4375 13.125 5.3125Z" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 8.5625H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 10.4375H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 8.5625H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 10.4375H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 8.5625H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 10.4375H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                              ۱۷ آبان ،۱۴۰۰  
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <img class="rounded-xl overflow-hidden md:rounded-[21px] lg:w-4/5 lg:max-w-[200px]" src="images/weblogImgLeft.jpg">
+                                <div class="flex flex-col justify-around">
+                                    <h5 class="text-xs md:text-base">چگونه یک ملک زیبا داشته باشیم ؟؟</h5>
+
+                                    <p class="text-[9px] text-graytext md:text-xs">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                
+                                    <p class="flex items-center gap-1 text-[9px] text-primaryOrange md:text-xs">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 1.25V3.125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.1875 5.68127H12.8125" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.125 5.3125V10.625C13.125 12.5 12.1875 13.75 10 13.75H5C2.8125 13.75 1.875 12.5 1.875 10.625V5.3125C1.875 3.4375 2.8125 2.1875 5 2.1875H10C12.1875 2.1875 13.125 3.4375 13.125 5.3125Z" stroke="#E16428" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 8.5625H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.80907 10.4375H9.81468" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 8.5625H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.49657 10.4375H7.50218" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 8.5625H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.18407 10.4375H5.18968" stroke="#E16428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                              ۱۷ آبان ،۱۴۰۰  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-10 mt-7">
+                            <h4 class="md:text-xl">دسته بندی های محبوب</h4>
+
+                            <div class="flex flex-col gap-2 md:gap-3">
+                                <div class="flex justify-between items-center py-3 px-8 bg-secondary rounded-lg opacity-80 cursor-pointer transition-all duration-300 hover:bg-primaryOrange">
+                                    <span class="text-[13px] md:text-base">اتاق نشیمن (۲۴)</span>
+    
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3073 13.6642L6.0174 9.5401C5.51077 9.05304 5.46823 8.21607 5.92286 7.68015L9.77246 3.14227" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+                                
+                                <div class="flex justify-between items-center py-3 px-8 bg-secondary rounded-lg opacity-80 cursor-pointer transition-all duration-300 hover:bg-primaryOrange">
+                                    <span class="text-[13px] md:text-base">مشاور املاک (۱۶)</span>
+    
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3073 13.6642L6.0174 9.5401C5.51077 9.05304 5.46823 8.21607 5.92286 7.68015L9.77246 3.14227" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+
+                                <div class="flex justify-between items-center py-3 px-8 bg-secondary rounded-lg opacity-80 cursor-pointer transition-all duration-300 hover:bg-primaryOrange">
+                                    <span class="text-[13px] md:text-base">اتاق نشیمن (۲۴)</span>
+    
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3073 13.6642L6.0174 9.5401C5.51077 9.05304 5.46823 8.21607 5.92286 7.68015L9.77246 3.14227" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+
+                                <div class="flex justify-between items-center py-3 px-8 bg-secondary rounded-lg opacity-80 cursor-pointer transition-all duration-300 hover:bg-primaryOrange">
+                                    <span class="text-[13px] md:text-base">اتاق نشیمن (۲۴)</span>
+    
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3073 13.6642L6.0174 9.5401C5.51077 9.05304 5.46823 8.21607 5.92286 7.68015L9.77246 3.14227" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+
+                                <div class="flex justify-between items-center py-3 px-8 bg-secondary rounded-lg opacity-80 cursor-pointer transition-all duration-300 hover:bg-primaryOrange">
+                                    <span class="text-[13px] md:text-base">اتاق نشیمن (۲۴)</span>
+    
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3073 13.6642L6.0174 9.5401C5.51077 9.05304 5.46823 8.21607 5.92286 7.68015L9.77246 3.14227" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-8 mt-7">
+                            <h4 class="md:text-xl">برچسب های محبوب</h4>
+
+                            <div class="flex gap-1 flex-wrap pl-12">
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">خانه</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">مشاوراملاک</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">ساختمان</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">آژانس</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">اتاق</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">خانواده</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">حمام</a>
+                                <a class="bg-secondary bg-opacity-80 text-[10px] md:text-sm py-2 px-4 rounded-md hover:bg-primaryOrange transition-all duration-300" href="#">آشپزخانه</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container m-auto p-4">
+                <div class="lg:w-3/5">
+                    <div class="flex justify-between lg:px-8 relative">
+                        <span class="hidden lg:inline-block absolute right-0 top-[45%] cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.5 12H20.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                        </span>
+                        
+                        <a class="bg-primary py-5 px-3 rounded-2xl border-[1px] border-[#DAD6D6] md:py-9 md:px-6 md:rounded-[28px]" href="#">
+                            <p class="text-[9px] md:text-base mb-2">پست قبلی</p>
+                            <p class="text-[10px] md:text-xl">چگونه یک ملک زیبا داشته باشیم ؟؟</p>
+                        </a>
+                        
+                        <a class="bg-primaryOrange/20 py-5 px-3 rounded-2xl md:py-9 md:px-6 md:rounded-[28px]" href="#">
+                            <p class="text-primaryOrange text-[9px] md:text-base mb-2">پست بعدی</p>
+                            <p class="text-primaryOrange text-[10px] md:text-xl">چگونه یک ملک زیبا داشته باشیم ؟؟</p>
+                        </a>
+
+                        <span class="hidden lg:inline-block absolute left-0 top-[45%] cursor-pointer">
+                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.96875 5.93005L3.28011 12.0001L8.96875 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.2119 12H3.4393" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-col-reverse">
+                        <!-- Comments -->
+                        <div class="flex flex-col">
+                            <h4 class="text-center text-lg font-semibold md:text-xl mt-20">کامنت ها</h4>
+                            
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-5">
+                                    <div class="flex gap-3 pl-16">
+                                        <img class="hidden lg:block w-14 h-14" src="images/weblogPerson.png">
+    
+                                        <div class="flex flex-col gap-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-xs">پوریا حدادی</span>
+                                                <span class="text-[10px] text-graytext">نوشته شده در : 22 آذر 1400</span>
+                                            </div>
+
+                                            <div class="flex flex-col bg-primary px-5 py-4 rounded-lg">
+                                                <p class="pl-6 text-[10px] md:text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+    
+                                                <button class="py-1 px-4 text-[10px] cursor-pointer hover:bg-hoverPrimaryOrange transition-all duration-300 bg-primaryOrange rounded-md w-full lg:w-fit lg:mr-auto">پاسخ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Reply -->
+                                    <div class="pr-16">
+                                        <div class="flex gap-3">
+                                            <img class="hidden lg:block w-14 h-14" src="images/weblogPerson.png">
+                                            
+                                            <div class="flex flex-col gap-3">
+                                                <div class="flex justify-between items-center">
+                                                        <p class="flex gap-2 text-xs"><span class="text-graytext">پاسخ</span> علی عبدالملکی <span class="text-graytext">به </span>پوریا حدادی</p>
+                                                        <span class="text-[10px] text-graytext">نوشته شده در : 22 آذر 1400</span>
+                                                    </div>
+        
+                                                    <div class="flex flex-col bg-primary px-5 py-4 rounded-lg">
+                                                        <p class="pl-6 text-[10px] md:text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+            
+                                                        <button class="py-1 px-4 text-[10px] cursor-pointer hover:bg-hoverPrimaryOrange transition-all duration-300 bg-primaryOrange rounded-md w-full lg:w-fit lg:mr-auto">پاسخ</button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-5">
+                                    <div class="flex gap-3 pl-16">
+                                        <img class="hidden lg:block w-14 h-14" src="images/weblogPerson.png">
+    
+                                        <div class="flex flex-col gap-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-xs">پوریا حدادی</span>
+                                                <span class="text-[10px] text-graytext">نوشته شده در : 22 آذر 1400</span>
+                                            </div>
+
+                                            <div class="flex flex-col bg-primary px-5 py-4 rounded-lg">
+                                                <p class="pl-6 text-[10px] md:text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+    
+                                                <button class="py-1 px-4 text-[10px] cursor-pointer hover:bg-hoverPrimaryOrange transition-all duration-300 bg-primaryOrange rounded-md w-full lg:w-fit lg:mr-auto">پاسخ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="text-center text-lg font-semibold md:text-2xl my-20">کامنت بگذارید</h4>
+
+                            <div>
+                                <form class="flex flex-col gap-3">
+                                    <div class="flex flex-col lg:flex-row gap-3 lg:justify-between">
+                                        <div class="flex flex-col gap-2 lg:w-1/2">
+                                            <label for="fullName">نام کامل</label>
+                                            <input class="bg-transparent outline-none text-xs md:text-sm border-[1px] border-graytext px-5 py-4 rounded-lg" id="fullName" type="text" placeholder="نام کامل">
+                                        </div>
+    
+                                        <div class="flex flex-col gap-2 lg:w-1/2">
+                                            <label for="email">آدرس ایمیل</label>
+                                            <input class="bg-transparent outline-none text-xs md:text-sm border-[1px] border-graytext px-5 py-4 rounded-lg" id="email" type="email" placeholder="آدرس ایمیل">
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-col gap-2">
+                                        <label for="message">پیام شما</label>
+                                        <textarea class="bg-transparent outline-none text-xs md:text-sm border-[1px] border-graytext px-5 py-4 rounded-lg" name="message" id="message" cols="30" rows="10" placeholder="پیام خود را بنویسید..."></textarea>
+                                    </div>
+
+                                    <button class="btn w-full mt-3 py-3 md:w-1/4">ارسال نظر</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Posts -->
+                        <div class="flex flex-col">
+                            <h4 class="text-center text-lg font-semibold md:text-xl my-20">پست های مرتبط</h4>
+
+                            <div class="flex flex-col md:flex-row gap-2">
+                                <div class="bg-primary rounded-2xl md:rounded-[15px] p-3 group cursor-pointer flex flex-col md:gap-8">
+                                    <div class="relative">
+                                        <img src="images/weblogPageImg1.png" class="w-full h-full rounded-2xl md:rounded-[15px] overflow-hidden">
+                
+                                        <div class="absolute top-3 left-3 right-3 flex justify-between">
+                                            <div class="flex gap-2 items-center">
+                                                <div class="bg-[#6DC175] p-1 rounded-md flex items-center relative w-7 overflow-hidden group-hover:w-24 transition-all duration-300">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.4269 10.4896C16.4269 14.3133 13.3236 17.4167 9.49984 17.4167C5.67609 17.4167 2.57275 14.3133 2.57275 10.4896C2.57275 6.66583 5.67609 3.5625 9.49984 3.5625C13.3236 3.5625 16.4269 6.66583 16.4269 10.4896Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.5 6.33337V10.2917" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M7.125 1.58337H11.875" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>   
+                                                    </span>
+                                                    <span class="text-[10px] absolute right-7">دو دقیقه مطالعه</span>
+                                                </div>
+                                            </div>
+                
+                                            <div>
+                                                <span class="bg-white text-[10px] text-[#535353] py-2 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">۲ روز پیش</span>
+                                            </div>
+                                        </div>
+                
+                                        <div class="absolute bottom-3 right-3 left-3 flex justify-end items-end gap-2">
+                                            <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-6 relative group-hover:h-11 overflow-hidden transition-all duration-300">
+                                                <span class="absolute bottom-5">۲۰</span>
+                                                <span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.66683 12.6667H5.3335C2.66683 12.6667 1.3335 12 1.3335 8.66671V5.33337C1.3335 2.66671 2.66683 1.33337 5.3335 1.33337H10.6668C13.3335 1.33337 14.6668 2.66671 14.6668 5.33337V8.66671C14.6668 11.3334 13.3335 12.6667 10.6668 12.6667H10.3335C10.1268 12.6667 9.92683 12.7667 9.80016 12.9334L8.80016 14.2667C8.36016 14.8534 7.64016 14.8534 7.20016 14.2667L6.20016 12.9334C6.0935 12.7867 5.84683 12.6667 5.66683 12.6667Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10.6641 7.33333H10.6701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.99715 7.33333H8.00314" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.32967 7.33333H5.33566" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                                                                    
+                                                </span>
+                                            </div>
+                
+                                            <div>
+                                                <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-6 relative group-hover:h-11 overflow-hidden transition-all duration-300">
+                                                    <span class="absolute bottom-5">۳۰۰</span>
+                                                    <span>
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.3866 8.00007C10.3866 9.32007 9.31995 10.3867 7.99995 10.3867C6.67995 10.3867 5.61328 9.32007 5.61328 8.00007C5.61328 6.68007 6.67995 5.6134 7.99995 5.6134C9.31995 5.6134 10.3866 6.68007 10.3866 8.00007Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M7.9999 13.5133C10.3532 13.5133 12.5466 12.1266 14.0732 9.72665C14.6732 8.78665 14.6732 7.20665 14.0732 6.26665C12.5466 3.86665 10.3532 2.47998 7.9999 2.47998C5.64656 2.47998 3.45323 3.86665 1.92656 6.26665C1.32656 7.20665 1.32656 8.78665 1.92656 9.72665C3.45323 12.1266 5.64656 13.5133 7.9999 13.5133Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>                                                                                                                                                                    
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="py-3 flex gap-4 flex-col md:justify-between">
+                                        <h3 class="text-[15px] font-bold md:text-xl group-hover:text-primaryOrange transition-all duration-300">
+                                            چگونه یک ملک زیبا داشته باشیم ؟؟
+                                        </h3>
+        
+                                        <p class="text-[10px] text-right md:text-[14px] text-[#9EA1AC]">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                        
+                                        <div class="flex justify-between">
+                                            <div class="flex gap-3">
+                                                <img class="object-cover w-[35px] h-[35px] md:w-11 md:h-11 cursor-pointer" src="images/weblogPerson.png" alt="">
+                                                <div class="flex flex-col justify-around">
+                                                    <span class="text-[10px] md:text-base">پوریا حدادی</span>
+                                                    <span class="text-[8px] text-[#B1B1B1] md:text-[11px]">۱۰ سال تجربه</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-3">
+                                                <img class="md:w-11 md:h-11 cursor-pointer" src="images/Group 34.svg">
+                                                
+                                                <a href="tell/+9891110010000">
+                                                    <img class="md:w-11 md:h-11 cursor-pointer" src="images/Group 33.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-primary rounded-2xl md:rounded-[15px] p-3 group cursor-pointer flex flex-col md:gap-8">
+                                    <div class="relative">
+                                        <img src="images/weblogPageImg1.png" class="w-full h-full rounded-2xl md:rounded-[15px] overflow-hidden">
+                
+                                        <div class="absolute top-3 left-3 right-3 flex justify-between">
+                                            <div class="flex gap-2 items-center">
+                                                <div class="bg-[#6DC175] p-1 rounded-md flex items-center relative w-7 overflow-hidden group-hover:w-24 transition-all duration-300">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.4269 10.4896C16.4269 14.3133 13.3236 17.4167 9.49984 17.4167C5.67609 17.4167 2.57275 14.3133 2.57275 10.4896C2.57275 6.66583 5.67609 3.5625 9.49984 3.5625C13.3236 3.5625 16.4269 6.66583 16.4269 10.4896Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.5 6.33337V10.2917" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M7.125 1.58337H11.875" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>   
+                                                    </span>
+                                                    <span class="text-[10px] absolute right-7">دو دقیقه مطالعه</span>
+                                                </div>
+                                            </div>
+                
+                                            <div>
+                                                <span class="bg-white text-[10px] text-[#535353] py-2 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300">۲ روز پیش</span>
+                                            </div>
+                                        </div>
+                
+                                        <div class="absolute bottom-3 right-3 left-3 flex justify-end items-end gap-2">
+                                            <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-6 relative group-hover:h-11 overflow-hidden transition-all duration-300">
+                                                <span class="absolute bottom-5">۲۰</span>
+                                                <span>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.66683 12.6667H5.3335C2.66683 12.6667 1.3335 12 1.3335 8.66671V5.33337C1.3335 2.66671 2.66683 1.33337 5.3335 1.33337H10.6668C13.3335 1.33337 14.6668 2.66671 14.6668 5.33337V8.66671C14.6668 11.3334 13.3335 12.6667 10.6668 12.6667H10.3335C10.1268 12.6667 9.92683 12.7667 9.80016 12.9334L8.80016 14.2667C8.36016 14.8534 7.64016 14.8534 7.20016 14.2667L6.20016 12.9334C6.0935 12.7867 5.84683 12.6667 5.66683 12.6667Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10.6641 7.33333H10.6701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.99715 7.33333H8.00314" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.32967 7.33333H5.33566" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                                                                    
+                                                </span>
+                                            </div>
+                
+                                            <div>
+                                                <div class="bg-[#101737] py-1 px-2 rounded-md flex flex-col justify-end items-center h-6 relative group-hover:h-11 overflow-hidden transition-all duration-300">
+                                                    <span class="absolute bottom-5">۳۰۰</span>
+                                                    <span>
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.3866 8.00007C10.3866 9.32007 9.31995 10.3867 7.99995 10.3867C6.67995 10.3867 5.61328 9.32007 5.61328 8.00007C5.61328 6.68007 6.67995 5.6134 7.99995 5.6134C9.31995 5.6134 10.3866 6.68007 10.3866 8.00007Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M7.9999 13.5133C10.3532 13.5133 12.5466 12.1266 14.0732 9.72665C14.6732 8.78665 14.6732 7.20665 14.0732 6.26665C12.5466 3.86665 10.3532 2.47998 7.9999 2.47998C5.64656 2.47998 3.45323 3.86665 1.92656 6.26665C1.32656 7.20665 1.32656 8.78665 1.92656 9.72665C3.45323 12.1266 5.64656 13.5133 7.9999 13.5133Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>                                                                                                                                                                    
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="py-3 flex gap-4 flex-col md:justify-between">
+                                        <h3 class="text-[15px] font-bold md:text-xl group-hover:text-primaryOrange transition-all duration-300">
+                                            چگونه یک ملک زیبا داشته باشیم ؟؟
+                                        </h3>
+        
+                                        <p class="text-[10px] text-right md:text-[14px] text-[#9EA1AC]">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                                        
+                                        <div class="flex justify-between">
+                                            <div class="flex gap-3">
+                                                <img class="object-cover w-[35px] h-[35px] md:w-11 md:h-11 cursor-pointer" src="images/weblogPerson.png" alt="">
+                                                <div class="flex flex-col justify-around">
+                                                    <span class="text-[10px] md:text-base">پوریا حدادی</span>
+                                                    <span class="text-[8px] text-[#B1B1B1] md:text-[11px]">۱۰ سال تجربه</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-3">
+                                                <img class="md:w-11 md:h-11 cursor-pointer" src="images/Group 34.svg">
+                                                
+                                                <a href="tell/+9891110010000">
+                                                    <img class="md:w-11 md:h-11 cursor-pointer" src="images/Group 33.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container m-auto my-32 px-4">
+                <div class="relative my-28 rounded-xl overflow-hidden lg:mt-0">
+                    <div class=" w-full h-[117px] lg:h-[223px] after:absolute after:left-0 after:top-0 after:bottom-0 after:w-5/6 after:bg-gradient-to-r after:from-primaryOrange after:via-primaryOrange after:z-10">
+                        <div class="bg-cover bg-right h-full w-3/5" style="background-image: url(images/weblog2Img6.jpg);"></div>
+                        <div class="flex items-center gap-4 absolute left-[10%] top-0 bottom-0 z-20 cursor-pointer">
+                            <h3 class="w-20 text-center text-sm font-extrabold lg:text-3xl lg:w-48">خرید ویلاهای لوکس و لاکچری</h3>
+
+                            <svg class="md:w-9 md:h-9" width="24" height="24" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.7935 0.717834H4.20683C1.78016 0.717834 0.333496 2.1645 0.333496 4.59117V10.1712C0.333496 12.6045 1.78016 14.0512 4.20683 14.0512H9.78683C12.2135 14.0512 13.6602 12.6045 13.6602 10.1778V4.59117C13.6668 2.1645 12.2202 0.717834 9.7935 0.717834ZM11.0002 7.8845H4.20683L6.2135 9.89117C6.40683 10.0845 6.40683 10.4045 6.2135 10.5978C6.1135 10.6978 5.98683 10.7445 5.86016 10.7445C5.7335 10.7445 5.60683 10.6978 5.50683 10.5978L2.64683 7.73783C2.5535 7.6445 2.50016 7.51783 2.50016 7.3845C2.50016 7.25117 2.5535 7.1245 2.64683 7.03117L5.50683 4.17117C5.70016 3.97783 6.02016 3.97783 6.2135 4.17117C6.40683 4.3645 6.40683 4.6845 6.2135 4.87783L4.20683 6.8845H11.0002C11.2735 6.8845 11.5002 7.11117 11.5002 7.3845C11.5002 7.65783 11.2735 7.8845 11.0002 7.8845Z" fill="white"/>
+                            </svg>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer dir="ltr" class="bg-[#1D2228]">
+        <div class=" lg:px-12">
+            <div class="container m-auto p-5 lg:p-6 ">
+                <div class="flex flex-col justify-center text-center items-center gap-12 md:flex-row-reverse md:flex-wrap md:items-start md:py-8 lg:justify-between lg:gap-0">
+                    <div class=" flex flex-col justify-center text-center items-center gap-5 mt-20 md:mt-0 md:w-64 md:text-right md:items-end">
+                        <img class="w-32" src="images/Logo.png" alt="">
+                        <p class="px-10 text-graytext md:text-xs md:px-0">اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند.</p>
+                        <div class="flex flex-row-reverse gap-4">
+                            <svg class="hidden cursor-pointer hover:scale-125 transition-all duration-300 md:inline-block md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6067 18.0322C11.98 18.0303 12.9779 18.0131 13.6006 17.9805C14.2622 17.946 14.8368 17.8482 15.3243 17.687C15.9046 17.4798 16.4095 17.1632 16.839 16.7373C17.2684 16.3113 17.5876 15.8106 17.7966 15.235C17.9591 14.7515 18.0577 14.1817 18.0925 13.5255C18.1274 12.8693 18.1448 11.793 18.1448 10.2964L18.1443 9.78595C18.1419 8.55391 18.1304 7.65348 18.1099 7.08467C18.0635 6.41699 17.9591 5.8414 17.7966 5.3579C17.5876 4.78232 17.2684 4.28155 16.839 3.85562C16.4095 3.42968 15.9046 3.11311 15.3243 2.9059C14.8368 2.74473 14.2622 2.64689 13.6006 2.61235C12.939 2.57781 11.8538 2.56055 10.3448 2.56055L10.083 2.56073C8.70972 2.56264 7.71176 2.57985 7.08907 2.61235C6.42747 2.64689 5.85292 2.74473 5.36543 2.9059C4.78508 3.11311 4.28017 3.42968 3.85071 3.85562C3.42125 4.28155 3.10206 4.78232 2.89313 5.3579C2.73063 5.8414 2.63197 6.41123 2.59715 7.0674C2.56233 7.72357 2.54492 8.79992 2.54492 10.2964L2.5451 10.5562C2.54703 11.9182 2.56438 12.9079 2.59715 13.5255C2.63197 14.1817 2.73063 14.7515 2.89313 15.235C3.10206 15.8106 3.42125 16.3113 3.85071 16.7373C4.28017 17.1632 4.78508 17.4683 5.36543 17.6525C5.85292 17.8367 6.42747 17.946 7.08907 17.9805C7.75067 18.0151 8.83593 18.0324 10.3448 18.0324L10.6067 18.0322ZM11.1335 16.6501L9.55965 16.6501C8.74039 16.6484 8.09668 16.637 7.62853 16.6159C6.76961 16.5698 6.14283 16.4777 5.7482 16.3396C5.05177 16.0633 4.55267 15.5683 4.25089 14.8546C4.11161 14.4632 4.01875 13.8415 3.97232 12.9896C3.94911 12.4831 3.9375 11.7694 3.9375 10.8485L3.93774 9.51741C3.93952 8.70488 3.95104 8.06645 3.97232 7.60215C4.01875 6.72725 4.11161 6.10562 4.25089 5.73724C4.52946 5.02351 5.02856 4.52851 5.7482 4.25222C6.14283 4.11408 6.76961 4.02199 7.62853 3.97594C8.13924 3.95292 8.85888 3.94141 9.78744 3.94141L11.1295 3.94165C11.9488 3.9434 12.5925 3.95484 13.0606 3.97594C13.9428 4.02199 14.5695 4.11408 14.941 4.25222C15.6606 4.52851 16.1597 5.02351 16.4383 5.73724C16.5776 6.10562 16.6704 6.72725 16.7168 7.60215C16.7401 8.08564 16.7517 8.79937 16.7517 9.74333L16.7514 11.0744C16.7496 11.8869 16.7381 12.5253 16.7168 12.9896C16.6704 13.8415 16.5776 14.4632 16.4383 14.8546C16.1597 15.5453 15.6606 16.0403 14.941 16.3396C14.5695 16.4777 13.9428 16.5698 13.0606 16.6159C12.6136 16.637 11.9715 16.6484 11.1342 16.6501L11.1335 16.6501ZM15.1664 6.80835C14.9923 6.99254 14.7776 7.08463 14.5222 7.08463C14.2668 7.08463 14.0463 6.99254 13.8606 6.80835C13.6749 6.62416 13.582 6.40544 13.582 6.15218C13.582 5.89892 13.6749 5.6802 13.8606 5.49601C14.0463 5.31182 14.2668 5.21973 14.5222 5.21973C14.7776 5.21973 14.9981 5.31182 15.1838 5.49601C15.3695 5.6802 15.4624 5.89892 15.4624 6.15218C15.4392 6.40544 15.3405 6.62416 15.1664 6.80835ZM10.3443 14.2683C11.0639 14.2683 11.7313 14.0899 12.3465 13.733C12.9617 13.3761 13.4491 12.8927 13.809 12.2825C14.1688 11.6724 14.3487 11.0105 14.3487 10.2968C14.3487 9.58302 14.1688 8.9211 13.809 8.31097C13.4491 7.70085 12.9617 7.21736 12.3465 6.86049C11.7313 6.50363 11.0639 6.3252 10.3443 6.3252C9.62463 6.3252 8.95723 6.50363 8.34206 6.86049C7.72688 7.21736 7.23939 7.70085 6.87957 8.31097C6.51975 8.9211 6.33984 9.58302 6.33984 10.2968C6.33984 11.0105 6.51975 11.6724 6.87957 12.2825C7.23939 12.8927 7.72688 13.3761 8.34206 13.733C8.95723 14.0899 9.62463 14.2683 10.3443 14.2683ZM8.50044 12.1275C9.01115 12.6341 9.62632 12.8873 10.346 12.8873C11.0656 12.8873 11.6808 12.6341 12.1915 12.1275C12.7022 11.621 12.9575 11.0109 12.9575 10.2972C12.9575 9.58345 12.7022 8.97332 12.1915 8.46681C11.6808 7.96029 11.0656 7.70703 10.346 7.70703C9.62632 7.70703 9.01115 7.96029 8.50044 8.46681C7.98973 8.97332 7.73438 9.58345 7.73438 10.2972C7.73438 11.0109 7.98973 11.621 8.50044 12.1275Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-1 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.74769 17.0772C9.7297 17.0772 11.4855 16.578 13.0151 15.5798C14.4154 14.6877 15.5034 13.4876 16.2789 11.9795C17.033 10.5564 17.41 9.08022 17.41 7.55092C17.41 7.35975 17.3992 7.22169 17.3777 7.13673C18.0455 6.6482 18.6164 6.06409 19.0904 5.3844C18.4441 5.66053 17.7978 5.84107 17.1515 5.92603C17.8839 5.47999 18.3794 4.86402 18.638 4.07813C17.9701 4.46045 17.2484 4.72595 16.4728 4.87464C16.1497 4.55603 15.7781 4.30115 15.358 4.10999C14.9379 3.91882 14.4801 3.82324 13.9846 3.82324C13.3813 3.82324 12.8212 3.97192 12.3042 4.26929C11.7871 4.56665 11.3778 4.97553 11.0762 5.49592C10.7746 6.0163 10.6238 6.57386 10.6238 7.16859C10.6238 7.42347 10.6453 7.67836 10.6884 7.93324C9.3096 7.86952 8.0116 7.52968 6.79439 6.91371C5.57718 6.29774 4.54847 5.46937 3.70827 4.42859C3.38512 4.9596 3.22354 5.51716 3.22354 6.10126C3.22354 6.68537 3.36358 7.22169 3.64364 7.71022C3.92371 8.19874 4.28995 8.60231 4.74237 8.92092C4.20378 8.89967 3.6975 8.75099 3.22354 8.47487V8.53859C3.22354 9.32448 3.48207 10.0254 3.99911 10.6414C4.51616 11.2573 5.16246 11.6503 5.93803 11.8202C5.63642 11.8839 5.33481 11.9158 5.0332 11.9158C4.83931 11.9158 4.63465 11.9052 4.41921 11.8839C4.63465 12.5424 5.02782 13.0893 5.59872 13.5248C6.16963 13.9602 6.83209 14.1779 7.58612 14.1779C6.33659 15.1337 4.92549 15.6116 3.35281 15.6116C3.0512 15.6116 2.7819 15.601 2.54492 15.5798C4.1176 16.578 5.85186 17.0772 7.74769 17.0772Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-2 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.875 3.06279C14.875 3.00534 14.8637 2.94845 14.8417 2.89537C14.8197 2.84229 14.7875 2.79406 14.7469 2.75343C14.7062 2.71281 14.658 2.68058 14.6049 2.65859C14.5518 2.63661 14.495 2.62529 14.4375 2.62529H12.25C11.1485 2.57042 10.07 2.95376 9.25026 3.69155C8.43049 4.42934 7.93606 5.4616 7.875 6.56279V8.92529H5.6875C5.57147 8.92529 5.46019 8.97139 5.37814 9.05343C5.29609 9.13548 5.25 9.24676 5.25 9.36279V11.6378C5.25 11.7538 5.29609 11.8651 5.37814 11.9472C5.46019 12.0292 5.57147 12.0753 5.6875 12.0753H7.875V17.9378C7.875 18.0538 7.92109 18.1651 8.00314 18.2472C8.08519 18.3292 8.19647 18.3753 8.3125 18.3753H10.9375C10.995 18.3753 11.0518 18.364 11.1049 18.342C11.158 18.32 11.2062 18.2878 11.2469 18.2472C11.2875 18.2065 11.3197 18.1583 11.3417 18.1052C11.3637 18.0521 11.375 17.9952 11.375 17.9378V12.0753H13.6675C13.7648 12.0767 13.8598 12.0456 13.9374 11.987C14.0151 11.9283 14.071 11.8455 14.0963 11.7515L14.7263 9.47654C14.7437 9.4119 14.746 9.34412 14.7331 9.27843C14.7202 9.21274 14.6924 9.15089 14.6518 9.09764C14.6112 9.04439 14.559 9.00116 14.4991 8.97128C14.4392 8.9414 14.3732 8.92567 14.3063 8.92529H11.375V6.56279C11.3968 6.34621 11.4985 6.14551 11.6603 5.9999C11.8221 5.85428 12.0323 5.7742 12.25 5.77529H14.4375C14.5535 5.77529 14.6648 5.7292 14.7469 5.64715C14.8289 5.5651 14.875 5.45382 14.875 5.33779V3.06279Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-3 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5788 11.479C9.75975 13.1695 8.63888 15.4585 8.08237 16.491C7.54338 17.4307 7.09625 17.3056 6.74188 16.5164C5.51163 13.6105 2.9855 8.51535 1.79725 5.65848C1.57763 5.1326 1.41137 4.79485 1.25563 4.66185C1.09725 4.5306 0.770875 4.45185 0.273875 4.42473C0.090125 4.40373 0 4.3591 0 4.2856V3.88748L0.0455 3.8481C0.854 3.84373 4.77138 3.8481 4.77138 3.8481L4.816 3.88748V4.26723C4.816 4.37135 4.75038 4.42123 4.61912 4.42123L4.12563 4.44835C3.70125 4.47373 3.4895 4.59185 3.4895 4.82985C3.4895 4.94798 3.53588 5.1186 3.63475 5.35573C4.5815 7.67098 7.8505 14.5616 7.8505 14.5616L7.9695 14.6019L10.0791 10.3931L9.65737 9.45948L8.20662 6.60348C8.20662 6.60348 7.92837 6.03123 7.83213 5.84048C7.19513 4.57785 7.20912 4.51223 6.566 4.4256C6.38487 4.40548 6.29213 4.38185 6.29213 4.29523V3.88573L6.34462 3.84635H10.1001L10.199 3.87873V4.27335C10.199 4.36523 10.1325 4.4046 10.0004 4.4046L9.73088 4.44573C9.03788 4.4991 9.1525 4.7791 9.61187 5.68998L10.9961 8.53548L12.5344 5.46948C12.7908 4.90948 12.7382 4.7686 12.6315 4.64085C12.5702 4.56735 12.3646 4.44835 11.921 4.43085L11.7451 4.41248C11.6989 4.41274 11.6541 4.39697 11.6182 4.36785C11.5997 4.35555 11.5846 4.33874 11.5744 4.31899C11.5641 4.29925 11.559 4.27722 11.5596 4.25498V3.88135L11.613 3.84198C12.7041 3.83498 15.1506 3.84198 15.1506 3.84198L15.2022 3.88135V4.26285C15.2022 4.36873 15.1506 4.4186 15.0334 4.4186C14.4681 4.44485 14.3491 4.50173 14.1383 4.80273C14.0333 4.96548 13.8101 5.3181 13.573 5.71185L11.5596 9.45073L11.5028 9.56885L13.9458 14.5669L14.0945 14.6089L17.941 5.4756C18.0758 5.10635 18.0539 4.84385 17.885 4.69248C17.7126 4.54198 17.5823 4.4536 17.1351 4.43435L16.7676 4.42035C16.7202 4.42169 16.6736 4.4079 16.6346 4.38098C16.597 4.3556 16.5716 4.31535 16.5716 4.27685V3.89535L16.6233 3.85598H20.9641L21 3.89535V4.27773C21 4.38185 20.9352 4.43523 20.8171 4.43523C20.2501 4.46148 19.831 4.59273 19.5545 4.8036C19.2797 5.02673 19.0671 5.3426 18.9105 5.73723C18.9105 5.73723 15.3729 13.838 14.1628 16.5339C13.7034 17.415 13.2414 17.3362 12.8476 16.5067C12.348 15.4821 11.2963 13.194 10.5324 11.5105L10.5788 11.479Z" fill="white"></path>
+                            </svg>
+                            <svg class="order-4 cursor-pointer hover:scale-125 transition-all duration-300 md:order-none" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.55791 16.3187L8.80291 12.6174L15.5229 6.56241C15.8204 6.29116 15.4617 6.15991 15.0679 6.39616L6.77291 11.6374L3.18541 10.4999C2.41541 10.2812 2.40666 9.74741 3.36041 9.36241L17.3342 3.97241C17.9729 3.68366 18.5854 4.12991 18.3404 5.10991L15.9604 16.3187C15.7942 17.1149 15.3129 17.3074 14.6479 16.9399L11.0254 14.2624L9.28416 15.9512C9.08291 16.1524 8.91666 16.3187 8.55791 16.3187Z" fill="white"></path>
+                            </svg>																																							
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">دسته بندی</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه برقی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">دوچرخه معمولی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4 hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">لوازم جانبی دوچرخه</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32 lg:w-[9rem]">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">راهنمای خرید</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">نحوه ثبت سفارش</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">رویه ارسال</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">شیوه های پرداخت</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درخواست فاکتور رسمی</li>
+                        </ul>
+                    </div>
+    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center md:items-end md:w-32">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">باایویتک</h3>
+                        <ul class="flex flex-col text-center gap-5 md:text-right">
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">تماس  با ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">درباره ایویتک</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">مجله تخصصی</li>
+                            <li class="cursor-pointer relative text-[13px] hover:text-hoverPrimaryOrange hover:pr-4  hover:after:content-['<'] transition-all duration-300 after:absolute after:right-0 lg:text-base">وبلاگ ایویتک</li>
+                        </ul>
+                    </div>
+    
+                    <div class="flex flex-col gap-7 justify-center text-center items-center w-full md:items-end md:w-1/2 lg:w-1/4">
+                        <h3 class="font-extrabold text-[#E16428] lg:text-xl">از جدیدترین کالاهای ما با خبر شوید</h3>
+                        <div class="relative h-[51px] w-5/6 lg:w-full">
+                            <input class="h-full w-full bg-sec222831 rounded-lg text-right p-4 outline-none border-0" type="text" placeholder="ایمیل خود را وارد کنید">
+                            <a class="btn w-14 absolute left-1 top-1 cursor-pointer">ثبت</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <img class="cursor-pointer" src="images/footerNamad1.png" alt="">
+                            <img class="cursor-pointer" src="images/footerNamad2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col text-center justify-center items-center px-10 py-5 gap-6 bg-sec222831 lg:flex-row-reverse lg:px-12">
+            <p class="text-xs lg:hidden">کلیه حقوق این وب‌سایت به شرکت پاک نیرو البرز تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.<br>2022</p>
+            <p class="text-xs lg:hidden">اجراء و پیاده سازی : <span class="text-sm font-extrabold">شرکت هایپونت</span></p>
+            <p class="hidden lg:block text-sm">کلیه حقوق این وب‌سایت به <span class="text-base font-bold">مشاورین املاک هم لند</span> تعلق دارد و هرگونه کپی برداری ممنوع بوده و پیگرد قانونی دارد.</p>
+            <span class=" hidden lg:inline-block h-8 border-[1px] border-[rgba(255, 255, 255, 0.27)]"></span>
+            <div class="hidden lg:flex justify-between w-1/2">
+                <span class="text-sm">Copyright &copy; 2021 EvTech | All Rights Reserved</span>
+                <span class="text-sm">اجراء و پیاده سازی : <span class="font-bold">شرکت هایپونت</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menuNav.js"></script>
+</body>
+</html>

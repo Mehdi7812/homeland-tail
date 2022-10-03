@@ -33,3 +33,34 @@ body {
     border-radius: 0.5rem;
     transition: 0.3s;
 }
+
+.navMain {
+    @apply top-5 w-[95%] rounded-2xl m-auto
+}
+
+.inputCustom {
+    @apply  before:top-[2px] checked:before:z-10 checked:after:bg-primaryOrange after:transition-all after:duration-200 before:transition-all before:duration-300;
+}
+
+.inputCheckBoxCustom::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #7d7878;
+    right: -8px;
+}
+
+.inputCheckBoxCustom::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 16px;
+    border: solid 4px red;
+    border-top-width: 0;
+    border-left-width: 0;
+    transform: rotate(45deg);
+    border-radius: 8px;
+    top: 2px;
+}

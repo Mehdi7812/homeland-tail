@@ -19,30 +19,28 @@ const melkBtn = document.getElementById('melk')
 const priceBtn = document.getElementById('price')
 
 mantagheBtn.addEventListener('click', (e) => {
-	listOpen(e)
+	listOpen(mantagheBtn)
 })
 melkBtn.addEventListener('click', (e) => {
-	listOpen(e)
+	listOpen(melkBtn)
 })
 priceBtn.addEventListener('click', (e) => {
-	listOpen(e)
+	listOpen(priceBtn)
 })
 
-function listOpen (e) {
-	let mantagheList = e.target.querySelector('div')
-	let svgElem = e.target.querySelector('svg')
+function listOpen (btn) {
+	console.log(btn);
+	let list = btn.querySelector('div')
+	let svgElem = btn.querySelector('svg')
 
 	if (!svgElem.classList.contains('-rotate-90')) {
-		mantagheList.style.height = '0px'
+		list.style.height = '0px'
 		svgElem.classList.add('-rotate-90')
 	} else {
-		mantagheList.style.height = '165px'
+		list.style.height = '165px'
 		svgElem.classList.remove('-rotate-90')
 	}
 }
-
-
-
 
 const swiperNewsImg1 = new Swiper(".swiperNewsImg1", {
 	direction: "horizontal",
@@ -126,5 +124,21 @@ const swiperPersons = new Swiper('.swiperPersons', {
 	navigation: {
 		nextEl: '.personsNext',
 		prevEl: '.personsPrev',
+	}
+})
+
+const navMenu = document.getElementById('navMenu')
+
+document.addEventListener('scroll', function () {
+	if(document.documentElement.scrollTop > 100) {
+		if(navMenu.classList.contains('navMain')) {
+			navMenu.classList.remove('navMain')
+			console.log('navMenu Removed');
+		}
+	} else {
+		if(!navMenu.classList.contains('navMain')) {
+			navMenu.classList.add('navMain')
+			console.log('hgvfhgfhgf Added');
+		} 
 	}
 })
