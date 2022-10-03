@@ -1,17 +1,3 @@
-const hamburger = document.getElementById("hamburger");
-const menuMobile = document.getElementById("menu_mobile");
-const exitBtn = document.getElementById("exitBtn");
-
-hamburger.addEventListener("click", () => {
-	menuMobile.classList.remove("w-0");
-	menuMobile.classList.add("w-full");
-});
-
-exitBtn.addEventListener("click", () => {
-	menuMobile.classList.remove("w-full");
-	menuMobile.classList.add("w-0");
-});
-
 const swiper1 = new Swiper(".swiper1", {
 	// Optional parameters
 	direction: "horizontal",
@@ -43,7 +29,7 @@ const swiperProposal = new Swiper(".swiperProposal", {
 
 	breakpoints: {
 		768: {slidesPerView: 2, spaceBetween: 10},
-		1024: {slidesPerView: 2, spaceBetween: 10},
+		1394: {slidesPerView: 2, spaceBetween: 10},
 	}
 });
 
