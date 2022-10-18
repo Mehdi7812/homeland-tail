@@ -1398,11 +1398,6 @@ video {
   background-color: rgb(16 23 55 / var(--tw-bg-opacity));
 }
 
-.bg-graytext {
-  --tw-bg-opacity: 1;
-  background-color: rgb(155 155 155 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#55499B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(85 73 155 / var(--tw-bg-opacity));
@@ -1411,6 +1406,11 @@ video {
 .bg-\[\#FFA80A\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 168 10 / var(--tw-bg-opacity));
+}
+
+.bg-graytext {
+  --tw-bg-opacity: 1;
+  background-color: rgb(155 155 155 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-80 {
@@ -2341,6 +2341,11 @@ body {
   top: 0px;
 }
 
+.group:focus-within .group-focus-within\:border-primaryOrange {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 100 40 / var(--tw-border-opacity));
+}
+
 .group:focus-within .group-focus-within\:border-b-primaryOrange {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(225 100 40 / var(--tw-border-opacity));
@@ -2369,6 +2374,12 @@ body {
 
 .group:hover .group-hover\:w-11\/12 {
   width: 91.666667%;
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-primaryOrange {
